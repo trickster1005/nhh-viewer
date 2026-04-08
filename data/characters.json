@@ -16,17 +16,15 @@
       },
       "sprites": {
         "idle": "assets/jobs/Barbarian/Barbarian_Idle.png",
-        "idleStart": "assets/jobs/Barbarian/Barbarian_IdleStart.png",
-        "idleEnd": "assets/jobs/Barbarian/Barbarian_IdleEnd.png",
         "walk": "assets/jobs/Barbarian/Barbarian_Walk.png",
+        "attack": "assets/jobs/Barbarian/Barbarian_Attack.png",
+        "jump": "assets/jobs/Barbarian/Barbarian_Jump.png",
         "die": "assets/jobs/Barbarian/Barbarian_Die.png",
         "dmg": "assets/jobs/Barbarian/Barbarian_Dmg.png",
-        "jump": "assets/jobs/Barbarian/Barbarian_Jump.png",
-        "attack": "assets/jobs/Barbarian/Barbarian_Attack.png",
-        "skill_1": "assets/jobs/Barbarian/Barbarian_Skill_1.png",
-        "skill_2": "assets/jobs/Barbarian/Barbarian_Skill_2.png",
-        "skill_3": "assets/jobs/Barbarian/Barbarian_Skill_3.png",
-        "skill_4": "assets/jobs/Barbarian/Barbarian_Skill_4.png"
+        "skill_1": "assets/jobs/Barbarian/Barbarian_skill_1.png",
+        "skill_2": "assets/jobs/Barbarian/Barbarian_skill_2.png",
+        "skill_3": "assets/jobs/Barbarian/Barbarian_skill_3.png",
+        "skill_4": "assets/jobs/Barbarian/Barbarian_skill_4.png"
       }
     },
     {
@@ -48,14 +46,13 @@
         "idleStart": "assets/jobs/Bard/Bard_IdleStart.png",
         "idleEnd": "assets/jobs/Bard/Bard_IdleEnd.png",
         "walk": "assets/jobs/Bard/Bard_Walk.png",
+        "attack": "assets/jobs/Bard/Bard_Attack.png",
+        "jump": "assets/jobs/Bard/Bard_Jump.png",
         "die": "assets/jobs/Bard/Bard_Die.png",
         "dmg": "assets/jobs/Bard/Bard_Dmg.png",
-        "jump": "assets/jobs/Bard/Bard_Jump.png",
-        "attack": "assets/jobs/Bard/Bard_Attack.png",
-        "skill_1": "assets/jobs/Bard/Bard_Skill_1.png",
-        "skill_2": "assets/jobs/Bard/Bard_Skill_2.png",
-        "skill_3": "assets/jobs/Bard/Bard_Skill_3.png",
-        "skill_4": "assets/jobs/Bard/Bard_Skill_4.png"
+        "skill_1": "assets/jobs/Bard/Bard_skill_1.png",
+        "skill_2": "assets/jobs/Bard/Bard_skill_2.png",
+        "skill_3": "assets/jobs/Bard/Bard_skill_3.png"
       }
     },
     {
@@ -74,13 +71,11 @@
       },
       "sprites": {
         "idle": "assets/jobs/Blood_Mage/Blood_Mage_Idle.png",
-        "idleStart": "assets/jobs/Blood_Mage/Blood_Mage_IdleStart.png",
-        "idleEnd": "assets/jobs/Blood_Mage/Blood_Mage_IdleEnd.png",
         "walk": "assets/jobs/Blood_Mage/Blood_Mage_Walk.png",
+        "attack": "assets/jobs/Blood_Mage/Blood_Mage_Attack.png",
+        "jump": "assets/jobs/Blood_Mage/Blood_Mage_Jump.png",
         "die": "assets/jobs/Blood_Mage/Blood_Mage_Die.png",
         "dmg": "assets/jobs/Blood_Mage/Blood_Mage_Dmg.png",
-        "jump": "assets/jobs/Blood_Mage/Blood_Mage_Jump.png",
-        "attack": "assets/jobs/Blood_Mage/Blood_Mage_Attack.png",
         "skill_1": "assets/jobs/Blood_Mage/Blood_Mage_Skill_1.png",
         "skill_2": "assets/jobs/Blood_Mage/Blood_Mage_Skill_2.png",
         "skill_3": "assets/jobs/Blood_Mage/Blood_Mage_Skill_3.png",
@@ -106,14 +101,12 @@
         "idleStart": "assets/jobs/Cleric/Cleric_IdleStart.png",
         "idleEnd": "assets/jobs/Cleric/Cleric_IdleEnd.png",
         "walk": "assets/jobs/Cleric/Cleric_Walk.png",
+        "attack": "assets/jobs/Cleric/Cleric_Attack.png",
+        "jump": "assets/jobs/Cleric/Cleric_Jump.png",
         "die": "assets/jobs/Cleric/Cleric_Die.png",
         "dmg": "assets/jobs/Cleric/Cleric_Dmg.png",
-        "jump": "assets/jobs/Cleric/Cleric_Jump.png",
-        "attack": "assets/jobs/Cleric/Cleric_Attack.png",
-        "skill_1": "assets/jobs/Cleric/Cleric_Skill_1.png",
-        "skill_2": "assets/jobs/Cleric/Cleric_Skill_2.png",
-        "skill_3": "assets/jobs/Cleric/Cleric_Skill_3.png",
-        "skill_4": "assets/jobs/Cleric/Cleric_Skill_4.png"
+        "skill_1": "assets/jobs/Cleric/Cleric_skill_1.png",
+        "skill_2": "assets/jobs/Cleric/Cleric_skill_2.png"
       }
     },
     {
@@ -132,17 +125,15 @@
       },
       "sprites": {
         "idle": "assets/jobs/Druid/Druid_Idle.png",
-        "idleStart": "assets/jobs/Druid/Druid_IdleStart.png",
-        "idleEnd": "assets/jobs/Druid/Druid_IdleEnd.png",
         "walk": "assets/jobs/Druid/Druid_Walk.png",
+        "attack": "assets/jobs/Druid/Druid_Attack.png",
+        "jump": "assets/jobs/Druid/Druid_Jump.png",
         "die": "assets/jobs/Druid/Druid_Die.png",
         "dmg": "assets/jobs/Druid/Druid_Dmg.png",
-        "jump": "assets/jobs/Druid/Druid_Jump.png",
-        "attack": "assets/jobs/Druid/Druid_Attack.png",
-        "skill_1": "assets/jobs/Druid/Druid_Skill_1.png",
-        "skill_2": "assets/jobs/Druid/Druid_Skill_2.png",
-        "skill_3": "assets/jobs/Druid/Druid_Skill_3.png",
-        "skill_4": "assets/jobs/Druid/Druid_Skill_4.png"
+        "skill_1": "assets/jobs/Druid/Druid_skill_1.png",
+        "skill_2": "assets/jobs/Druid/Druid_skill_2.png",
+        "skill_3": "assets/jobs/Druid/Druid_skill_3.png",
+        "skill_4": "assets/jobs/Druid/Druid_skill_4.png"
       }
     },
     {
@@ -161,17 +152,11 @@
       },
       "sprites": {
         "idle": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Idle.png",
-        "idleStart": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_IdleStart.png",
-        "idleEnd": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_IdleEnd.png",
         "walk": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Walk.png",
         "die": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Die.png",
         "dmg": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Dmg.png",
-        "jump": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Jump.png",
-        "attack": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Attack.png",
         "skill_1": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Skill_1.png",
-        "skill_2": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Skill_2.png",
-        "skill_3": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Skill_3.png",
-        "skill_4": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Skill_4.png"
+        "skill_2": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Skill_2.png"
       }
     },
     {
@@ -190,17 +175,10 @@
       },
       "sprites": {
         "idle": "assets/jobs/Elf_Druid/Elf_Druid_Idle.png",
-        "idleStart": "assets/jobs/Elf_Druid/Elf_Druid_IdleStart.png",
-        "idleEnd": "assets/jobs/Elf_Druid/Elf_Druid_IdleEnd.png",
         "walk": "assets/jobs/Elf_Druid/Elf_Druid_Walk.png",
         "die": "assets/jobs/Elf_Druid/Elf_Druid_Die.png",
         "dmg": "assets/jobs/Elf_Druid/Elf_Druid_Dmg.png",
-        "jump": "assets/jobs/Elf_Druid/Elf_Druid_Jump.png",
-        "attack": "assets/jobs/Elf_Druid/Elf_Druid_Attack.png",
-        "skill_1": "assets/jobs/Elf_Druid/Elf_Druid_Skill_1.png",
-        "skill_2": "assets/jobs/Elf_Druid/Elf_Druid_Skill_2.png",
-        "skill_3": "assets/jobs/Elf_Druid/Elf_Druid_Skill_3.png",
-        "skill_4": "assets/jobs/Elf_Druid/Elf_Druid_Skill_4.png"
+        "skill_1": "assets/jobs/Elf_Druid/Elf_Druid_skill_1.png"
       }
     },
     {
@@ -219,17 +197,12 @@
       },
       "sprites": {
         "idle": "assets/jobs/Farmer/Farmer_Idle.png",
-        "idleStart": "assets/jobs/Farmer/Farmer_IdleStart.png",
-        "idleEnd": "assets/jobs/Farmer/Farmer_IdleEnd.png",
         "walk": "assets/jobs/Farmer/Farmer_Walk.png",
+        "attack": "assets/jobs/Farmer/Farmer_Attack.png",
         "die": "assets/jobs/Farmer/Farmer_Die.png",
         "dmg": "assets/jobs/Farmer/Farmer_Dmg.png",
-        "jump": "assets/jobs/Farmer/Farmer_Jump.png",
-        "attack": "assets/jobs/Farmer/Farmer_Attack.png",
-        "skill_1": "assets/jobs/Farmer/Farmer_Skill_1.png",
-        "skill_2": "assets/jobs/Farmer/Farmer_Skill_2.png",
-        "skill_3": "assets/jobs/Farmer/Farmer_Skill_3.png",
-        "skill_4": "assets/jobs/Farmer/Farmer_Skill_4.png"
+        "skill_1": "assets/jobs/Farmer/Farmer_skill_1.png",
+        "skill_2": "assets/jobs/Farmer/Farmer_skill_2.png"
       }
     },
     {
@@ -248,13 +221,12 @@
       },
       "sprites": {
         "idle": "assets/jobs/Fighter/Fighter_Idle.png",
-        "idleStart": "assets/jobs/Fighter/Fighter_IdleStart.png",
-        "idleEnd": "assets/jobs/Fighter/Fighter_IdleEnd.png",
-        "walk": "assets/jobs/Fighter/Fighter_Walk.png",
+        "idleStart": "assets/jobs/Fighter/Fighter_Idlestart.png",
+        "walk": "assets/jobs/Fighter/Fighter_walk.png",
+        "attack": "assets/jobs/Fighter/Fighter_Attack.png",
+        "jump": "assets/jobs/Fighter/Fighter_Jump.png",
         "die": "assets/jobs/Fighter/Fighter_Die.png",
         "dmg": "assets/jobs/Fighter/Fighter_Dmg.png",
-        "jump": "assets/jobs/Fighter/Fighter_Jump.png",
-        "attack": "assets/jobs/Fighter/Fighter_Attack.png",
         "skill_1": "assets/jobs/Fighter/Fighter_Skill_1.png",
         "skill_2": "assets/jobs/Fighter/Fighter_Skill_2.png",
         "skill_3": "assets/jobs/Fighter/Fighter_Skill_3.png",
@@ -277,17 +249,10 @@
       },
       "sprites": {
         "idle": "assets/jobs/Hunter/Hunter_Idle.png",
-        "idleStart": "assets/jobs/Hunter/Hunter_IdleStart.png",
-        "idleEnd": "assets/jobs/Hunter/Hunter_IdleEnd.png",
         "walk": "assets/jobs/Hunter/Hunter_Walk.png",
-        "die": "assets/jobs/Hunter/Hunter_Die.png",
-        "dmg": "assets/jobs/Hunter/Hunter_Dmg.png",
-        "jump": "assets/jobs/Hunter/Hunter_Jump.png",
         "attack": "assets/jobs/Hunter/Hunter_Attack.png",
-        "skill_1": "assets/jobs/Hunter/Hunter_Skill_1.png",
-        "skill_2": "assets/jobs/Hunter/Hunter_Skill_2.png",
-        "skill_3": "assets/jobs/Hunter/Hunter_Skill_3.png",
-        "skill_4": "assets/jobs/Hunter/Hunter_Skill_4.png"
+        "die": "assets/jobs/Hunter/Hunter_Die.png",
+        "dmg": "assets/jobs/Hunter/Hunter_Dmg.png"
       }
     },
     {
@@ -305,18 +270,11 @@
         "desc": "명령 하나로 전장의 흐름을 바꾼다."
       },
       "sprites": {
-        "idle": "assets/jobs/King/King_Idle.png",
-        "idleStart": "assets/jobs/King/King_IdleStart.png",
-        "idleEnd": "assets/jobs/King/King_IdleEnd.png",
-        "walk": "assets/jobs/King/King_Walk.png",
-        "die": "assets/jobs/King/King_Die.png",
-        "dmg": "assets/jobs/King/King_Dmg.png",
-        "jump": "assets/jobs/King/King_Jump.png",
-        "attack": "assets/jobs/King/King_Attack.png",
-        "skill_1": "assets/jobs/King/King_Skill_1.png",
-        "skill_2": "assets/jobs/King/King_Skill_2.png",
-        "skill_3": "assets/jobs/King/King_Skill_3.png",
-        "skill_4": "assets/jobs/King/King_Skill_4.png"
+        "idle": "assets/jobs/King/king_Idle.png",
+        "walk": "assets/jobs/King/king_Walk.png",
+        "attack": "assets/jobs/King/king_Attack.png",
+        "die": "assets/jobs/King/king_Die.png",
+        "dmg": "assets/jobs/King/king_Dmg.png"
       }
     },
     {
@@ -335,17 +293,10 @@
       },
       "sprites": {
         "idle": "assets/jobs/Lumberjack/Lumberjack_Idle.png",
-        "idleStart": "assets/jobs/Lumberjack/Lumberjack_IdleStart.png",
-        "idleEnd": "assets/jobs/Lumberjack/Lumberjack_IdleEnd.png",
         "walk": "assets/jobs/Lumberjack/Lumberjack_Walk.png",
-        "die": "assets/jobs/Lumberjack/Lumberjack_Die.png",
-        "dmg": "assets/jobs/Lumberjack/Lumberjack_Dmg.png",
-        "jump": "assets/jobs/Lumberjack/Lumberjack_Jump.png",
         "attack": "assets/jobs/Lumberjack/Lumberjack_Attack.png",
-        "skill_1": "assets/jobs/Lumberjack/Lumberjack_Skill_1.png",
-        "skill_2": "assets/jobs/Lumberjack/Lumberjack_Skill_2.png",
-        "skill_3": "assets/jobs/Lumberjack/Lumberjack_Skill_3.png",
-        "skill_4": "assets/jobs/Lumberjack/Lumberjack_Skill_4.png"
+        "die": "assets/jobs/Lumberjack/Lumberjack_Die.png",
+        "dmg": "assets/jobs/Lumberjack/Lumberjack_Dmg.png"
       }
     },
     {
@@ -364,17 +315,11 @@
       },
       "sprites": {
         "idle": "assets/jobs/Mad_Inventor/Mad_Inventor_Idle.png",
-        "idleStart": "assets/jobs/Mad_Inventor/Mad_Inventor_IdleStart.png",
-        "idleEnd": "assets/jobs/Mad_Inventor/Mad_Inventor_IdleEnd.png",
         "walk": "assets/jobs/Mad_Inventor/Mad_Inventor_Walk.png",
+        "attack": "assets/jobs/Mad_Inventor/Mad_Inventor_Attack.png",
         "die": "assets/jobs/Mad_Inventor/Mad_Inventor_Die.png",
         "dmg": "assets/jobs/Mad_Inventor/Mad_Inventor_Dmg.png",
-        "jump": "assets/jobs/Mad_Inventor/Mad_Inventor_Jump.png",
-        "attack": "assets/jobs/Mad_Inventor/Mad_Inventor_Attack.png",
-        "skill_1": "assets/jobs/Mad_Inventor/Mad_Inventor_Skill_1.png",
-        "skill_2": "assets/jobs/Mad_Inventor/Mad_Inventor_Skill_2.png",
-        "skill_3": "assets/jobs/Mad_Inventor/Mad_Inventor_Skill_3.png",
-        "skill_4": "assets/jobs/Mad_Inventor/Mad_Inventor_Skill_4.png"
+        "skill_1": "assets/jobs/Mad_Inventor/Mad_Inventor_skill_1.png"
       }
     },
     {
@@ -398,12 +343,7 @@
         "walk": "assets/jobs/Merchant/Merchant_Walk.png",
         "die": "assets/jobs/Merchant/Merchant_Die.png",
         "dmg": "assets/jobs/Merchant/Merchant_Dmg.png",
-        "jump": "assets/jobs/Merchant/Merchant_Jump.png",
-        "attack": "assets/jobs/Merchant/Merchant_Attack.png",
-        "skill_1": "assets/jobs/Merchant/Merchant_Skill_1.png",
-        "skill_2": "assets/jobs/Merchant/Merchant_Skill_2.png",
-        "skill_3": "assets/jobs/Merchant/Merchant_Skill_3.png",
-        "skill_4": "assets/jobs/Merchant/Merchant_Skill_4.png"
+        "skill_1": "assets/jobs/Merchant/Merchant_skill_1.png"
       }
     },
     {
@@ -422,17 +362,10 @@
       },
       "sprites": {
         "idle": "assets/jobs/Miner/Miner_Idle.png",
-        "idleStart": "assets/jobs/Miner/Miner_IdleStart.png",
-        "idleEnd": "assets/jobs/Miner/Miner_IdleEnd.png",
         "walk": "assets/jobs/Miner/Miner_Walk.png",
-        "die": "assets/jobs/Miner/Miner_Die.png",
-        "dmg": "assets/jobs/Miner/Miner_Dmg.png",
-        "jump": "assets/jobs/Miner/Miner_Jump.png",
         "attack": "assets/jobs/Miner/Miner_Attack.png",
-        "skill_1": "assets/jobs/Miner/Miner_Skill_1.png",
-        "skill_2": "assets/jobs/Miner/Miner_Skill_2.png",
-        "skill_3": "assets/jobs/Miner/Miner_Skill_3.png",
-        "skill_4": "assets/jobs/Miner/Miner_Skill_4.png"
+        "die": "assets/jobs/Miner/Miner_Die.png",
+        "dmg": "assets/jobs/Miner/Miner_Dmg.png"
       }
     },
     {
@@ -451,17 +384,15 @@
       },
       "sprites": {
         "idle": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Idle.png",
-        "idleStart": "assets/jobs/Ninja_Assassin/Ninja_Assassin_IdleStart.png",
-        "idleEnd": "assets/jobs/Ninja_Assassin/Ninja_Assassin_IdleEnd.png",
         "walk": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Walk.png",
+        "attack": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Attack.png",
+        "jump": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Jump.png",
         "die": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Die.png",
         "dmg": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Dmg.png",
-        "jump": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Jump.png",
-        "attack": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Attack.png",
-        "skill_1": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Skill_1.png",
-        "skill_2": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Skill_2.png",
-        "skill_3": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Skill_3.png",
-        "skill_4": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Skill_4.png"
+        "skill_1": "assets/jobs/Ninja_Assassin/Ninja_Assassin_skill_1.png",
+        "skill_2": "assets/jobs/Ninja_Assassin/Ninja_Assassin_skill_2.png",
+        "skill_3": "assets/jobs/Ninja_Assassin/Ninja_Assassin_skill_3.png",
+        "skill_4": "assets/jobs/Ninja_Assassin/Ninja_Assassin_skill_4.png"
       }
     },
     {
@@ -483,14 +414,13 @@
         "idleStart": "assets/jobs/Paladin/Paladin_IdleStart.png",
         "idleEnd": "assets/jobs/Paladin/Paladin_IdleEnd.png",
         "walk": "assets/jobs/Paladin/Paladin_Walk.png",
+        "attack": "assets/jobs/Paladin/Paladin_Attack.png",
+        "jump": "assets/jobs/Paladin/Paladin_Jump.png",
         "die": "assets/jobs/Paladin/Paladin_Die.png",
         "dmg": "assets/jobs/Paladin/Paladin_Dmg.png",
-        "jump": "assets/jobs/Paladin/Paladin_Jump.png",
-        "attack": "assets/jobs/Paladin/Paladin_Attack.png",
-        "skill_1": "assets/jobs/Paladin/Paladin_Skill_1.png",
-        "skill_2": "assets/jobs/Paladin/Paladin_Skill_2.png",
-        "skill_3": "assets/jobs/Paladin/Paladin_Skill_3.png",
-        "skill_4": "assets/jobs/Paladin/Paladin_Skill_4.png"
+        "skill_1": "assets/jobs/Paladin/Paladin_skill_1.png",
+        "skill_2": "assets/jobs/Paladin/Paladin_skill_2.png",
+        "skill_3": "assets/jobs/Paladin/Paladin_skill_3.png"
       }
     },
     {
@@ -510,16 +440,15 @@
       "sprites": {
         "idle": "assets/jobs/Ranger/Ranger_Idle.png",
         "idleStart": "assets/jobs/Ranger/Ranger_IdleStart.png",
-        "idleEnd": "assets/jobs/Ranger/Ranger_IdleEnd.png",
-        "walk": "assets/jobs/Ranger/Ranger_Walk.png",
+        "walk": "assets/jobs/Ranger/Ranger_walk.png",
+        "attack": "assets/jobs/Ranger/Ranger_attack.png",
+        "jump": "assets/jobs/Ranger/Ranger_Jump.png",
         "die": "assets/jobs/Ranger/Ranger_Die.png",
         "dmg": "assets/jobs/Ranger/Ranger_Dmg.png",
-        "jump": "assets/jobs/Ranger/Ranger_Jump.png",
-        "attack": "assets/jobs/Ranger/Ranger_Attack.png",
-        "skill_1": "assets/jobs/Ranger/Ranger_Skill_1.png",
-        "skill_2": "assets/jobs/Ranger/Ranger_Skill_2.png",
-        "skill_3": "assets/jobs/Ranger/Ranger_Skill_3.png",
-        "skill_4": "assets/jobs/Ranger/Ranger_Skill_4.png"
+        "skill_1": "assets/jobs/Ranger/Ranger_skill_1.png",
+        "skill_2": "assets/jobs/Ranger/Ranger_skill_2.png",
+        "skill_3": "assets/jobs/Ranger/Ranger_skill_3.png",
+        "skill_4": "assets/jobs/Ranger/Ranger_skill_4.png"
       }
     },
     {
@@ -538,17 +467,14 @@
       },
       "sprites": {
         "idle": "assets/jobs/Rogue/Rogue_Idle.png",
-        "idleStart": "assets/jobs/Rogue/Rogue_IdleStart.png",
-        "idleEnd": "assets/jobs/Rogue/Rogue_IdleEnd.png",
         "walk": "assets/jobs/Rogue/Rogue_Walk.png",
+        "attack": "assets/jobs/Rogue/Rogue_Attack.png",
+        "jump": "assets/jobs/Rogue/Rogue_Jump.png",
         "die": "assets/jobs/Rogue/Rogue_Die.png",
         "dmg": "assets/jobs/Rogue/Rogue_Dmg.png",
-        "jump": "assets/jobs/Rogue/Rogue_Jump.png",
-        "attack": "assets/jobs/Rogue/Rogue_Attack.png",
         "skill_1": "assets/jobs/Rogue/Rogue_Skill_1.png",
         "skill_2": "assets/jobs/Rogue/Rogue_Skill_2.png",
-        "skill_3": "assets/jobs/Rogue/Rogue_Skill_3.png",
-        "skill_4": "assets/jobs/Rogue/Rogue_Skill_4.png"
+        "skill_3": "assets/jobs/Rogue/Rogue_Skill_3.png"
       }
     },
     {
@@ -567,17 +493,10 @@
       },
       "sprites": {
         "idle": "assets/jobs/Samurai/Samurai_Idle.png",
-        "idleStart": "assets/jobs/Samurai/Samurai_IdleStart.png",
-        "idleEnd": "assets/jobs/Samurai/Samurai_IdleEnd.png",
         "walk": "assets/jobs/Samurai/Samurai_Walk.png",
-        "die": "assets/jobs/Samurai/Samurai_Die.png",
-        "dmg": "assets/jobs/Samurai/Samurai_Dmg.png",
-        "jump": "assets/jobs/Samurai/Samurai_Jump.png",
         "attack": "assets/jobs/Samurai/Samurai_Attack.png",
-        "skill_1": "assets/jobs/Samurai/Samurai_Skill_1.png",
-        "skill_2": "assets/jobs/Samurai/Samurai_Skill_2.png",
-        "skill_3": "assets/jobs/Samurai/Samurai_Skill_3.png",
-        "skill_4": "assets/jobs/Samurai/Samurai_Skill_4.png"
+        "die": "assets/jobs/Samurai/Samurai_Die.png",
+        "dmg": "assets/jobs/Samurai/Samurai_Dmg.png"
       }
     },
     {
@@ -596,17 +515,15 @@
       },
       "sprites": {
         "idle": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Idle.png",
-        "idleStart": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_IdleStart.png",
-        "idleEnd": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_IdleEnd.png",
         "walk": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Walk.png",
+        "attack": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_attack.png",
+        "jump": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Jump.png",
         "die": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Die.png",
         "dmg": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Dmg.png",
-        "jump": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Jump.png",
-        "attack": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Attack.png",
-        "skill_1": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Skill_1.png",
-        "skill_2": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Skill_2.png",
-        "skill_3": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Skill_3.png",
-        "skill_4": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Skill_4.png"
+        "skill_1": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_skill_1.png",
+        "skill_2": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_skill_2.png",
+        "skill_3": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_skill_3.png",
+        "skill_4": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_skill_4.png"
       }
     },
     {
@@ -625,17 +542,16 @@
       },
       "sprites": {
         "idle": "assets/jobs/Wizard/Wizard_Idle.png",
-        "idleStart": "assets/jobs/Wizard/Wizard_IdleStart.png",
-        "idleEnd": "assets/jobs/Wizard/Wizard_IdleEnd.png",
+        "idleStart": "assets/jobs/Wizard/Wizard_Idlestart.png",
         "walk": "assets/jobs/Wizard/Wizard_Walk.png",
+        "attack": "assets/jobs/Wizard/Wizard_Attack.png",
+        "jump": "assets/jobs/Wizard/Wizard_Jump.png",
         "die": "assets/jobs/Wizard/Wizard_Die.png",
         "dmg": "assets/jobs/Wizard/Wizard_Dmg.png",
-        "jump": "assets/jobs/Wizard/Wizard_Jump.png",
-        "attack": "assets/jobs/Wizard/Wizard_Attack.png",
-        "skill_1": "assets/jobs/Wizard/Wizard_Skill_1.png",
-        "skill_2": "assets/jobs/Wizard/Wizard_Skill_2.png",
-        "skill_3": "assets/jobs/Wizard/Wizard_Skill_3.png",
-        "skill_4": "assets/jobs/Wizard/Wizard_Skill_4.png"
+        "skill_1": "assets/jobs/Wizard/Wizard_skill_1.png",
+        "skill_2": "assets/jobs/Wizard/Wizard_skill_2.png",
+        "skill_3": "assets/jobs/Wizard/Wizard_skill_3.png",
+        "skill_4": "assets/jobs/Wizard/Wizard_skill_4.png"
       }
     }
   ],
@@ -655,18 +571,7 @@
         "desc": "재료를 변환해 포션과 약재를 제조한다."
       },
       "sprites": {
-        "idle": "assets/professions/Alchemy/Alchemy_Idle.png",
-        "idleStart": "assets/professions/Alchemy/Alchemy_IdleStart.png",
-        "idleEnd": "assets/professions/Alchemy/Alchemy_IdleEnd.png",
-        "walk": "assets/professions/Alchemy/Alchemy_Walk.png",
-        "die": "assets/professions/Alchemy/Alchemy_Die.png",
-        "dmg": "assets/professions/Alchemy/Alchemy_Dmg.png",
-        "jump": "assets/professions/Alchemy/Alchemy_Jump.png",
-        "attack": "assets/professions/Alchemy/Alchemy_Attack.png",
-        "skill_1": "assets/professions/Alchemy/Alchemy_Skill_1.png",
-        "skill_2": "assets/professions/Alchemy/Alchemy_Skill_2.png",
-        "skill_3": "assets/professions/Alchemy/Alchemy_Skill_3.png",
-        "skill_4": "assets/professions/Alchemy/Alchemy_Skill_4.png"
+        "idle": "assets/professions/Alchemy/Alchemy_idle.png"
       }
     },
     {
@@ -684,18 +589,7 @@
         "desc": "금속의 성질을 바꿔 더 강한 무기를 만든다."
       },
       "sprites": {
-        "idle": "assets/professions/Blacksmith/Blacksmith_Idle.png",
-        "idleStart": "assets/professions/Blacksmith/Blacksmith_IdleStart.png",
-        "idleEnd": "assets/professions/Blacksmith/Blacksmith_IdleEnd.png",
-        "walk": "assets/professions/Blacksmith/Blacksmith_Walk.png",
-        "die": "assets/professions/Blacksmith/Blacksmith_Die.png",
-        "dmg": "assets/professions/Blacksmith/Blacksmith_Dmg.png",
-        "jump": "assets/professions/Blacksmith/Blacksmith_Jump.png",
-        "attack": "assets/professions/Blacksmith/Blacksmith_Attack.png",
-        "skill_1": "assets/professions/Blacksmith/Blacksmith_Skill_1.png",
-        "skill_2": "assets/professions/Blacksmith/Blacksmith_Skill_2.png",
-        "skill_3": "assets/professions/Blacksmith/Blacksmith_Skill_3.png",
-        "skill_4": "assets/professions/Blacksmith/Blacksmith_Skill_4.png"
+        "idle": "assets/professions/Blacksmith/Blacksmith_idle.png"
       }
     },
     {
@@ -713,18 +607,7 @@
         "desc": "지형을 정밀하게 기록하고 숨겨진 경로를 발견한다."
       },
       "sprites": {
-        "idle": "assets/professions/Cartographer_Studio/Cartographer_Studio_Idle.png",
-        "idleStart": "assets/professions/Cartographer_Studio/Cartographer_Studio_IdleStart.png",
-        "idleEnd": "assets/professions/Cartographer_Studio/Cartographer_Studio_IdleEnd.png",
-        "walk": "assets/professions/Cartographer_Studio/Cartographer_Studio_Walk.png",
-        "die": "assets/professions/Cartographer_Studio/Cartographer_Studio_Die.png",
-        "dmg": "assets/professions/Cartographer_Studio/Cartographer_Studio_Dmg.png",
-        "jump": "assets/professions/Cartographer_Studio/Cartographer_Studio_Jump.png",
-        "attack": "assets/professions/Cartographer_Studio/Cartographer_Studio_Attack.png",
-        "skill_1": "assets/professions/Cartographer_Studio/Cartographer_Studio_Skill_1.png",
-        "skill_2": "assets/professions/Cartographer_Studio/Cartographer_Studio_Skill_2.png",
-        "skill_3": "assets/professions/Cartographer_Studio/Cartographer_Studio_Skill_3.png",
-        "skill_4": "assets/professions/Cartographer_Studio/Cartographer_Studio_Skill_4.png"
+        "idle": "assets/professions/Cartographer_Studio/Cartographer_Studio_idle.png"
       }
     },
     {
@@ -742,18 +625,7 @@
         "desc": "음식으로 아군의 사기와 체력을 회복시킨다."
       },
       "sprites": {
-        "idle": "assets/professions/Cooking/Cooking_Idle.png",
-        "idleStart": "assets/professions/Cooking/Cooking_IdleStart.png",
-        "idleEnd": "assets/professions/Cooking/Cooking_IdleEnd.png",
-        "walk": "assets/professions/Cooking/Cooking_Walk.png",
-        "die": "assets/professions/Cooking/Cooking_Die.png",
-        "dmg": "assets/professions/Cooking/Cooking_Dmg.png",
-        "jump": "assets/professions/Cooking/Cooking_Jump.png",
-        "attack": "assets/professions/Cooking/Cooking_Attack.png",
-        "skill_1": "assets/professions/Cooking/Cooking_Skill_1.png",
-        "skill_2": "assets/professions/Cooking/Cooking_Skill_2.png",
-        "skill_3": "assets/professions/Cooking/Cooking_Skill_3.png",
-        "skill_4": "assets/professions/Cooking/Cooking_Skill_4.png"
+        "idle": "assets/professions/Cooking/Cooking_idle.png"
       }
     },
     {
@@ -771,18 +643,7 @@
         "desc": "염료로 위장색을 만들거나 신호를 보낸다."
       },
       "sprites": {
-        "idle": "assets/professions/Dyeing/Dyeing_Idle.png",
-        "idleStart": "assets/professions/Dyeing/Dyeing_IdleStart.png",
-        "idleEnd": "assets/professions/Dyeing/Dyeing_IdleEnd.png",
-        "walk": "assets/professions/Dyeing/Dyeing_Walk.png",
-        "die": "assets/professions/Dyeing/Dyeing_Die.png",
-        "dmg": "assets/professions/Dyeing/Dyeing_Dmg.png",
-        "jump": "assets/professions/Dyeing/Dyeing_Jump.png",
-        "attack": "assets/professions/Dyeing/Dyeing_Attack.png",
-        "skill_1": "assets/professions/Dyeing/Dyeing_Skill_1.png",
-        "skill_2": "assets/professions/Dyeing/Dyeing_Skill_2.png",
-        "skill_3": "assets/professions/Dyeing/Dyeing_Skill_3.png",
-        "skill_4": "assets/professions/Dyeing/Dyeing_Skill_4.png"
+        "idle": "assets/professions/Dyeing/Dyeing_idle.png"
       }
     },
     {
@@ -800,18 +661,7 @@
         "desc": "바람을 계산한 화살을 제조한다."
       },
       "sprites": {
-        "idle": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Idle.png",
-        "idleStart": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_IdleStart.png",
-        "idleEnd": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_IdleEnd.png",
-        "walk": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Walk.png",
-        "die": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Die.png",
-        "dmg": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Dmg.png",
-        "jump": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Jump.png",
-        "attack": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Attack.png",
-        "skill_1": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Skill_1.png",
-        "skill_2": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Skill_2.png",
-        "skill_3": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Skill_3.png",
-        "skill_4": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Skill_4.png"
+        "idle": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_idle.png"
       }
     },
     {
@@ -829,18 +679,7 @@
         "desc": "적은 재료로 최대 효율의 식량을 만든다."
       },
       "sprites": {
-        "idle": "assets/professions/Food_Preparation/Food_Preparation_Idle.png",
-        "idleStart": "assets/professions/Food_Preparation/Food_Preparation_IdleStart.png",
-        "idleEnd": "assets/professions/Food_Preparation/Food_Preparation_IdleEnd.png",
-        "walk": "assets/professions/Food_Preparation/Food_Preparation_Walk.png",
-        "die": "assets/professions/Food_Preparation/Food_Preparation_Die.png",
-        "dmg": "assets/professions/Food_Preparation/Food_Preparation_Dmg.png",
-        "jump": "assets/professions/Food_Preparation/Food_Preparation_Jump.png",
-        "attack": "assets/professions/Food_Preparation/Food_Preparation_Attack.png",
-        "skill_1": "assets/professions/Food_Preparation/Food_Preparation_Skill_1.png",
-        "skill_2": "assets/professions/Food_Preparation/Food_Preparation_Skill_2.png",
-        "skill_3": "assets/professions/Food_Preparation/Food_Preparation_Skill_3.png",
-        "skill_4": "assets/professions/Food_Preparation/Food_Preparation_Skill_4.png"
+        "idle": "assets/professions/Food_Preparation/Food_Preparation_idle.png"
       }
     },
     {
@@ -858,18 +697,7 @@
         "desc": "보석에 마법 속성을 부여한다."
       },
       "sprites": {
-        "idle": "assets/professions/Jewelry/Jewelry_Idle.png",
-        "idleStart": "assets/professions/Jewelry/Jewelry_IdleStart.png",
-        "idleEnd": "assets/professions/Jewelry/Jewelry_IdleEnd.png",
-        "walk": "assets/professions/Jewelry/Jewelry_Walk.png",
-        "die": "assets/professions/Jewelry/Jewelry_Die.png",
-        "dmg": "assets/professions/Jewelry/Jewelry_Dmg.png",
-        "jump": "assets/professions/Jewelry/Jewelry_Jump.png",
-        "attack": "assets/professions/Jewelry/Jewelry_Attack.png",
-        "skill_1": "assets/professions/Jewelry/Jewelry_Skill_1.png",
-        "skill_2": "assets/professions/Jewelry/Jewelry_Skill_2.png",
-        "skill_3": "assets/professions/Jewelry/Jewelry_Skill_3.png",
-        "skill_4": "assets/professions/Jewelry/Jewelry_Skill_4.png"
+        "idle": "assets/professions/Jewelry/Jewelry_idle.png"
       }
     },
     {
@@ -887,18 +715,7 @@
         "desc": "짐승의 가죽으로 방어구를 제작한다."
       },
       "sprites": {
-        "idle": "assets/professions/Leatherwork/Leatherwork_Idle.png",
-        "idleStart": "assets/professions/Leatherwork/Leatherwork_IdleStart.png",
-        "idleEnd": "assets/professions/Leatherwork/Leatherwork_IdleEnd.png",
-        "walk": "assets/professions/Leatherwork/Leatherwork_Walk.png",
-        "die": "assets/professions/Leatherwork/Leatherwork_Die.png",
-        "dmg": "assets/professions/Leatherwork/Leatherwork_Dmg.png",
-        "jump": "assets/professions/Leatherwork/Leatherwork_Jump.png",
-        "attack": "assets/professions/Leatherwork/Leatherwork_Attack.png",
-        "skill_1": "assets/professions/Leatherwork/Leatherwork_Skill_1.png",
-        "skill_2": "assets/professions/Leatherwork/Leatherwork_Skill_2.png",
-        "skill_3": "assets/professions/Leatherwork/Leatherwork_Skill_3.png",
-        "skill_4": "assets/professions/Leatherwork/Leatherwork_Skill_4.png"
+        "idle": "assets/professions/Leatherwork/Leatherwork_idle.png"
       }
     },
     {
@@ -916,18 +733,7 @@
         "desc": "그림으로 착시와 환상을 만들어낸다."
       },
       "sprites": {
-        "idle": "assets/professions/Painter_Studio/Painter_Studio_Idle.png",
-        "idleStart": "assets/professions/Painter_Studio/Painter_Studio_IdleStart.png",
-        "idleEnd": "assets/professions/Painter_Studio/Painter_Studio_IdleEnd.png",
-        "walk": "assets/professions/Painter_Studio/Painter_Studio_Walk.png",
-        "die": "assets/professions/Painter_Studio/Painter_Studio_Die.png",
-        "dmg": "assets/professions/Painter_Studio/Painter_Studio_Dmg.png",
-        "jump": "assets/professions/Painter_Studio/Painter_Studio_Jump.png",
-        "attack": "assets/professions/Painter_Studio/Painter_Studio_Attack.png",
-        "skill_1": "assets/professions/Painter_Studio/Painter_Studio_Skill_1.png",
-        "skill_2": "assets/professions/Painter_Studio/Painter_Studio_Skill_2.png",
-        "skill_3": "assets/professions/Painter_Studio/Painter_Studio_Skill_3.png",
-        "skill_4": "assets/professions/Painter_Studio/Painter_Studio_Skill_4.png"
+        "idle": "assets/professions/Painter_Studio/Painter_Studio_idle.png"
       }
     },
     {
@@ -945,18 +751,7 @@
         "desc": "마법 전도율이 높은 지팡이를 제작한다."
       },
       "sprites": {
-        "idle": "assets/professions/Staves_Workshop/Staves_Workshop_Idle.png",
-        "idleStart": "assets/professions/Staves_Workshop/Staves_Workshop_IdleStart.png",
-        "idleEnd": "assets/professions/Staves_Workshop/Staves_Workshop_IdleEnd.png",
-        "walk": "assets/professions/Staves_Workshop/Staves_Workshop_Walk.png",
-        "die": "assets/professions/Staves_Workshop/Staves_Workshop_Die.png",
-        "dmg": "assets/professions/Staves_Workshop/Staves_Workshop_Dmg.png",
-        "jump": "assets/professions/Staves_Workshop/Staves_Workshop_Jump.png",
-        "attack": "assets/professions/Staves_Workshop/Staves_Workshop_Attack.png",
-        "skill_1": "assets/professions/Staves_Workshop/Staves_Workshop_Skill_1.png",
-        "skill_2": "assets/professions/Staves_Workshop/Staves_Workshop_Skill_2.png",
-        "skill_3": "assets/professions/Staves_Workshop/Staves_Workshop_Skill_3.png",
-        "skill_4": "assets/professions/Staves_Workshop/Staves_Workshop_Skill_4.png"
+        "idle": "assets/professions/Staves_Workshop/Staves_Workshop_idle.png"
       }
     },
     {
@@ -974,18 +769,8 @@
         "desc": "특수 섬유로 가벼우면서도 튼튼한 의복을 만든다."
       },
       "sprites": {
-        "idle": "assets/professions/Tailor/Tailor_Idle.png",
-        "idleStart": "assets/professions/Tailor/Tailor_IdleStart.png",
-        "idleEnd": "assets/professions/Tailor/Tailor_IdleEnd.png",
-        "walk": "assets/professions/Tailor/Tailor_Walk.png",
-        "die": "assets/professions/Tailor/Tailor_Die.png",
-        "dmg": "assets/professions/Tailor/Tailor_Dmg.png",
-        "jump": "assets/professions/Tailor/Tailor_Jump.png",
-        "attack": "assets/professions/Tailor/Tailor_Attack.png",
-        "skill_1": "assets/professions/Tailor/Tailor_Skill_1.png",
-        "skill_2": "assets/professions/Tailor/Tailor_Skill_2.png",
-        "skill_3": "assets/professions/Tailor/Tailor_Skill_3.png",
-        "skill_4": "assets/professions/Tailor/Tailor_Skill_4.png"
+        "idle": "assets/professions/Tailor/Tailor_idle.png",
+        "idleStart": "assets/professions/Tailor/Tailor_idlestart.png"
       }
     },
     {
@@ -1003,18 +788,8 @@
         "desc": "나무로 정밀한 구조물과 도구를 만든다."
       },
       "sprites": {
-        "idle": "assets/professions/Woodwork/Woodwork_Idle.png",
-        "idleStart": "assets/professions/Woodwork/Woodwork_IdleStart.png",
-        "idleEnd": "assets/professions/Woodwork/Woodwork_IdleEnd.png",
-        "walk": "assets/professions/Woodwork/Woodwork_Walk.png",
-        "die": "assets/professions/Woodwork/Woodwork_Die.png",
-        "dmg": "assets/professions/Woodwork/Woodwork_Dmg.png",
-        "jump": "assets/professions/Woodwork/Woodwork_Jump.png",
-        "attack": "assets/professions/Woodwork/Woodwork_Attack.png",
-        "skill_1": "assets/professions/Woodwork/Woodwork_Skill_1.png",
-        "skill_2": "assets/professions/Woodwork/Woodwork_Skill_2.png",
-        "skill_3": "assets/professions/Woodwork/Woodwork_Skill_3.png",
-        "skill_4": "assets/professions/Woodwork/Woodwork_Skill_4.png"
+        "idle": "assets/professions/Woodwork/Woodwork_idle.png",
+        "skill_1": "assets/professions/Woodwork/Woodwork_skill_1.png"
       }
     }
   ]
