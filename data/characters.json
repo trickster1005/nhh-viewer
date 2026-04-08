@@ -1,0 +1,1021 @@
+{
+  "jobs": [
+    {
+      "id": "Barbarian",
+      "name": "Barbarian",
+      "badge": "Berserker",
+      "stats": {
+        "STR": 92,
+        "AGI": 65,
+        "INT": 20,
+        "LCK": 40
+      },
+      "ability": {
+        "name": "Blood Rage",
+        "desc": "체력이 낮아질수록 공격력이 올라간다. 죽음을 두려워하지 않는 자의 분노."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Barbarian/Barbarian_Idle.png",
+        "idleStart": "assets/jobs/Barbarian/Barbarian_IdleStart.png",
+        "idleEnd": "assets/jobs/Barbarian/Barbarian_IdleEnd.png",
+        "walk": "assets/jobs/Barbarian/Barbarian_Walk.png",
+        "die": "assets/jobs/Barbarian/Barbarian_Die.png",
+        "dmg": "assets/jobs/Barbarian/Barbarian_Dmg.png",
+        "jump": "assets/jobs/Barbarian/Barbarian_Jump.png",
+        "attack": "assets/jobs/Barbarian/Barbarian_Attack.png",
+        "skill_1": "assets/jobs/Barbarian/Barbarian_Skill_1.png",
+        "skill_2": "assets/jobs/Barbarian/Barbarian_Skill_2.png",
+        "skill_3": "assets/jobs/Barbarian/Barbarian_Skill_3.png",
+        "skill_4": "assets/jobs/Barbarian/Barbarian_Skill_4.png"
+      }
+    },
+    {
+      "id": "Bard",
+      "name": "Bard",
+      "badge": "Wandering Minstrel",
+      "stats": {
+        "CHA": 85,
+        "LCK": 72,
+        "COM": 30,
+        "SUR": 48
+      },
+      "ability": {
+        "name": "Rumour Weaver",
+        "desc": "소문을 흘리거나 잠재울 수 있다. 거리의 평판에 영향을 준다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Bard/Bard_Idle.png",
+        "idleStart": "assets/jobs/Bard/Bard_IdleStart.png",
+        "idleEnd": "assets/jobs/Bard/Bard_IdleEnd.png",
+        "walk": "assets/jobs/Bard/Bard_Walk.png",
+        "die": "assets/jobs/Bard/Bard_Die.png",
+        "dmg": "assets/jobs/Bard/Bard_Dmg.png",
+        "jump": "assets/jobs/Bard/Bard_Jump.png",
+        "attack": "assets/jobs/Bard/Bard_Attack.png",
+        "skill_1": "assets/jobs/Bard/Bard_Skill_1.png",
+        "skill_2": "assets/jobs/Bard/Bard_Skill_2.png",
+        "skill_3": "assets/jobs/Bard/Bard_Skill_3.png",
+        "skill_4": "assets/jobs/Bard/Bard_Skill_4.png"
+      }
+    },
+    {
+      "id": "Blood_Mage",
+      "name": "Blood Mage",
+      "badge": "Crimson Arcanist",
+      "stats": {
+        "INT": 88,
+        "STR": 40,
+        "SUR": 35,
+        "LCK": 55
+      },
+      "ability": {
+        "name": "Sanguine Pact",
+        "desc": "자신의 피를 소모해 강력한 주문을 시전한다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Blood_Mage/Blood_Mage_Idle.png",
+        "idleStart": "assets/jobs/Blood_Mage/Blood_Mage_IdleStart.png",
+        "idleEnd": "assets/jobs/Blood_Mage/Blood_Mage_IdleEnd.png",
+        "walk": "assets/jobs/Blood_Mage/Blood_Mage_Walk.png",
+        "die": "assets/jobs/Blood_Mage/Blood_Mage_Die.png",
+        "dmg": "assets/jobs/Blood_Mage/Blood_Mage_Dmg.png",
+        "jump": "assets/jobs/Blood_Mage/Blood_Mage_Jump.png",
+        "attack": "assets/jobs/Blood_Mage/Blood_Mage_Attack.png",
+        "skill_1": "assets/jobs/Blood_Mage/Blood_Mage_Skill_1.png",
+        "skill_2": "assets/jobs/Blood_Mage/Blood_Mage_Skill_2.png",
+        "skill_3": "assets/jobs/Blood_Mage/Blood_Mage_Skill_3.png",
+        "skill_4": "assets/jobs/Blood_Mage/Blood_Mage_Skill_4.png"
+      }
+    },
+    {
+      "id": "Cleric",
+      "name": "Cleric",
+      "badge": "Divine Servant",
+      "stats": {
+        "INT": 75,
+        "CHA": 70,
+        "STR": 45,
+        "SUR": 80
+      },
+      "ability": {
+        "name": "Sacred Ward",
+        "desc": "아군을 치유하고 언데드를 물리친다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Cleric/Cleric_Idle.png",
+        "idleStart": "assets/jobs/Cleric/Cleric_IdleStart.png",
+        "idleEnd": "assets/jobs/Cleric/Cleric_IdleEnd.png",
+        "walk": "assets/jobs/Cleric/Cleric_Walk.png",
+        "die": "assets/jobs/Cleric/Cleric_Die.png",
+        "dmg": "assets/jobs/Cleric/Cleric_Dmg.png",
+        "jump": "assets/jobs/Cleric/Cleric_Jump.png",
+        "attack": "assets/jobs/Cleric/Cleric_Attack.png",
+        "skill_1": "assets/jobs/Cleric/Cleric_Skill_1.png",
+        "skill_2": "assets/jobs/Cleric/Cleric_Skill_2.png",
+        "skill_3": "assets/jobs/Cleric/Cleric_Skill_3.png",
+        "skill_4": "assets/jobs/Cleric/Cleric_Skill_4.png"
+      }
+    },
+    {
+      "id": "Druid",
+      "name": "Druid",
+      "badge": "Nature's Voice",
+      "stats": {
+        "INT": 80,
+        "SUR": 85,
+        "STR": 40,
+        "LCK": 60
+      },
+      "ability": {
+        "name": "Wild Shape",
+        "desc": "자연과 하나가 되어 동물의 형태를 취할 수 있다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Druid/Druid_Idle.png",
+        "idleStart": "assets/jobs/Druid/Druid_IdleStart.png",
+        "idleEnd": "assets/jobs/Druid/Druid_IdleEnd.png",
+        "walk": "assets/jobs/Druid/Druid_Walk.png",
+        "die": "assets/jobs/Druid/Druid_Die.png",
+        "dmg": "assets/jobs/Druid/Druid_Dmg.png",
+        "jump": "assets/jobs/Druid/Druid_Jump.png",
+        "attack": "assets/jobs/Druid/Druid_Attack.png",
+        "skill_1": "assets/jobs/Druid/Druid_Skill_1.png",
+        "skill_2": "assets/jobs/Druid/Druid_Skill_2.png",
+        "skill_3": "assets/jobs/Druid/Druid_Skill_3.png",
+        "skill_4": "assets/jobs/Druid/Druid_Skill_4.png"
+      }
+    },
+    {
+      "id": "Dwarven_Marksman",
+      "name": "Dwarven Marksman",
+      "badge": "Ironshot",
+      "stats": {
+        "AGI": 88,
+        "STR": 65,
+        "INT": 40,
+        "SUR": 70
+      },
+      "ability": {
+        "name": "Steady Aim",
+        "desc": "움직이지 않으면 명중률이 크게 상승한다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Idle.png",
+        "idleStart": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_IdleStart.png",
+        "idleEnd": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_IdleEnd.png",
+        "walk": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Walk.png",
+        "die": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Die.png",
+        "dmg": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Dmg.png",
+        "jump": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Jump.png",
+        "attack": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Attack.png",
+        "skill_1": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Skill_1.png",
+        "skill_2": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Skill_2.png",
+        "skill_3": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Skill_3.png",
+        "skill_4": "assets/jobs/Dwarven_Marksman/Dwarven_Marksman_Skill_4.png"
+      }
+    },
+    {
+      "id": "Elf_Druid",
+      "name": "Elf Druid",
+      "badge": "Forest Keeper",
+      "stats": {
+        "INT": 82,
+        "AGI": 78,
+        "LCK": 65,
+        "SUR": 75
+      },
+      "ability": {
+        "name": "Sylvan Bond",
+        "desc": "숲의 동물들과 교감하고 나무의 기억을 읽는다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Elf_Druid/Elf_Druid_Idle.png",
+        "idleStart": "assets/jobs/Elf_Druid/Elf_Druid_IdleStart.png",
+        "idleEnd": "assets/jobs/Elf_Druid/Elf_Druid_IdleEnd.png",
+        "walk": "assets/jobs/Elf_Druid/Elf_Druid_Walk.png",
+        "die": "assets/jobs/Elf_Druid/Elf_Druid_Die.png",
+        "dmg": "assets/jobs/Elf_Druid/Elf_Druid_Dmg.png",
+        "jump": "assets/jobs/Elf_Druid/Elf_Druid_Jump.png",
+        "attack": "assets/jobs/Elf_Druid/Elf_Druid_Attack.png",
+        "skill_1": "assets/jobs/Elf_Druid/Elf_Druid_Skill_1.png",
+        "skill_2": "assets/jobs/Elf_Druid/Elf_Druid_Skill_2.png",
+        "skill_3": "assets/jobs/Elf_Druid/Elf_Druid_Skill_3.png",
+        "skill_4": "assets/jobs/Elf_Druid/Elf_Druid_Skill_4.png"
+      }
+    },
+    {
+      "id": "Farmer",
+      "name": "Farmer",
+      "badge": "Tiller of Earth",
+      "stats": {
+        "STR": 60,
+        "SUR": 90,
+        "LCK": 55,
+        "INT": 30
+      },
+      "ability": {
+        "name": "Harvest Fortune",
+        "desc": "계절과 날씨를 읽는다. 예상치 못한 곳에서 자원을 찾아낸다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Farmer/Farmer_Idle.png",
+        "idleStart": "assets/jobs/Farmer/Farmer_IdleStart.png",
+        "idleEnd": "assets/jobs/Farmer/Farmer_IdleEnd.png",
+        "walk": "assets/jobs/Farmer/Farmer_Walk.png",
+        "die": "assets/jobs/Farmer/Farmer_Die.png",
+        "dmg": "assets/jobs/Farmer/Farmer_Dmg.png",
+        "jump": "assets/jobs/Farmer/Farmer_Jump.png",
+        "attack": "assets/jobs/Farmer/Farmer_Attack.png",
+        "skill_1": "assets/jobs/Farmer/Farmer_Skill_1.png",
+        "skill_2": "assets/jobs/Farmer/Farmer_Skill_2.png",
+        "skill_3": "assets/jobs/Farmer/Farmer_Skill_3.png",
+        "skill_4": "assets/jobs/Farmer/Farmer_Skill_4.png"
+      }
+    },
+    {
+      "id": "Fighter",
+      "name": "Fighter",
+      "badge": "Blade Veteran",
+      "stats": {
+        "STR": 85,
+        "SUR": 75,
+        "AGI": 60,
+        "INT": 35
+      },
+      "ability": {
+        "name": "Combat Mastery",
+        "desc": "전투 경험이 쌓일수록 적의 패턴을 읽는다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Fighter/Fighter_Idle.png",
+        "idleStart": "assets/jobs/Fighter/Fighter_IdleStart.png",
+        "idleEnd": "assets/jobs/Fighter/Fighter_IdleEnd.png",
+        "walk": "assets/jobs/Fighter/Fighter_Walk.png",
+        "die": "assets/jobs/Fighter/Fighter_Die.png",
+        "dmg": "assets/jobs/Fighter/Fighter_Dmg.png",
+        "jump": "assets/jobs/Fighter/Fighter_Jump.png",
+        "attack": "assets/jobs/Fighter/Fighter_Attack.png",
+        "skill_1": "assets/jobs/Fighter/Fighter_Skill_1.png",
+        "skill_2": "assets/jobs/Fighter/Fighter_Skill_2.png",
+        "skill_3": "assets/jobs/Fighter/Fighter_Skill_3.png",
+        "skill_4": "assets/jobs/Fighter/Fighter_Skill_4.png"
+      }
+    },
+    {
+      "id": "Hunter",
+      "name": "Hunter",
+      "badge": "Tracker",
+      "stats": {
+        "AGI": 82,
+        "SUR": 78,
+        "STR": 58,
+        "LCK": 62
+      },
+      "ability": {
+        "name": "Prey Sense",
+        "desc": "추적한 대상의 위치를 감지한다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Hunter/Hunter_Idle.png",
+        "idleStart": "assets/jobs/Hunter/Hunter_IdleStart.png",
+        "idleEnd": "assets/jobs/Hunter/Hunter_IdleEnd.png",
+        "walk": "assets/jobs/Hunter/Hunter_Walk.png",
+        "die": "assets/jobs/Hunter/Hunter_Die.png",
+        "dmg": "assets/jobs/Hunter/Hunter_Dmg.png",
+        "jump": "assets/jobs/Hunter/Hunter_Jump.png",
+        "attack": "assets/jobs/Hunter/Hunter_Attack.png",
+        "skill_1": "assets/jobs/Hunter/Hunter_Skill_1.png",
+        "skill_2": "assets/jobs/Hunter/Hunter_Skill_2.png",
+        "skill_3": "assets/jobs/Hunter/Hunter_Skill_3.png",
+        "skill_4": "assets/jobs/Hunter/Hunter_Skill_4.png"
+      }
+    },
+    {
+      "id": "King",
+      "name": "King",
+      "badge": "Sovereign",
+      "stats": {
+        "CHA": 90,
+        "INT": 75,
+        "STR": 60,
+        "LCK": 70
+      },
+      "ability": {
+        "name": "Royal Decree",
+        "desc": "명령 하나로 전장의 흐름을 바꾼다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/King/King_Idle.png",
+        "idleStart": "assets/jobs/King/King_IdleStart.png",
+        "idleEnd": "assets/jobs/King/King_IdleEnd.png",
+        "walk": "assets/jobs/King/King_Walk.png",
+        "die": "assets/jobs/King/King_Die.png",
+        "dmg": "assets/jobs/King/King_Dmg.png",
+        "jump": "assets/jobs/King/King_Jump.png",
+        "attack": "assets/jobs/King/King_Attack.png",
+        "skill_1": "assets/jobs/King/King_Skill_1.png",
+        "skill_2": "assets/jobs/King/King_Skill_2.png",
+        "skill_3": "assets/jobs/King/King_Skill_3.png",
+        "skill_4": "assets/jobs/King/King_Skill_4.png"
+      }
+    },
+    {
+      "id": "Lumberjack",
+      "name": "Lumberjack",
+      "badge": "Woodcutter",
+      "stats": {
+        "STR": 88,
+        "SUR": 72,
+        "AGI": 45,
+        "INT": 25
+      },
+      "ability": {
+        "name": "Fell Strike",
+        "desc": "강한 단타로 방어를 무너뜨린다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Lumberjack/Lumberjack_Idle.png",
+        "idleStart": "assets/jobs/Lumberjack/Lumberjack_IdleStart.png",
+        "idleEnd": "assets/jobs/Lumberjack/Lumberjack_IdleEnd.png",
+        "walk": "assets/jobs/Lumberjack/Lumberjack_Walk.png",
+        "die": "assets/jobs/Lumberjack/Lumberjack_Die.png",
+        "dmg": "assets/jobs/Lumberjack/Lumberjack_Dmg.png",
+        "jump": "assets/jobs/Lumberjack/Lumberjack_Jump.png",
+        "attack": "assets/jobs/Lumberjack/Lumberjack_Attack.png",
+        "skill_1": "assets/jobs/Lumberjack/Lumberjack_Skill_1.png",
+        "skill_2": "assets/jobs/Lumberjack/Lumberjack_Skill_2.png",
+        "skill_3": "assets/jobs/Lumberjack/Lumberjack_Skill_3.png",
+        "skill_4": "assets/jobs/Lumberjack/Lumberjack_Skill_4.png"
+      }
+    },
+    {
+      "id": "Mad_Inventor",
+      "name": "Mad Inventor",
+      "badge": "Tinkerer",
+      "stats": {
+        "INT": 90,
+        "LCK": 68,
+        "STR": 30,
+        "AGI": 50
+      },
+      "ability": {
+        "name": "Contraption",
+        "desc": "즉흥적으로 장치를 만들어낸다. 효과는 예측 불가."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Mad_Inventor/Mad_Inventor_Idle.png",
+        "idleStart": "assets/jobs/Mad_Inventor/Mad_Inventor_IdleStart.png",
+        "idleEnd": "assets/jobs/Mad_Inventor/Mad_Inventor_IdleEnd.png",
+        "walk": "assets/jobs/Mad_Inventor/Mad_Inventor_Walk.png",
+        "die": "assets/jobs/Mad_Inventor/Mad_Inventor_Die.png",
+        "dmg": "assets/jobs/Mad_Inventor/Mad_Inventor_Dmg.png",
+        "jump": "assets/jobs/Mad_Inventor/Mad_Inventor_Jump.png",
+        "attack": "assets/jobs/Mad_Inventor/Mad_Inventor_Attack.png",
+        "skill_1": "assets/jobs/Mad_Inventor/Mad_Inventor_Skill_1.png",
+        "skill_2": "assets/jobs/Mad_Inventor/Mad_Inventor_Skill_2.png",
+        "skill_3": "assets/jobs/Mad_Inventor/Mad_Inventor_Skill_3.png",
+        "skill_4": "assets/jobs/Mad_Inventor/Mad_Inventor_Skill_4.png"
+      }
+    },
+    {
+      "id": "Merchant",
+      "name": "Merchant",
+      "badge": "Tradesman",
+      "stats": {
+        "CHA": 80,
+        "LCK": 75,
+        "INT": 65,
+        "STR": 30
+      },
+      "ability": {
+        "name": "Silver Tongue",
+        "desc": "가격을 조작하고 정보를 거래한다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Merchant/Merchant_Idle.png",
+        "idleStart": "assets/jobs/Merchant/Merchant_IdleStart.png",
+        "idleEnd": "assets/jobs/Merchant/Merchant_IdleEnd.png",
+        "walk": "assets/jobs/Merchant/Merchant_Walk.png",
+        "die": "assets/jobs/Merchant/Merchant_Die.png",
+        "dmg": "assets/jobs/Merchant/Merchant_Dmg.png",
+        "jump": "assets/jobs/Merchant/Merchant_Jump.png",
+        "attack": "assets/jobs/Merchant/Merchant_Attack.png",
+        "skill_1": "assets/jobs/Merchant/Merchant_Skill_1.png",
+        "skill_2": "assets/jobs/Merchant/Merchant_Skill_2.png",
+        "skill_3": "assets/jobs/Merchant/Merchant_Skill_3.png",
+        "skill_4": "assets/jobs/Merchant/Merchant_Skill_4.png"
+      }
+    },
+    {
+      "id": "Miner",
+      "name": "Miner",
+      "badge": "Deep Delver",
+      "stats": {
+        "STR": 80,
+        "SUR": 85,
+        "INT": 35,
+        "AGI": 40
+      },
+      "ability": {
+        "name": "Vein Sense",
+        "desc": "땅 속 광맥의 위치를 감지한다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Miner/Miner_Idle.png",
+        "idleStart": "assets/jobs/Miner/Miner_IdleStart.png",
+        "idleEnd": "assets/jobs/Miner/Miner_IdleEnd.png",
+        "walk": "assets/jobs/Miner/Miner_Walk.png",
+        "die": "assets/jobs/Miner/Miner_Die.png",
+        "dmg": "assets/jobs/Miner/Miner_Dmg.png",
+        "jump": "assets/jobs/Miner/Miner_Jump.png",
+        "attack": "assets/jobs/Miner/Miner_Attack.png",
+        "skill_1": "assets/jobs/Miner/Miner_Skill_1.png",
+        "skill_2": "assets/jobs/Miner/Miner_Skill_2.png",
+        "skill_3": "assets/jobs/Miner/Miner_Skill_3.png",
+        "skill_4": "assets/jobs/Miner/Miner_Skill_4.png"
+      }
+    },
+    {
+      "id": "Ninja_Assassin",
+      "name": "Ninja Assassin",
+      "badge": "Shadow Blade",
+      "stats": {
+        "AGI": 95,
+        "STR": 70,
+        "LCK": 60,
+        "INT": 55
+      },
+      "ability": {
+        "name": "Shadow Step",
+        "desc": "어둠 속에서 순간이동하듯 이동한다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Idle.png",
+        "idleStart": "assets/jobs/Ninja_Assassin/Ninja_Assassin_IdleStart.png",
+        "idleEnd": "assets/jobs/Ninja_Assassin/Ninja_Assassin_IdleEnd.png",
+        "walk": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Walk.png",
+        "die": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Die.png",
+        "dmg": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Dmg.png",
+        "jump": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Jump.png",
+        "attack": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Attack.png",
+        "skill_1": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Skill_1.png",
+        "skill_2": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Skill_2.png",
+        "skill_3": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Skill_3.png",
+        "skill_4": "assets/jobs/Ninja_Assassin/Ninja_Assassin_Skill_4.png"
+      }
+    },
+    {
+      "id": "Paladin",
+      "name": "Paladin",
+      "badge": "Holy Knight",
+      "stats": {
+        "STR": 80,
+        "SUR": 85,
+        "CHA": 65,
+        "INT": 55
+      },
+      "ability": {
+        "name": "Divine Shield",
+        "desc": "신성한 힘으로 아군을 보호한다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Paladin/Paladin_Idle.png",
+        "idleStart": "assets/jobs/Paladin/Paladin_IdleStart.png",
+        "idleEnd": "assets/jobs/Paladin/Paladin_IdleEnd.png",
+        "walk": "assets/jobs/Paladin/Paladin_Walk.png",
+        "die": "assets/jobs/Paladin/Paladin_Die.png",
+        "dmg": "assets/jobs/Paladin/Paladin_Dmg.png",
+        "jump": "assets/jobs/Paladin/Paladin_Jump.png",
+        "attack": "assets/jobs/Paladin/Paladin_Attack.png",
+        "skill_1": "assets/jobs/Paladin/Paladin_Skill_1.png",
+        "skill_2": "assets/jobs/Paladin/Paladin_Skill_2.png",
+        "skill_3": "assets/jobs/Paladin/Paladin_Skill_3.png",
+        "skill_4": "assets/jobs/Paladin/Paladin_Skill_4.png"
+      }
+    },
+    {
+      "id": "Ranger",
+      "name": "Ranger",
+      "badge": "Wilderness Scout",
+      "stats": {
+        "AGI": 85,
+        "SUR": 80,
+        "STR": 55,
+        "INT": 50
+      },
+      "ability": {
+        "name": "Pathfinder",
+        "desc": "미지의 지형에서도 길을 잃지 않는다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Ranger/Ranger_Idle.png",
+        "idleStart": "assets/jobs/Ranger/Ranger_IdleStart.png",
+        "idleEnd": "assets/jobs/Ranger/Ranger_IdleEnd.png",
+        "walk": "assets/jobs/Ranger/Ranger_Walk.png",
+        "die": "assets/jobs/Ranger/Ranger_Die.png",
+        "dmg": "assets/jobs/Ranger/Ranger_Dmg.png",
+        "jump": "assets/jobs/Ranger/Ranger_Jump.png",
+        "attack": "assets/jobs/Ranger/Ranger_Attack.png",
+        "skill_1": "assets/jobs/Ranger/Ranger_Skill_1.png",
+        "skill_2": "assets/jobs/Ranger/Ranger_Skill_2.png",
+        "skill_3": "assets/jobs/Ranger/Ranger_Skill_3.png",
+        "skill_4": "assets/jobs/Ranger/Ranger_Skill_4.png"
+      }
+    },
+    {
+      "id": "Rogue",
+      "name": "Rogue",
+      "badge": "Cutpurse",
+      "stats": {
+        "AGI": 88,
+        "LCK": 80,
+        "STR": 45,
+        "INT": 60
+      },
+      "ability": {
+        "name": "Backstab",
+        "desc": "방심한 적에게 치명적인 일격을 가한다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Rogue/Rogue_Idle.png",
+        "idleStart": "assets/jobs/Rogue/Rogue_IdleStart.png",
+        "idleEnd": "assets/jobs/Rogue/Rogue_IdleEnd.png",
+        "walk": "assets/jobs/Rogue/Rogue_Walk.png",
+        "die": "assets/jobs/Rogue/Rogue_Die.png",
+        "dmg": "assets/jobs/Rogue/Rogue_Dmg.png",
+        "jump": "assets/jobs/Rogue/Rogue_Jump.png",
+        "attack": "assets/jobs/Rogue/Rogue_Attack.png",
+        "skill_1": "assets/jobs/Rogue/Rogue_Skill_1.png",
+        "skill_2": "assets/jobs/Rogue/Rogue_Skill_2.png",
+        "skill_3": "assets/jobs/Rogue/Rogue_Skill_3.png",
+        "skill_4": "assets/jobs/Rogue/Rogue_Skill_4.png"
+      }
+    },
+    {
+      "id": "Samurai",
+      "name": "Samurai",
+      "badge": "Blade Saint",
+      "stats": {
+        "STR": 88,
+        "AGI": 82,
+        "INT": 60,
+        "SUR": 65
+      },
+      "ability": {
+        "name": "Iaijutsu",
+        "desc": "칼집에서 뽑는 순간 전투가 끝난다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Samurai/Samurai_Idle.png",
+        "idleStart": "assets/jobs/Samurai/Samurai_IdleStart.png",
+        "idleEnd": "assets/jobs/Samurai/Samurai_IdleEnd.png",
+        "walk": "assets/jobs/Samurai/Samurai_Walk.png",
+        "die": "assets/jobs/Samurai/Samurai_Die.png",
+        "dmg": "assets/jobs/Samurai/Samurai_Dmg.png",
+        "jump": "assets/jobs/Samurai/Samurai_Jump.png",
+        "attack": "assets/jobs/Samurai/Samurai_Attack.png",
+        "skill_1": "assets/jobs/Samurai/Samurai_Skill_1.png",
+        "skill_2": "assets/jobs/Samurai/Samurai_Skill_2.png",
+        "skill_3": "assets/jobs/Samurai/Samurai_Skill_3.png",
+        "skill_4": "assets/jobs/Samurai/Samurai_Skill_4.png"
+      }
+    },
+    {
+      "id": "Tech-Augmented_Gunslinger",
+      "name": "Tech Gunslinger",
+      "badge": "Augmented",
+      "stats": {
+        "AGI": 85,
+        "INT": 75,
+        "STR": 55,
+        "LCK": 65
+      },
+      "ability": {
+        "name": "Overclock",
+        "desc": "기계 장치를 과부하시켜 순간적인 폭발력을 낸다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Idle.png",
+        "idleStart": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_IdleStart.png",
+        "idleEnd": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_IdleEnd.png",
+        "walk": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Walk.png",
+        "die": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Die.png",
+        "dmg": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Dmg.png",
+        "jump": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Jump.png",
+        "attack": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Attack.png",
+        "skill_1": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Skill_1.png",
+        "skill_2": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Skill_2.png",
+        "skill_3": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Skill_3.png",
+        "skill_4": "assets/jobs/Tech-Augmented_Gunslinger/Tech-Augmented_Gunslinger_Skill_4.png"
+      }
+    },
+    {
+      "id": "Wizard",
+      "name": "Wizard",
+      "badge": "Arcane Scholar",
+      "stats": {
+        "INT": 95,
+        "LCK": 60,
+        "STR": 20,
+        "AGI": 35
+      },
+      "ability": {
+        "name": "Arcane Mastery",
+        "desc": "모든 마법 계열을 자유롭게 구사한다."
+      },
+      "sprites": {
+        "idle": "assets/jobs/Wizard/Wizard_Idle.png",
+        "idleStart": "assets/jobs/Wizard/Wizard_IdleStart.png",
+        "idleEnd": "assets/jobs/Wizard/Wizard_IdleEnd.png",
+        "walk": "assets/jobs/Wizard/Wizard_Walk.png",
+        "die": "assets/jobs/Wizard/Wizard_Die.png",
+        "dmg": "assets/jobs/Wizard/Wizard_Dmg.png",
+        "jump": "assets/jobs/Wizard/Wizard_Jump.png",
+        "attack": "assets/jobs/Wizard/Wizard_Attack.png",
+        "skill_1": "assets/jobs/Wizard/Wizard_Skill_1.png",
+        "skill_2": "assets/jobs/Wizard/Wizard_Skill_2.png",
+        "skill_3": "assets/jobs/Wizard/Wizard_Skill_3.png",
+        "skill_4": "assets/jobs/Wizard/Wizard_Skill_4.png"
+      }
+    }
+  ],
+  "professions": [
+    {
+      "id": "Alchemy",
+      "name": "Alchemy",
+      "badge": "Alchemist",
+      "stats": {
+        "INT": 85,
+        "LCK": 70,
+        "STR": 25,
+        "SUR": 60
+      },
+      "ability": {
+        "name": "Transmutation",
+        "desc": "재료를 변환해 포션과 약재를 제조한다."
+      },
+      "sprites": {
+        "idle": "assets/professions/Alchemy/Alchemy_Idle.png",
+        "idleStart": "assets/professions/Alchemy/Alchemy_IdleStart.png",
+        "idleEnd": "assets/professions/Alchemy/Alchemy_IdleEnd.png",
+        "walk": "assets/professions/Alchemy/Alchemy_Walk.png",
+        "die": "assets/professions/Alchemy/Alchemy_Die.png",
+        "dmg": "assets/professions/Alchemy/Alchemy_Dmg.png",
+        "jump": "assets/professions/Alchemy/Alchemy_Jump.png",
+        "attack": "assets/professions/Alchemy/Alchemy_Attack.png",
+        "skill_1": "assets/professions/Alchemy/Alchemy_Skill_1.png",
+        "skill_2": "assets/professions/Alchemy/Alchemy_Skill_2.png",
+        "skill_3": "assets/professions/Alchemy/Alchemy_Skill_3.png",
+        "skill_4": "assets/professions/Alchemy/Alchemy_Skill_4.png"
+      }
+    },
+    {
+      "id": "Blacksmith",
+      "name": "Blacksmith",
+      "badge": "Forgemaster",
+      "stats": {
+        "STR": 85,
+        "INT": 60,
+        "SUR": 75,
+        "AGI": 40
+      },
+      "ability": {
+        "name": "Temper",
+        "desc": "금속의 성질을 바꿔 더 강한 무기를 만든다."
+      },
+      "sprites": {
+        "idle": "assets/professions/Blacksmith/Blacksmith_Idle.png",
+        "idleStart": "assets/professions/Blacksmith/Blacksmith_IdleStart.png",
+        "idleEnd": "assets/professions/Blacksmith/Blacksmith_IdleEnd.png",
+        "walk": "assets/professions/Blacksmith/Blacksmith_Walk.png",
+        "die": "assets/professions/Blacksmith/Blacksmith_Die.png",
+        "dmg": "assets/professions/Blacksmith/Blacksmith_Dmg.png",
+        "jump": "assets/professions/Blacksmith/Blacksmith_Jump.png",
+        "attack": "assets/professions/Blacksmith/Blacksmith_Attack.png",
+        "skill_1": "assets/professions/Blacksmith/Blacksmith_Skill_1.png",
+        "skill_2": "assets/professions/Blacksmith/Blacksmith_Skill_2.png",
+        "skill_3": "assets/professions/Blacksmith/Blacksmith_Skill_3.png",
+        "skill_4": "assets/professions/Blacksmith/Blacksmith_Skill_4.png"
+      }
+    },
+    {
+      "id": "Cartographer_Studio",
+      "name": "Cartographer",
+      "badge": "Mapmaker",
+      "stats": {
+        "INT": 80,
+        "LCK": 65,
+        "AGI": 55,
+        "SUR": 70
+      },
+      "ability": {
+        "name": "Survey",
+        "desc": "지형을 정밀하게 기록하고 숨겨진 경로를 발견한다."
+      },
+      "sprites": {
+        "idle": "assets/professions/Cartographer_Studio/Cartographer_Studio_Idle.png",
+        "idleStart": "assets/professions/Cartographer_Studio/Cartographer_Studio_IdleStart.png",
+        "idleEnd": "assets/professions/Cartographer_Studio/Cartographer_Studio_IdleEnd.png",
+        "walk": "assets/professions/Cartographer_Studio/Cartographer_Studio_Walk.png",
+        "die": "assets/professions/Cartographer_Studio/Cartographer_Studio_Die.png",
+        "dmg": "assets/professions/Cartographer_Studio/Cartographer_Studio_Dmg.png",
+        "jump": "assets/professions/Cartographer_Studio/Cartographer_Studio_Jump.png",
+        "attack": "assets/professions/Cartographer_Studio/Cartographer_Studio_Attack.png",
+        "skill_1": "assets/professions/Cartographer_Studio/Cartographer_Studio_Skill_1.png",
+        "skill_2": "assets/professions/Cartographer_Studio/Cartographer_Studio_Skill_2.png",
+        "skill_3": "assets/professions/Cartographer_Studio/Cartographer_Studio_Skill_3.png",
+        "skill_4": "assets/professions/Cartographer_Studio/Cartographer_Studio_Skill_4.png"
+      }
+    },
+    {
+      "id": "Cooking",
+      "name": "Cook",
+      "badge": "Chef",
+      "stats": {
+        "CHA": 75,
+        "LCK": 70,
+        "INT": 55,
+        "SUR": 80
+      },
+      "ability": {
+        "name": "Hearty Meal",
+        "desc": "음식으로 아군의 사기와 체력을 회복시킨다."
+      },
+      "sprites": {
+        "idle": "assets/professions/Cooking/Cooking_Idle.png",
+        "idleStart": "assets/professions/Cooking/Cooking_IdleStart.png",
+        "idleEnd": "assets/professions/Cooking/Cooking_IdleEnd.png",
+        "walk": "assets/professions/Cooking/Cooking_Walk.png",
+        "die": "assets/professions/Cooking/Cooking_Die.png",
+        "dmg": "assets/professions/Cooking/Cooking_Dmg.png",
+        "jump": "assets/professions/Cooking/Cooking_Jump.png",
+        "attack": "assets/professions/Cooking/Cooking_Attack.png",
+        "skill_1": "assets/professions/Cooking/Cooking_Skill_1.png",
+        "skill_2": "assets/professions/Cooking/Cooking_Skill_2.png",
+        "skill_3": "assets/professions/Cooking/Cooking_Skill_3.png",
+        "skill_4": "assets/professions/Cooking/Cooking_Skill_4.png"
+      }
+    },
+    {
+      "id": "Dyeing",
+      "name": "Dyer",
+      "badge": "Color Artisan",
+      "stats": {
+        "INT": 65,
+        "CHA": 70,
+        "LCK": 60,
+        "AGI": 55
+      },
+      "ability": {
+        "name": "Pigment Lore",
+        "desc": "염료로 위장색을 만들거나 신호를 보낸다."
+      },
+      "sprites": {
+        "idle": "assets/professions/Dyeing/Dyeing_Idle.png",
+        "idleStart": "assets/professions/Dyeing/Dyeing_IdleStart.png",
+        "idleEnd": "assets/professions/Dyeing/Dyeing_IdleEnd.png",
+        "walk": "assets/professions/Dyeing/Dyeing_Walk.png",
+        "die": "assets/professions/Dyeing/Dyeing_Die.png",
+        "dmg": "assets/professions/Dyeing/Dyeing_Dmg.png",
+        "jump": "assets/professions/Dyeing/Dyeing_Jump.png",
+        "attack": "assets/professions/Dyeing/Dyeing_Attack.png",
+        "skill_1": "assets/professions/Dyeing/Dyeing_Skill_1.png",
+        "skill_2": "assets/professions/Dyeing/Dyeing_Skill_2.png",
+        "skill_3": "assets/professions/Dyeing/Dyeing_Skill_3.png",
+        "skill_4": "assets/professions/Dyeing/Dyeing_Skill_4.png"
+      }
+    },
+    {
+      "id": "Fletcher_Workshop",
+      "name": "Fletcher",
+      "badge": "Arrow Crafter",
+      "stats": {
+        "AGI": 80,
+        "INT": 65,
+        "STR": 50,
+        "LCK": 60
+      },
+      "ability": {
+        "name": "True Flight",
+        "desc": "바람을 계산한 화살을 제조한다."
+      },
+      "sprites": {
+        "idle": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Idle.png",
+        "idleStart": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_IdleStart.png",
+        "idleEnd": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_IdleEnd.png",
+        "walk": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Walk.png",
+        "die": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Die.png",
+        "dmg": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Dmg.png",
+        "jump": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Jump.png",
+        "attack": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Attack.png",
+        "skill_1": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Skill_1.png",
+        "skill_2": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Skill_2.png",
+        "skill_3": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Skill_3.png",
+        "skill_4": "assets/professions/Fletcher_Workshop/Fletcher_Workshop_Skill_4.png"
+      }
+    },
+    {
+      "id": "Food_Preparation",
+      "name": "Food Prep",
+      "badge": "Provisioner",
+      "stats": {
+        "SUR": 85,
+        "CHA": 65,
+        "INT": 50,
+        "LCK": 60
+      },
+      "ability": {
+        "name": "Ration Master",
+        "desc": "적은 재료로 최대 효율의 식량을 만든다."
+      },
+      "sprites": {
+        "idle": "assets/professions/Food_Preparation/Food_Preparation_Idle.png",
+        "idleStart": "assets/professions/Food_Preparation/Food_Preparation_IdleStart.png",
+        "idleEnd": "assets/professions/Food_Preparation/Food_Preparation_IdleEnd.png",
+        "walk": "assets/professions/Food_Preparation/Food_Preparation_Walk.png",
+        "die": "assets/professions/Food_Preparation/Food_Preparation_Die.png",
+        "dmg": "assets/professions/Food_Preparation/Food_Preparation_Dmg.png",
+        "jump": "assets/professions/Food_Preparation/Food_Preparation_Jump.png",
+        "attack": "assets/professions/Food_Preparation/Food_Preparation_Attack.png",
+        "skill_1": "assets/professions/Food_Preparation/Food_Preparation_Skill_1.png",
+        "skill_2": "assets/professions/Food_Preparation/Food_Preparation_Skill_2.png",
+        "skill_3": "assets/professions/Food_Preparation/Food_Preparation_Skill_3.png",
+        "skill_4": "assets/professions/Food_Preparation/Food_Preparation_Skill_4.png"
+      }
+    },
+    {
+      "id": "Jewelry",
+      "name": "Jeweler",
+      "badge": "Gem Cutter",
+      "stats": {
+        "INT": 75,
+        "CHA": 80,
+        "AGI": 70,
+        "LCK": 65
+      },
+      "ability": {
+        "name": "Enchant Setting",
+        "desc": "보석에 마법 속성을 부여한다."
+      },
+      "sprites": {
+        "idle": "assets/professions/Jewelry/Jewelry_Idle.png",
+        "idleStart": "assets/professions/Jewelry/Jewelry_IdleStart.png",
+        "idleEnd": "assets/professions/Jewelry/Jewelry_IdleEnd.png",
+        "walk": "assets/professions/Jewelry/Jewelry_Walk.png",
+        "die": "assets/professions/Jewelry/Jewelry_Die.png",
+        "dmg": "assets/professions/Jewelry/Jewelry_Dmg.png",
+        "jump": "assets/professions/Jewelry/Jewelry_Jump.png",
+        "attack": "assets/professions/Jewelry/Jewelry_Attack.png",
+        "skill_1": "assets/professions/Jewelry/Jewelry_Skill_1.png",
+        "skill_2": "assets/professions/Jewelry/Jewelry_Skill_2.png",
+        "skill_3": "assets/professions/Jewelry/Jewelry_Skill_3.png",
+        "skill_4": "assets/professions/Jewelry/Jewelry_Skill_4.png"
+      }
+    },
+    {
+      "id": "Leatherwork",
+      "name": "Leatherworker",
+      "badge": "Tanner",
+      "stats": {
+        "STR": 65,
+        "AGI": 70,
+        "SUR": 75,
+        "INT": 50
+      },
+      "ability": {
+        "name": "Hide Craft",
+        "desc": "짐승의 가죽으로 방어구를 제작한다."
+      },
+      "sprites": {
+        "idle": "assets/professions/Leatherwork/Leatherwork_Idle.png",
+        "idleStart": "assets/professions/Leatherwork/Leatherwork_IdleStart.png",
+        "idleEnd": "assets/professions/Leatherwork/Leatherwork_IdleEnd.png",
+        "walk": "assets/professions/Leatherwork/Leatherwork_Walk.png",
+        "die": "assets/professions/Leatherwork/Leatherwork_Die.png",
+        "dmg": "assets/professions/Leatherwork/Leatherwork_Dmg.png",
+        "jump": "assets/professions/Leatherwork/Leatherwork_Jump.png",
+        "attack": "assets/professions/Leatherwork/Leatherwork_Attack.png",
+        "skill_1": "assets/professions/Leatherwork/Leatherwork_Skill_1.png",
+        "skill_2": "assets/professions/Leatherwork/Leatherwork_Skill_2.png",
+        "skill_3": "assets/professions/Leatherwork/Leatherwork_Skill_3.png",
+        "skill_4": "assets/professions/Leatherwork/Leatherwork_Skill_4.png"
+      }
+    },
+    {
+      "id": "Painter_Studio",
+      "name": "Painter",
+      "badge": "Artisan",
+      "stats": {
+        "INT": 70,
+        "CHA": 85,
+        "LCK": 65,
+        "AGI": 60
+      },
+      "ability": {
+        "name": "Illusion Brush",
+        "desc": "그림으로 착시와 환상을 만들어낸다."
+      },
+      "sprites": {
+        "idle": "assets/professions/Painter_Studio/Painter_Studio_Idle.png",
+        "idleStart": "assets/professions/Painter_Studio/Painter_Studio_IdleStart.png",
+        "idleEnd": "assets/professions/Painter_Studio/Painter_Studio_IdleEnd.png",
+        "walk": "assets/professions/Painter_Studio/Painter_Studio_Walk.png",
+        "die": "assets/professions/Painter_Studio/Painter_Studio_Die.png",
+        "dmg": "assets/professions/Painter_Studio/Painter_Studio_Dmg.png",
+        "jump": "assets/professions/Painter_Studio/Painter_Studio_Jump.png",
+        "attack": "assets/professions/Painter_Studio/Painter_Studio_Attack.png",
+        "skill_1": "assets/professions/Painter_Studio/Painter_Studio_Skill_1.png",
+        "skill_2": "assets/professions/Painter_Studio/Painter_Studio_Skill_2.png",
+        "skill_3": "assets/professions/Painter_Studio/Painter_Studio_Skill_3.png",
+        "skill_4": "assets/professions/Painter_Studio/Painter_Studio_Skill_4.png"
+      }
+    },
+    {
+      "id": "Staves_Workshop",
+      "name": "Staff Maker",
+      "badge": "Wood Carver",
+      "stats": {
+        "INT": 75,
+        "STR": 55,
+        "AGI": 60,
+        "LCK": 60
+      },
+      "ability": {
+        "name": "Conduit Craft",
+        "desc": "마법 전도율이 높은 지팡이를 제작한다."
+      },
+      "sprites": {
+        "idle": "assets/professions/Staves_Workshop/Staves_Workshop_Idle.png",
+        "idleStart": "assets/professions/Staves_Workshop/Staves_Workshop_IdleStart.png",
+        "idleEnd": "assets/professions/Staves_Workshop/Staves_Workshop_IdleEnd.png",
+        "walk": "assets/professions/Staves_Workshop/Staves_Workshop_Walk.png",
+        "die": "assets/professions/Staves_Workshop/Staves_Workshop_Die.png",
+        "dmg": "assets/professions/Staves_Workshop/Staves_Workshop_Dmg.png",
+        "jump": "assets/professions/Staves_Workshop/Staves_Workshop_Jump.png",
+        "attack": "assets/professions/Staves_Workshop/Staves_Workshop_Attack.png",
+        "skill_1": "assets/professions/Staves_Workshop/Staves_Workshop_Skill_1.png",
+        "skill_2": "assets/professions/Staves_Workshop/Staves_Workshop_Skill_2.png",
+        "skill_3": "assets/professions/Staves_Workshop/Staves_Workshop_Skill_3.png",
+        "skill_4": "assets/professions/Staves_Workshop/Staves_Workshop_Skill_4.png"
+      }
+    },
+    {
+      "id": "Tailor",
+      "name": "Tailor",
+      "badge": "Seamster",
+      "stats": {
+        "AGI": 75,
+        "CHA": 70,
+        "INT": 60,
+        "LCK": 65
+      },
+      "ability": {
+        "name": "Fine Stitch",
+        "desc": "특수 섬유로 가벼우면서도 튼튼한 의복을 만든다."
+      },
+      "sprites": {
+        "idle": "assets/professions/Tailor/Tailor_Idle.png",
+        "idleStart": "assets/professions/Tailor/Tailor_IdleStart.png",
+        "idleEnd": "assets/professions/Tailor/Tailor_IdleEnd.png",
+        "walk": "assets/professions/Tailor/Tailor_Walk.png",
+        "die": "assets/professions/Tailor/Tailor_Die.png",
+        "dmg": "assets/professions/Tailor/Tailor_Dmg.png",
+        "jump": "assets/professions/Tailor/Tailor_Jump.png",
+        "attack": "assets/professions/Tailor/Tailor_Attack.png",
+        "skill_1": "assets/professions/Tailor/Tailor_Skill_1.png",
+        "skill_2": "assets/professions/Tailor/Tailor_Skill_2.png",
+        "skill_3": "assets/professions/Tailor/Tailor_Skill_3.png",
+        "skill_4": "assets/professions/Tailor/Tailor_Skill_4.png"
+      }
+    },
+    {
+      "id": "Woodwork",
+      "name": "Woodworker",
+      "badge": "Carpenter",
+      "stats": {
+        "STR": 75,
+        "INT": 60,
+        "AGI": 55,
+        "SUR": 70
+      },
+      "ability": {
+        "name": "Joinery",
+        "desc": "나무로 정밀한 구조물과 도구를 만든다."
+      },
+      "sprites": {
+        "idle": "assets/professions/Woodwork/Woodwork_Idle.png",
+        "idleStart": "assets/professions/Woodwork/Woodwork_IdleStart.png",
+        "idleEnd": "assets/professions/Woodwork/Woodwork_IdleEnd.png",
+        "walk": "assets/professions/Woodwork/Woodwork_Walk.png",
+        "die": "assets/professions/Woodwork/Woodwork_Die.png",
+        "dmg": "assets/professions/Woodwork/Woodwork_Dmg.png",
+        "jump": "assets/professions/Woodwork/Woodwork_Jump.png",
+        "attack": "assets/professions/Woodwork/Woodwork_Attack.png",
+        "skill_1": "assets/professions/Woodwork/Woodwork_Skill_1.png",
+        "skill_2": "assets/professions/Woodwork/Woodwork_Skill_2.png",
+        "skill_3": "assets/professions/Woodwork/Woodwork_Skill_3.png",
+        "skill_4": "assets/professions/Woodwork/Woodwork_Skill_4.png"
+      }
+    }
+  ]
+}

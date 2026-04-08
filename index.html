@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NHH · Character Codex</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap');
+
+  :root {
+    --bg: #0d0a08;
+    --surface: #16120e;
+    --surface2: #1e1810;
+    --border: #2e2418;
+    --border2: #3d3020;
+    --gold: #c9a84c;
+    --gold-dim: #7a6330;
+    --gold-faint: #3d3018;
+    --text: #e8dcc8;
+    --text-dim: #7a6e5e;
+    --accent: #8b4a6b;
+    --sidebar-w: 200px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Crimson Pro', serif;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 30% 50%, #1a100808 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 80% 80%, #1a0d1008 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── 사이드바 ── */
+  .sidebar {
+    width: var(--sidebar-w);
+    flex-shrink: 0;
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .sidebar-header {
+    padding: 18px 14px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .game-title {
+    font-size: 0.55rem;
+    letter-spacing: 0.3em;
+    color: var(--gold-dim);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .codex-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.85rem;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+  }
+
+  /* 탭 */
+  .tab-row {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .tab {
+    flex: 1;
+    padding: 8px 4px;
+    background: transparent;
+    border: none;
+    border-right: 1px solid var(--border);
+    color: var(--text-dim);
+    font-family: 'Crimson Pro', serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .tab:last-child { border-right: none; }
+  .tab:hover { color: var(--text); background: var(--surface2); }
+  .tab.active { color: var(--gold); background: var(--gold-faint); }
+
+  /* 캐릭터 목록 */
+  .char-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 6px 0;
+  }
+
+  .char-list::-webkit-scrollbar { width: 3px; }
+  .char-list::-webkit-scrollbar-track { background: transparent; }
+  .char-list::-webkit-scrollbar-thumb { background: var(--border2); }
+
+  .char-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 14px;
+    cursor: pointer;
+    border-left: 2px solid transparent;
+    transition: all 0.12s;
+  }
+
+  .char-item:hover { background: var(--surface2); }
+  .char-item.active {
+    border-left-color: var(--gold);
+    background: var(--gold-faint);
+    color: var(--gold);
+  }
+
+  .char-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--border2);
+    flex-shrink: 0;
+    transition: background 0.12s;
+  }
+
+  .char-item.active .char-dot { background: var(--gold); }
+
+  .char-item-name {
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* ── 메인 ── */
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+    overflow-y: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  /* 헤더 */
+  .char-header {
+    text-align: center;
+    width: 100%;
+  }
+
+  .char-name {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.6rem;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+  }
+
+  .char-badge {
+    display: inline-block;
+    margin-top: 0.4rem;
+    padding: 0.18rem 0.8rem;
+    border: 1px solid var(--gold-dim);
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+  }
+
+  /* 카드 */
+  .card {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    position: relative;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+  }
+
+  .card::before, .card::after,
+  .card .c-br, .card .c-bl {
+    content: '';
+    position: absolute;
+    width: 10px; height: 10px;
+    border-color: var(--gold-dim);
+    border-style: solid;
+  }
+  .card::before { top: 5px; left: 5px; border-width: 1px 0 0 1px; }
+  .card::after  { top: 5px; right: 5px; border-width: 1px 1px 0 0; }
+  .card .c-br   { bottom: 5px; right: 5px; border-width: 0 1px 1px 0; }
+  .card .c-bl   { bottom: 5px; left: 5px; border-width: 0 0 1px 1px; }
+
+  /* 캔버스 */
+  .canvas-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px; height: 160px;
+    background: #0a0806;
+    border: 1px solid var(--border);
+  }
+
+  canvas {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    width: 128px; height: 128px;
+  }
+
+  .state-label {
+    position: absolute;
+    bottom: -1px; left: 50%;
+    transform: translateX(-50%);
+    background: var(--surface);
+    padding: 0.1rem 0.6rem;
+    font-size: 0.55rem;
+    letter-spacing: 0.2em;
+    color: var(--gold-dim);
+    text-transform: uppercase;
+    white-space: nowrap;
+    border: 1px solid var(--border);
+    border-bottom: none;
+  }
+
+  /* 방향 패드 */
+  .dir-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    grid-template-rows: repeat(2, 34px);
+    gap: 4px;
+  }
+
+  .dir-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.15s;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .dir-btn:hover { border-color: var(--gold-dim); color: var(--gold); }
+  .dir-btn.active { border-color: var(--gold); color: var(--gold); background: var(--gold-faint); }
+
+  /* 애니메이션 버튼 */
+  .anim-row {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .anim-btn {
+    padding: 0.28rem 0.75rem;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    font-family: 'Crimson Pro', serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.15s;
+    text-transform: uppercase;
+  }
+
+  .anim-btn:hover { border-color: var(--gold-dim); color: var(--text); }
+  .anim-btn.active { border-color: var(--gold); color: var(--gold); background: var(--gold-faint); }
+  .anim-btn:disabled { opacity: 0.25; cursor: not-allowed; }
+
+  /* 구분선 */
+  .divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--gold-dim);
+    font-size: 0.5rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .divider::before, .divider::after {
+    content: ''; flex: 1;
+    height: 1px; background: var(--border);
+  }
+
+  /* 스탯 */
+  .stats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1.2rem;
+  }
+
+  .stat { display: flex; flex-direction: column; gap: 0.15rem; }
+
+  .stat-name {
+    font-size: 0.5rem;
+    letter-spacing: 0.2em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+  }
+
+  .stat-bar {
+    height: 2px;
+    background: var(--border);
+    position: relative; overflow: hidden;
+  }
+
+  .stat-fill {
+    height: 100%;
+    background: var(--gold);
+    transition: width 0.5s ease;
+  }
+
+  .stat-val {
+    font-size: 0.62rem;
+    color: var(--text-dim);
+  }
+
+  /* 어빌리티 */
+  .ability {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border);
+    background: #0d0a08;
+  }
+
+  .ability-name {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.6rem;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.3rem;
+  }
+
+  .ability-desc {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  /* 빈 상태 */
+  .empty-state {
+    text-align: center;
+    color: var(--text-dim);
+  }
+
+  .empty-state .em-icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    opacity: 0.3;
+  }
+
+  .empty-state p {
+    font-size: 0.8rem;
+    font-style: italic;
+    letter-spacing: 0.05em;
+  }
+</style>
+</head>
+<body>
+
+<!-- 사이드바 -->
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <div class="game-title">No Heroes Here</div>
+    <div class="codex-title">Codex</div>
+  </div>
+
+  <div class="tab-row">
+    <button class="tab active" data-tab="jobs">Jobs</button>
+    <button class="tab" data-tab="professions">Craft</button>
+  </div>
+
+  <div class="char-list" id="charList"></div>
+</aside>
+
+<!-- 메인 -->
+<main class="main">
+  <div class="content" id="mainContent">
+    <div class="empty-state">
+      <div class="em-icon">⚔</div>
+      <p>Select a character<br>from the codex</p>
+    </div>
+  </div>
+</main>
+
+<script>
+// ── 데이터 ──
+let JOBS = [];
+let PROFESSIONS = [];
+
+// ── 스프라이트 엔진 ──
+const FRAME_W = 32, FRAME_H = 32;
+const images = {};
+let currentChar = null;
+let currentAnim = 'idle';
+// 조이스틱 순서: 왼앞=0, 오른앞=1, 왼뒤=2, 오른뒤=3
+// 스프라이트 행: 0=오른앞, 1=왼앞, 2=오른뒤, 3=왼뒤
+const DIR_TO_ROW = { 0: 3, 1: 2, 2: 1, 3: 0 };
+let currentDir = 3;
+let currentFrame = 0;
+let idlePhase = 'loop';
+let idleTimer = 0;
+let loopCount = 0;
+let lastTime = 0;
+let animTimer = 0;
+let rafId = null;
+
+function loadImage(key, src) {
+  return new Promise(resolve => {
+    const img = new Image();
+    img.onload = () => { images[key] = img; resolve(); };
+    img.onerror = () => resolve();
+    img.src = src;
+  });
+}
+
+async function loadCharSprites(char) {
+  ['idleLoop', 'idleStart', 'idleEnd', 'walk', 'die', 'dmg'].forEach(k => delete images[k]);
+  if (!char.sprites) return;
+  await Promise.all([
+    char.sprites.idle      && loadImage('idleLoop',  char.sprites.idle),
+    char.sprites.idleStart && loadImage('idleStart', char.sprites.idleStart),
+    char.sprites.idleEnd   && loadImage('idleEnd',   char.sprites.idleEnd),
+    char.sprites.walk      && loadImage('walk',      char.sprites.walk),
+    char.sprites.die       && loadImage('die',       char.sprites.die),
+    char.sprites.dmg       && loadImage('dmg',       char.sprites.dmg),
+    char.sprites.jump      && loadImage('jump',      char.sprites.jump),
+    char.sprites.attack    && loadImage('attack',    char.sprites.attack),
+    char.sprites.skill_1   && loadImage('skill_1',   char.sprites.skill_1),
+    char.sprites.skill_2   && loadImage('skill_2',   char.sprites.skill_2),
+    char.sprites.skill_3   && loadImage('skill_3',   char.sprites.skill_3),
+    char.sprites.skill_4   && loadImage('skill_4',   char.sprites.skill_4),
+  ].filter(Boolean));
+}
+
+function getCanvas() { return document.getElementById('charCanvas'); }
+function getCtx() {
+  const c = getCanvas();
+  if (!c) return null;
+  const ctx = c.getContext('2d');
+  ctx.imageSmoothingEnabled = false;
+  return ctx;
+}
+
+function autoFrameCount(img) {
+  return img ? Math.round(img.width / FRAME_W) : 0;
+}
+
+function drawPlaceholder() {
+  const ctx = getCtx(); if (!ctx) return;
+  ctx.fillStyle = '#1a1410';
+  ctx.fillRect(0, 0, 32, 32);
+  ctx.fillStyle = '#2e2418';
+  ctx.fillRect(12, 8, 8, 8);
+  ctx.fillRect(10, 16, 12, 10);
+  ctx.fillStyle = '#c9a84c';
+  ctx.fillRect(14, 6, 4, 4);
+}
+
+function drawFrame() {
+  const ctx = getCtx(); if (!ctx) return;
+  ctx.clearRect(0, 0, 32, 32);
+
+  let imgKey;
+  if (currentAnim === 'walk')         imgKey = 'walk';
+  else if (currentAnim === 'jump')   imgKey = 'jump';
+  else if (currentAnim === 'attack')  imgKey = 'attack';
+  else if (currentAnim === 'skill_1') imgKey = 'skill_1';
+  else if (currentAnim === 'skill_2') imgKey = 'skill_2';
+  else if (currentAnim === 'skill_3') imgKey = 'skill_3';
+  else if (currentAnim === 'skill_4') imgKey = 'skill_4';
+  else if (currentAnim === 'die')     imgKey = 'die';
+  else if (currentAnim === 'dmg')    imgKey = 'dmg';
+  else {
+    if (idlePhase === 'start')        imgKey = 'idleStart';
+    else if (idlePhase === 'special') imgKey = 'idleSpecial';
+    else if (idlePhase === 'end')     imgKey = 'idleEnd';
+    else                              imgKey = 'idleLoop';
+  }
+
+  // fallback
+  if (!images[imgKey]) {
+    if (imgKey === 'idleSpecial') imgKey = 'idleLoop';
+    if (!images[imgKey]) { drawPlaceholder(); return; }
+  }
+
+  const img = images[imgKey];
+  const count = autoFrameCount(img);
+  const fi = count > 0 ? currentFrame % count : 0;
+  const row = DIR_TO_ROW[currentDir] ?? 0;
+  ctx.drawImage(img, fi * FRAME_W, row * FRAME_H, FRAME_W, FRAME_H, 0, 0, 32, 32);
+}
+
+function setStateLabel(text) {
+  const el = document.getElementById('stateLabel');
+  if (el) el.textContent = text;
+}
+
+const FAST_ANIMS = new Set(['skill_1', 'skill_2', 'skill_3', 'skill_4']);
+
+function tick(ts) {
+  rafId = requestAnimationFrame(tick);
+  const dt = ts - lastTime; lastTime = ts;
+  animTimer += dt;
+  const delay = FAST_ANIMS.has(currentAnim) ? 100 : 200;
+  if (animTimer < delay) return;
+  animTimer = 0;
+
+  if (currentAnim !== 'idle') {
+    currentFrame++;
+    drawFrame();
+    return;
+  }
+
+  // idle 시퀀스
+  if (idlePhase === 'loop') {
+    currentFrame++;
+    idleTimer += 200;
+    if (idleTimer >= 3000 && images.idleStart) {
+      idlePhase = 'start'; currentFrame = 0; idleTimer = 0;
+      setStateLabel('Idle · Start');
+    }
+  } else if (idlePhase === 'start') {
+    currentFrame++;
+    const count = autoFrameCount(images.idleStart);
+    if (currentFrame >= count) {
+      idlePhase = 'special'; currentFrame = 0; loopCount = 0;
+      setStateLabel('Idle · Play');
+    }
+  } else if (idlePhase === 'special') {
+    currentFrame++;
+    const sp = images.idleSpecial || images.idleLoop;
+    const count = autoFrameCount(sp);
+    if (currentFrame >= count) {
+      currentFrame = 0; loopCount++;
+      if (loopCount >= 2 && images.idleEnd) {
+        idlePhase = 'end'; currentFrame = 0; loopCount = 0;
+        setStateLabel('Idle · End');
+      }
+    }
+  } else if (idlePhase === 'end') {
+    currentFrame++;
+    const count = autoFrameCount(images.idleEnd);
+    if (currentFrame >= count) {
+      idlePhase = 'loop'; currentFrame = 0; idleTimer = 0;
+      setStateLabel('Idle');
+    }
+  }
+
+  drawFrame();
+}
+
+function startAnim() {
+  if (rafId) cancelAnimationFrame(rafId);
+  lastTime = 0; animTimer = 0;
+  rafId = requestAnimationFrame(tick);
+}
+
+function resetAnim(anim) {
+  currentAnim = anim;
+  currentFrame = 0;
+  idlePhase = 'loop'; idleTimer = 0; loopCount = 0;
+  const labels = { idle: 'Idle', walk: 'Walk', jump: 'Jump', attack: 'Attack', skill_1: 'Skill 1', skill_2: 'Skill 2', skill_3: 'Skill 3', skill_4: 'Skill 4', die: 'Die', dmg: 'Dmg' };
+  setStateLabel(labels[anim] || anim);
+}
+
+// ── UI 렌더 ──
+let currentTab = 'jobs';
+
+function renderSidebar() {
+  const list = document.getElementById('charList');
+  const data = currentTab === 'jobs' ? JOBS : PROFESSIONS;
+  list.innerHTML = data.map(c => `
+    <div class="char-item${currentChar?.id === c.id ? ' active' : ''}" data-id="${c.id}">
+      <div class="char-dot"></div>
+      <span class="char-item-name">${c.name}</span>
+    </div>
+  `).join('');
+
+  list.querySelectorAll('.char-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const data2 = currentTab === 'jobs' ? JOBS : PROFESSIONS;
+      const char = data2.find(c => c.id === item.dataset.id);
+      if (char) selectChar(char);
+    });
+  });
+}
+
+function getStatKeys(char) {
+  return Object.keys(char.stats);
+}
+
+const STAT_LABELS = {
+  STR: 'Strength', AGI: 'Agility', INT: 'Intellect',
+  LCK: 'Luck', CHA: 'Charisma', COM: 'Combat',
+  SUR: 'Survival'
+};
+
+function renderMain(char) {
+  const statKeys = getStatKeys(char);
+  const statHtml = statKeys.map(k => `
+    <div class="stat">
+      <div class="stat-name">${STAT_LABELS[k] || k}</div>
+      <div class="stat-bar"><div class="stat-fill" style="width:${char.stats[k]}%"></div></div>
+      <div class="stat-val">${char.stats[k]}</div>
+    </div>
+  `).join('');
+
+  document.getElementById('mainContent').innerHTML = `
+    <div class="char-header">
+      <div class="char-name">${char.name}</div>
+      <div class="char-badge">${char.badge}</div>
+    </div>
+
+    <div class="card">
+      <div class="c-br"></div><div class="c-bl"></div>
+
+      <div class="canvas-wrap">
+        <canvas id="charCanvas" width="32" height="32"></canvas>
+        <div class="state-label" id="stateLabel">Idle</div>
+      </div>
+
+      <!-- 방향 패드: ↖↗ / ↙↘ -->
+      <div class="dir-grid">
+        <button class="dir-btn${currentDir===0?' active':''}" data-dir="0">↖</button>
+        <button class="dir-btn${currentDir===1?' active':''}" data-dir="1">↗</button>
+        <button class="dir-btn${currentDir===2?' active':''}" data-dir="2">↙</button>
+        <button class="dir-btn${currentDir===3?' active':''}" data-dir="3">↘</button>
+      </div>
+
+      <!-- 애니메이션 -->
+      <div style="display:flex;flex-direction:column;gap:0.4rem;width:100%;align-items:center">
+        <div class="anim-row">
+          <button class="anim-btn${currentAnim==='idle'?' active':''}" data-anim="idle">Idle</button>
+          <button class="anim-btn" data-anim="walk">Walk</button>
+          <button class="anim-btn" data-anim="jump">Jump</button>
+        </div>
+        <div class="anim-row">
+          <button class="anim-btn" data-anim="attack">Attack</button>
+          <button class="anim-btn" data-anim="dmg">Dmg</button>
+          <button class="anim-btn" data-anim="die">Die</button>
+        </div>
+        <div class="anim-row">
+          <button class="anim-btn" data-anim="skill_1">Skill 1</button>
+          <button class="anim-btn" data-anim="skill_2">Skill 2</button>
+          <button class="anim-btn" data-anim="skill_3">Skill 3</button>
+          <button class="anim-btn" data-anim="skill_4">Skill 4</button>
+        </div>
+      </div>
+
+      <div class="divider">Stats</div>
+      <div class="stats">${statHtml}</div>
+
+      <div class="divider">Ability</div>
+      <div class="ability">
+        <div class="ability-name">${char.ability.name}</div>
+        <div class="ability-desc">${char.ability.desc}</div>
+      </div>
+    </div>
+  `;
+
+  // 이벤트 바인딩
+  document.querySelectorAll('.dir-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentDir = parseInt(btn.dataset.dir);
+      currentFrame = 0;
+      document.querySelectorAll('.dir-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+
+  document.querySelectorAll('.anim-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.anim-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      resetAnim(btn.dataset.anim);
+    });
+  });
+
+  drawPlaceholder();
+  startAnim();
+}
+
+async function selectChar(char) {
+  currentChar = char;
+  ['idleLoop', 'idleStart', 'idleEnd', 'idleSpecial', 'walk', 'jump', 'attack', 'skill_1', 'skill_2', 'skill_3', 'skill_4', 'die', 'dmg'].forEach(k => delete images[k]);
+  resetAnim('idle');
+  renderSidebar();
+  renderMain(char);
+  await loadCharSprites(char);
+}
+
+// 탭 전환
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    currentTab = tab.dataset.tab;
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    currentChar = null;
+    document.getElementById('mainContent').innerHTML = `
+      <div class="empty-state">
+        <div class="em-icon">⚔</div>
+        <p>Select a character<br>from the codex</p>
+      </div>`;
+    renderSidebar();
+  });
+});
+
+// ── 초기화 ──
+async function init() {
+  try {
+    const res = await fetch('data/characters.json');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    JOBS = data.jobs || [];
+    PROFESSIONS = data.professions || [];
+  } catch (e) {
+    console.error('characters.json 로드 실패:', e);
+    document.getElementById('mainContent').innerHTML = `
+      <div class="empty-state">
+        <div class="em-icon">⚠</div>
+        <p>로컬 서버가 필요합니다<br><small style="font-size:0.7rem;letter-spacing:0.05em">python3 -m http.server 8000</small></p>
+      </div>`;
+  }
+  renderSidebar();
+}
+
+init();
+</script>
+</body>
+</html>
