@@ -482,15 +482,26 @@ function getSpriteCSS(item) {
   const s = atlasScale;
   const sw = w * s;
   const sh = h * s;
-  const ox = Math.floor((SPRITE_CONTAINER - sw) / 2);
-  const oy = Math.floor((SPRITE_CONTAINER - sh) / 2);
-  return { x, y, sw, sh, ox, oy, s, atlasW: atlas.w, atlasH: atlas.h, url: atlas.url };
+  // trimmed 스프라이트는 spriteSourceSize 오프셋으로 원본 위치 복원
+  // trim 없으면 sourceSize == frame size이므로 sss = {x:0, y:0}
+  const sss = frameData.spriteSourceSize || { x: 0, y: 0 };
+  const src = frameData.sourceSize || { w, h };
+  const containerW = src.w * s;
+  const containerH = src.h * s;
+  const ox = sss.x * s;
+  const oy = sss.y * s;
+  return { x, y, sw, sh, ox, oy, containerW, containerH, s, atlasW: atlas.w, atlasH: atlas.h, url: atlas.url };
 }
 
 // ── 스프라이트 DOM 생성 ──
 function makeSpriteDom(sp) {
   const wrap = document.createElement('div');
   wrap.className = 'item-sprite-wrap';
+  // 컨테이너를 sourceSize 기반으로, 40px보다 크면 40px로 clamp
+  const cw = Math.min(sp.containerW, SPRITE_CONTAINER);
+  const ch = Math.min(sp.containerH, SPRITE_CONTAINER);
+  wrap.style.width  = cw + 'px';
+  wrap.style.height = ch + 'px';
   const inner = document.createElement('div');
   inner.style.cssText = `
     position: absolute;
