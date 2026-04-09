@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NHH · Equipment</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap');
+
+  :root {
+    --bg: #0d0a08;
+    --surface: #16120e;
+    --surface2: #1e1810;
+    --border: #2e2418;
+    --border2: #3d3020;
+    --gold: #c9a84c;
+    --gold-dim: #7a6330;
+    --gold-faint: #3d3018;
+    --text: #e8dcc8;
+    --text-dim: #7a6e5e;
+    --slot-size: 52px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Crimson Pro', serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── 헤더 ── */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+
+  .back-btn {
+    background: transparent;
+    border: 1px solid var(--border2);
+    color: var(--gold-dim);
+    font-family: 'Crimson Pro', serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.7rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+  .back-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+  .header-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 0.9rem;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+  }
+
+  /* ── 바디 레이아웃 ── */
+  .body {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+  }
+
+  /* ── 장비 슬롯 패널 ── */
+  .eq-panel {
+    width: 220px;
+    flex-shrink: 0;
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 16px;
+    gap: 1rem;
+    overflow-y: auto;
+  }
+
+  .eq-panel-title {
+    font-size: 0.5rem;
+    letter-spacing: 0.25em;
+    color: var(--gold-dim);
+    text-transform: uppercase;
+    align-self: flex-start;
+  }
+
+  /* 슬롯 그리드: 3열 */
+  .slot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, var(--slot-size));
+    grid-template-rows: repeat(5, var(--slot-size));
+    gap: 6px;
+  }
+
+  /* 개별 슬롯 */
+  .slot {
+    width: var(--slot-size);
+    height: var(--slot-size);
+    border: 1px solid var(--border2);
+    background: var(--surface);
+    position: relative;
+    cursor: pointer;
+    transition: border-color 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slot:hover { border-color: var(--gold-dim); }
+  .slot.occupied { border-color: var(--gold-dim); background: var(--gold-faint); }
+  .slot.occupied:hover { border-color: var(--gold); }
+
+  .slot.locked {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .slot.empty-cell {
+    border: none;
+    background: transparent;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .slot-label {
+    position: absolute;
+    bottom: 2px; left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.38rem;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .slot.occupied .slot-label { color: var(--gold-dim); }
+
+  .slot-sprite {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
+
+  .slot-placeholder {
+    width: 24px;
+    height: 24px;
+    opacity: 0.15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+
+  /* 장착 캐릭터 표시 */
+  .equipped-char {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    font-size: 0.6rem;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  /* ── 아이템 목록 패널 ── */
+  .item-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* 필터 탭 */
+  .filter-row {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+
+  .filter-tab {
+    padding: 8px 14px;
+    background: transparent;
+    border: none;
+    border-right: 1px solid var(--border);
+    color: var(--text-dim);
+    font-family: 'Crimson Pro', serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .filter-tab:last-child { border-right: none; }
+  .filter-tab:hover { color: var(--text); background: var(--surface2); }
+  .filter-tab.active { color: var(--gold); background: var(--gold-faint); }
+
+  /* 검색 */
+  .search-wrap {
+    padding: 8px 14px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+
+  .search-input {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border2);
+    color: var(--text);
+    font-family: 'Crimson Pro', serif;
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  .search-input:focus { border-color: var(--gold-dim); }
+  .search-input::placeholder { color: var(--text-dim); }
+
+  /* 아이템 목록 */
+  .item-list {
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  .item-list::-webkit-scrollbar { width: 3px; }
+  .item-list::-webkit-scrollbar-track { background: transparent; }
+  .item-list::-webkit-scrollbar-thumb { background: var(--border2); }
+
+  .item-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 14px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.1s;
+  }
+
+  .item-row:hover { background: var(--surface2); }
+
+  .item-row.is-equipped {
+    background: var(--gold-faint);
+    border-bottom-color: var(--gold-dim);
+  }
+
+  .item-row.is-equipped:hover { background: #4a3a1a; }
+
+  /* 아이템 스프라이트 셀 */
+  .item-sprite-wrap {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    image-rendering: pixelated;
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+
+  .item-sprite-wrap img {
+    position: absolute;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
+
+  .item-sprite-placeholder {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    opacity: 0.25;
+    flex-shrink: 0;
+  }
+
+  .item-info { flex: 1; min-width: 0; }
+
+  .item-name-kr {
+    font-size: 0.82rem;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .item-row.is-equipped .item-name-kr { color: var(--gold); }
+
+  .item-name-en {
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: italic;
+  }
+
+  .item-badges { display: flex; gap: 4px; margin-top: 2px; }
+
+  .item-badge {
+    font-size: 0.42rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 1px 5px;
+    border: 1px solid var(--border2);
+    color: var(--text-dim);
+  }
+
+  .item-badge.two-hand { border-color: var(--gold-dim); color: var(--gold-dim); }
+  .item-badge.equipped-badge { border-color: var(--gold); color: var(--gold); }
+
+  .item-count {
+    font-size: 0.55rem;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+    flex-shrink: 0;
+  }
+
+  /* 빈 상태 */
+  .empty-msg {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    font-style: italic;
+    padding: 3rem 1rem;
+  }
+
+  /* 반응형 */
+  @media (max-width: 600px) {
+    .eq-panel { width: 180px; padding: 12px 10px; }
+    :root { --slot-size: 44px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html" class="back-btn">← Codex</a>
+  <div class="header-title">Equipment</div>
+</div>
+
+<div class="body">
+
+  <!-- 장비 슬롯 패널 -->
+  <aside class="eq-panel">
+    <div class="eq-panel-title">Equipped</div>
+    <div class="slot-grid" id="slotGrid"></div>
+  </aside>
+
+  <!-- 아이템 목록 패널 -->
+  <section class="item-panel">
+    <div class="filter-row" id="filterRow"></div>
+    <div class="search-wrap">
+      <input class="search-input" id="searchInput" type="text" placeholder="Search items...">
+    </div>
+    <div class="item-list" id="itemList"></div>
+  </section>
+
+</div>
+
+<script>
+// ── 상수 ──
+const TWO_HANDED = new Set(['GreatSword', 'GreatAxe', 'Bow']);
+
+const SLOT_LABEL = {
+  main_hand: 'Main Hand', off_hand: 'Off Hand',
+  head: 'Head', body: 'Body', legs: 'Legs',
+  feet: 'Feet', hands: 'Hands', back: 'Back',
+  belt: 'Belt', ring_1: 'Ring', ring_2: 'Ring',
+  earring: 'Earring', necklace: 'Necklace',
+};
+
+const SLOT_ICON = {
+  main_hand: '⚔', off_hand: '🛡',
+  head: '👑', body: '🧥', legs: '👖',
+  feet: '👢', hands: '🧤', back: '🧣',
+  belt: '📿', ring_1: '💍', ring_2: '💍',
+  earring: '✨', necklace: '📿',
+};
+
+// 슬롯 그리드 레이아웃 (행, 열, 슬롯ID)
+// 3열 × 5행
+const SLOT_LAYOUT = [
+  ['', 'head', ''],
+  ['back', 'body', 'necklace'],
+  ['ring_1', 'legs', 'ring_2'],
+  ['earring', 'feet', 'belt'],
+  ['main_hand', 'hands', 'off_hand'],
+];
+
+// sub_category → slot
+const SUB_TO_SLOT = {
+  // Main Hand (Weapon)
+  Sword: 'main_hand', Dagger: 'main_hand', Wand: 'main_hand',
+  Staff: 'main_hand', Spear: 'main_hand', Flail: 'main_hand',
+  HandAxe: 'main_hand', GreatAxe: 'main_hand', GreatSword: 'main_hand',
+  Bow: 'main_hand',
+  // Main Hand (Tool / lowercase weapon)
+  Axe: 'main_hand', Hammer: 'main_hand', Hoe: 'main_hand',
+  Pickaxe: 'main_hand', Shovel: 'main_hand', 'Watering Can': 'main_hand',
+  'Fishing Rod': 'main_hand', 'Claw Trap': 'main_hand',
+  'Box Trap': 'main_hand', 'Bug Net': 'main_hand', 'Fishing Trap': 'main_hand',
+  // Off Hand
+  Buckler: 'off_hand', Shield: 'off_hand', Arrow: 'off_hand',
+  // Armor
+  Hat: 'head', Top: 'body', Bottom: 'legs',
+  Boots: 'feet', Gloves: 'hands', Cloak: 'back',
+  // Accessory
+  Belt: 'belt', Ring: 'ring', Earring: 'earring', Necklace: 'necklace',
+};
+
+const FILTER_DEFS = [
+  { key: 'all',        label: 'All' },
+  { key: 'Weapon',     label: 'Weapon' },
+  { key: 'weapon',     label: 'Tool' },
+  { key: 'Armor',      label: 'Armor' },
+  { key: 'Accessory',  label: 'Accessory' },
+  { key: 'Ammunition', label: 'Ammo' },
+];
+
+// ── 상태 ──
+let items = [];
+let weaponFrames = {};
+let weaponAtlasW = 0, weaponAtlasH = 0;
+let atlasScale = 5; // 8px → 40px (×5)
+
+const equipped = {
+  main_hand: null, off_hand: null,
+  head: null, body: null, legs: null,
+  feet: null, hands: null, back: null,
+  belt: null, ring_1: null, ring_2: null,
+  earring: null, necklace: null,
+};
+
+let currentFilter = 'all';
+let searchQuery = '';
+
+// ── CSV 파서 ──
+function parseCSV(text) {
+  const lines = text.trim().split('\n');
+  const headers = lines[0].split(',').map(h => h.trim());
+  return lines.slice(1).map(line => {
+    const vals = line.split(',');
+    const obj = {};
+    headers.forEach((h, i) => { obj[h] = (vals[i] || '').trim(); });
+    return obj;
+  });
+}
+
+// ── 스프라이트 스타일 ──
+function getSpriteCSS(itemId) {
+  const key = itemId + '.png';
+  const frame = weaponFrames[key];
+  if (!frame) return null;
+  const { x, y } = frame.frame;
+  const s = atlasScale;
+  return {
+    left: `${-x * s}px`,
+    top:  `${-y * s}px`,
+    width: `${weaponAtlasW * s}px`,
+    height: `${weaponAtlasH * s}px`,
+  };
+}
+
+// ── 슬롯 렌더 ──
+function renderSlots() {
+  const grid = document.getElementById('slotGrid');
+  grid.innerHTML = '';
+
+  const isOffHandLocked = (() => {
+    const item = equipped.main_hand;
+    return item && TWO_HANDED.has(item.Sub_Category);
+  })();
+
+  SLOT_LAYOUT.forEach(row => {
+    row.forEach(slotId => {
+      const cell = document.createElement('div');
+
+      if (!slotId) {
+        cell.className = 'slot empty-cell';
+        grid.appendChild(cell);
+        return;
+      }
+
+      const item = equipped[slotId];
+      const isLocked = slotId === 'off_hand' && isOffHandLocked;
+
+      cell.className = 'slot' + (item ? ' occupied' : '') + (isLocked ? ' locked' : '');
+      cell.dataset.slot = slotId;
+
+      if (item) {
+        const css = getSpriteCSS(item.ID);
+        if (css) {
+          const wrap = document.createElement('div');
+          wrap.className = 'item-sprite-wrap';
+          wrap.style.width = '40px';
+          wrap.style.height = '40px';
+          wrap.style.border = 'none';
+          wrap.style.background = 'transparent';
+          const img = document.createElement('img');
+          img.src = 'assets/item/weapon/weapons.png';
+          Object.assign(img.style, css);
+          wrap.appendChild(img);
+          cell.appendChild(wrap);
+        } else {
+          const ph = document.createElement('div');
+          ph.className = 'slot-placeholder';
+          ph.textContent = SLOT_ICON[slotId] || '?';
+          cell.appendChild(ph);
+        }
+      } else {
+        const ph = document.createElement('div');
+        ph.className = 'slot-placeholder';
+        ph.textContent = SLOT_ICON[slotId] || '?';
+        cell.appendChild(ph);
+      }
+
+      const label = document.createElement('div');
+      label.className = 'slot-label';
+      label.textContent = SLOT_LABEL[slotId] || slotId;
+      cell.appendChild(label);
+
+      cell.addEventListener('click', () => {
+        if (item) unequipSlot(slotId);
+      });
+
+      grid.appendChild(cell);
+    });
+  });
+}
+
+// ── 아이템 목록 렌더 ──
+function renderItemList() {
+  const list = document.getElementById('itemList');
+  const q = searchQuery.toLowerCase();
+
+  let filtered = items.filter(item => {
+    if (currentFilter !== 'all' && item.Category !== currentFilter) return false;
+    if (q && !item.Name_KR.includes(q) && !item.Name_EN.toLowerCase().includes(q) && !item.ID.includes(q)) return false;
+    return true;
+  });
+
+  if (filtered.length === 0) {
+    list.innerHTML = '<div class="empty-msg">No items found.</div>';
+    return;
+  }
+
+  const equippedIds = new Set(Object.values(equipped).filter(Boolean).map(i => i.ID));
+
+  list.innerHTML = '';
+  filtered.forEach(item => {
+    const isEquipped = equippedIds.has(item.ID);
+    const isTwoHanded = TWO_HANDED.has(item.Sub_Category);
+    const css = getSpriteCSS(item.ID);
+
+    const row = document.createElement('div');
+    row.className = 'item-row' + (isEquipped ? ' is-equipped' : '');
+    row.dataset.id = item.ID;
+
+    // 스프라이트
+    if (css) {
+      const wrap = document.createElement('div');
+      wrap.className = 'item-sprite-wrap';
+      const img = document.createElement('img');
+      img.src = 'assets/item/weapon/weapons.png';
+      Object.assign(img.style, css);
+      wrap.appendChild(img);
+      row.appendChild(wrap);
+    } else {
+      const ph = document.createElement('div');
+      ph.className = 'item-sprite-placeholder';
+      ph.textContent = SLOT_ICON[SUB_TO_SLOT[item.Sub_Category]] || '📦';
+      row.appendChild(ph);
+    }
+
+    // 정보
+    const info = document.createElement('div');
+    info.className = 'item-info';
+    info.innerHTML = `
+      <div class="item-name-kr">${item.Name_KR}</div>
+      <div class="item-name-en">${item.Name_EN}</div>
+      <div class="item-badges">
+        <span class="item-badge">${item.Sub_Category}</span>
+        ${isTwoHanded ? '<span class="item-badge two-hand">2H</span>' : ''}
+        ${isEquipped ? '<span class="item-badge equipped-badge">Equipped</span>' : ''}
+      </div>
+    `;
+    row.appendChild(info);
+
+    row.addEventListener('click', () => handleItemClick(item));
+    list.appendChild(row);
+  });
+}
+
+// ── 장착 로직 ──
+function handleItemClick(item) {
+  const equippedIds = Object.entries(equipped).filter(([, v]) => v?.ID === item.ID);
+
+  // 이미 장착 중이면 해제
+  if (equippedIds.length > 0) {
+    equippedIds.forEach(([slot]) => { equipped[slot] = null; });
+    renderSlots();
+    renderItemList();
+    return;
+  }
+
+  const subCat = item.Sub_Category;
+  const baseSlot = SUB_TO_SLOT[subCat];
+  if (!baseSlot) return;
+
+  // Ring은 ring_1 → ring_2 순서로 채움
+  if (baseSlot === 'ring') {
+    if (!equipped.ring_1) equipped.ring_1 = item;
+    else if (!equipped.ring_2) equipped.ring_2 = item;
+    else equipped.ring_1 = item; // 꽉 차면 ring_1 교체
+    renderSlots();
+    renderItemList();
+    return;
+  }
+
+  // 양손 무기 장착
+  if (TWO_HANDED.has(subCat)) {
+    equipped.main_hand = item;
+    equipped.off_hand = null; // off_hand 비움
+    renderSlots();
+    renderItemList();
+    return;
+  }
+
+  // off_hand 장착 시 양손 무기가 있으면 차단
+  if (baseSlot === 'off_hand') {
+    const mh = equipped.main_hand;
+    if (mh && TWO_HANDED.has(mh.Sub_Category)) return;
+  }
+
+  equipped[baseSlot] = item;
+  renderSlots();
+  renderItemList();
+}
+
+function unequipSlot(slotId) {
+  equipped[slotId] = null;
+  // off_hand 해제 시 양손 잠금도 풀림 (main_hand는 그대로)
+  renderSlots();
+  renderItemList();
+}
+
+// ── 필터 탭 렌더 ──
+function renderFilterTabs() {
+  const row = document.getElementById('filterRow');
+  row.innerHTML = '';
+  FILTER_DEFS.forEach(({ key, label }) => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-tab' + (currentFilter === key ? ' active' : '');
+    btn.textContent = label;
+    btn.addEventListener('click', () => {
+      currentFilter = key;
+      renderFilterTabs();
+      renderItemList();
+    });
+    row.appendChild(btn);
+  });
+}
+
+// ── 초기화 ──
+async function init() {
+  // 1. weapons.json 로드
+  const [wjRes, wImg] = await Promise.all([
+    fetch('assets/item/weapon/weapons.json').then(r => r.json()),
+    new Promise(resolve => {
+      const img = new Image();
+      img.onload = () => resolve(img);
+      img.onerror = () => resolve(null);
+      img.src = 'assets/item/weapon/weapons.png';
+    }),
+  ]);
+
+  weaponFrames = wjRes.frames || {};
+  if (wImg) {
+    weaponAtlasW = wImg.naturalWidth;
+    weaponAtlasH = wImg.naturalHeight;
+  }
+
+  // 2. item_db CSV 로드
+  const csvText = await fetch('data/csv/item_db - Item_Table.csv').then(r => r.text());
+  const allItems = parseCSV(csvText);
+
+  // 장비 가능한 아이템만 (Weapon, weapon, Armor, Accessory, Ammunition)
+  const EQUIP_CATS = new Set(['Weapon', 'weapon', 'Armor', 'Accessory', 'Ammunition']);
+  items = allItems.filter(i => EQUIP_CATS.has(i.Category));
+
+  // 3. UI 렌더
+  renderFilterTabs();
+  renderSlots();
+  renderItemList();
+
+  // 4. 검색
+  document.getElementById('searchInput').addEventListener('input', e => {
+    searchQuery = e.target.value;
+    renderItemList();
+  });
+}
+
+init().catch(err => {
+  document.getElementById('itemList').innerHTML =
+    '<div class="empty-msg">로컬 서버가 필요합니다<br><small>python3 -m http.server 8000</small></div>';
+  console.error(err);
+});
+</script>
+</body>
+</html>
