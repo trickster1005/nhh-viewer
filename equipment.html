@@ -693,7 +693,7 @@ async function init() {
   }
 
   // 2. item_db CSV 로드
-  const csvText = await fetch('data/csv/item_db - Item_Table.csv').then(r => r.text());
+  const csvText = await fetch('data/csv/item_db%20-%20Item_Table.csv').then(r => r.text());
   const allItems = parseCSV(csvText);
 
   // 장비 가능한 아이템만 (Weapon, weapon, Armor, Accessory, Ammunition)
