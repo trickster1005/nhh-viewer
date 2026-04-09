@@ -677,7 +677,7 @@ function renderFilterTabs() {
 async function init() {
   // 1. weapons.json 로드
   const [wjRes, wImg] = await Promise.all([
-    fetch('assets/item/weapon/weapons.json').then(r => r.json()),
+    fetch('assets/item/weapon/weapons.json').then(r => { if (!r.ok) throw new Error(`weapons.json ${r.status}`); return r.json(); }),
     new Promise(resolve => {
       const img = new Image();
       img.onload = () => resolve(img);
@@ -693,7 +693,7 @@ async function init() {
   }
 
   // 2. item_db CSV 로드
-  const csvText = await fetch('data/csv/item_db%20-%20Item_Table.csv').then(r => r.text());
+  const csvText = await fetch('data/csv/item_db%20-%20Item_Table.csv').then(r => { if (!r.ok) throw new Error(`CSV ${r.status}: ${r.url}`); return r.text(); });
   const allItems = parseCSV(csvText);
 
   // 장비 가능한 아이템만 (Weapon, weapon, Armor, Accessory, Ammunition)
@@ -714,7 +714,7 @@ async function init() {
 
 init().catch(err => {
   document.getElementById('itemList').innerHTML =
-    '<div class="empty-msg">로컬 서버가 필요합니다<br><small>python3 -m http.server 8000</small></div>';
+    `<div class="empty-msg">로드 실패<br><small style="font-size:0.65rem;word-break:break-all">${err.message}</small></div>`;
   console.error(err);
 });
 </script>
