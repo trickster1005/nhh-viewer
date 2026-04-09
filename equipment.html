@@ -371,7 +371,7 @@
 
 <script>
 // ── 상수 ──
-const TWO_HANDED = new Set(['GreatSword', 'GreatAxe', 'Bow']);
+const TWO_HANDED = new Set(['GreatSword', 'GreatAxe', 'Bow', 'Staff', 'GreatFlail', 'GreatBow', 'DuelDagger', 'DuelAxe', 'DuelFlail', 'Pike']);
 
 const SLOT_LABEL = {
   main_hand: 'Main Hand', off_hand: 'Off Hand',
@@ -405,7 +405,9 @@ const SUB_TO_SLOT = {
   Sword: 'main_hand', Dagger: 'main_hand', Wand: 'main_hand',
   Staff: 'main_hand', Spear: 'main_hand', Flail: 'main_hand',
   HandAxe: 'main_hand', GreatAxe: 'main_hand', GreatSword: 'main_hand',
-  Bow: 'main_hand',
+  Bow: 'main_hand', GreatFlail: 'main_hand', GreatBow: 'main_hand',
+  DuelDagger: 'main_hand', DuelAxe: 'main_hand', DuelFlail: 'main_hand',
+  Pike: 'main_hand', Gauntlet: 'main_hand',
   // Main Hand (Tool / lowercase weapon)
   Axe: 'main_hand', Hammer: 'main_hand', Hoe: 'main_hand',
   Pickaxe: 'main_hand', Shovel: 'main_hand', 'Watering Can': 'main_hand',
@@ -431,7 +433,8 @@ const FILTER_DEFS = [
 
 // ── 아틀라스 정의 ──
 const ATLAS_DEFS = {
-  'weapons.png': { json: 'assets/item/weapon/weapons.json', png: 'assets/item/weapon/weapons.png' },
+  'weapons.png':  { json: 'assets/item/weapon/weapons.json',  png: 'assets/item/weapon/weapons.png'  },
+  'weapons2.png': { json: 'assets/item/weapon/weapons2.json', png: 'assets/item/weapon/weapons2.png' },
   'tools.png':   { json: 'assets/item/tool/tools.json',     png: 'assets/item/tool/tools.png'     },
   'acc.png':     { json: 'assets/item/accessory/acc.json',  png: 'assets/item/accessory/acc.png'  },
   'armor1.png':  { json: 'assets/item/armor/armor1.json',   png: 'assets/item/armor/armor1.png'   },
