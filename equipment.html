@@ -459,18 +459,42 @@ function parseCSV(text) {
 }
 
 // ── 스프라이트 스타일 ──
+// 컨테이너 크기(px) 안에 실제 w×h 스프라이트를 중앙 정렬
+const SPRITE_CONTAINER = 40;
+
 function getSpriteCSS(itemId) {
   const key = itemId + '.png';
   const frame = weaponFrames[key];
   if (!frame) return null;
-  const { x, y } = frame.frame;
+  const { x, y, w, h } = frame.frame;
   const s = atlasScale;
-  return {
-    left: `${-x * s}px`,
-    top:  `${-y * s}px`,
-    width: `${weaponAtlasW * s}px`,
-    height: `${weaponAtlasH * s}px`,
-  };
+  const sw = w * s;
+  const sh = h * s;
+  const ox = Math.floor((SPRITE_CONTAINER - sw) / 2);
+  const oy = Math.floor((SPRITE_CONTAINER - sh) / 2);
+  return { x, y, w, h, sw, sh, ox, oy, s };
+}
+
+// ── 스프라이트 DOM 생성 ──
+function makeSpriteDom(sp) {
+  const wrap = document.createElement('div');
+  wrap.className = 'item-sprite-wrap';
+  // 실제 스프라이트 크기로 내부 div 생성 후 중앙 정렬
+  const inner = document.createElement('div');
+  inner.style.cssText = `
+    position: absolute;
+    left: ${sp.ox}px;
+    top: ${sp.oy}px;
+    width: ${sp.sw}px;
+    height: ${sp.sh}px;
+    background-image: url('assets/item/weapon/weapons.png');
+    background-size: ${weaponAtlasW * sp.s}px ${weaponAtlasH * sp.s}px;
+    background-position: -${sp.x * sp.s}px -${sp.y * sp.s}px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  `;
+  wrap.appendChild(inner);
+  return wrap;
 }
 
 // ── 슬롯 렌더 ──
@@ -500,19 +524,9 @@ function renderSlots() {
       cell.dataset.slot = slotId;
 
       if (item) {
-        const css = getSpriteCSS(item.ID);
-        if (css) {
-          const wrap = document.createElement('div');
-          wrap.className = 'item-sprite-wrap';
-          wrap.style.width = '40px';
-          wrap.style.height = '40px';
-          wrap.style.border = 'none';
-          wrap.style.background = 'transparent';
-          const img = document.createElement('img');
-          img.src = 'assets/item/weapon/weapons.png';
-          Object.assign(img.style, css);
-          wrap.appendChild(img);
-          cell.appendChild(wrap);
+        const sp = getSpriteCSS(item.ID);
+        if (sp) {
+          cell.appendChild(makeSpriteDom(sp));
         } else {
           const ph = document.createElement('div');
           ph.className = 'slot-placeholder';
@@ -562,21 +576,15 @@ function renderItemList() {
   filtered.forEach(item => {
     const isEquipped = equippedIds.has(item.ID);
     const isTwoHanded = TWO_HANDED.has(item.Sub_Category);
-    const css = getSpriteCSS(item.ID);
+    const sp = getSpriteCSS(item.ID);
 
     const row = document.createElement('div');
     row.className = 'item-row' + (isEquipped ? ' is-equipped' : '');
     row.dataset.id = item.ID;
 
     // 스프라이트
-    if (css) {
-      const wrap = document.createElement('div');
-      wrap.className = 'item-sprite-wrap';
-      const img = document.createElement('img');
-      img.src = 'assets/item/weapon/weapons.png';
-      Object.assign(img.style, css);
-      wrap.appendChild(img);
-      row.appendChild(wrap);
+    if (sp) {
+      row.appendChild(makeSpriteDom(sp));
     } else {
       const ph = document.createElement('div');
       ph.className = 'item-sprite-placeholder';
