@@ -429,11 +429,21 @@ const FILTER_DEFS = [
   { key: 'Ammunition', label: 'Ammo' },
 ];
 
+// ── 아틀라스 정의 ──
+const ATLAS_DEFS = {
+  'weapons.png': { json: 'assets/item/weapon/weapons.json', png: 'assets/item/weapon/weapons.png' },
+  'tools.png':   { json: 'assets/item/tool/tools.json',     png: 'assets/item/tool/tools.png'     },
+  'acc.png':     { json: 'assets/item/accessory/acc.json',  png: 'assets/item/accessory/acc.png'  },
+  'armor1.png':  { json: 'assets/item/armor/armor1.json',   png: 'assets/item/armor/armor1.png'   },
+  'armor2.png':  { json: 'assets/item/armor/armor2.json',   png: 'assets/item/armor/armor2.png'   },
+  'arrow.png':   { json: 'assets/item/arrow/arrow.json',    png: 'assets/item/arrow/arrow.png'    },
+};
+
 // ── 상태 ──
 let items = [];
-let weaponFrames = {};
-let weaponAtlasW = 0, weaponAtlasH = 0;
-let atlasScale = 5; // 8px → 40px (×5)
+// atlases[atlasName] = { frames, w, h, url }
+const atlases = {};
+const atlasScale = 5; // 8px → 40px (×5)
 
 const equipped = {
   main_hand: null, off_hand: null,
@@ -459,27 +469,28 @@ function parseCSV(text) {
 }
 
 // ── 스프라이트 스타일 ──
-// 컨테이너 크기(px) 안에 실제 w×h 스프라이트를 중앙 정렬
 const SPRITE_CONTAINER = 40;
 
-function getSpriteCSS(itemId) {
-  const key = itemId + '.png';
-  const frame = weaponFrames[key];
-  if (!frame) return null;
-  const { x, y, w, h } = frame.frame;
+function getSpriteCSS(item) {
+  const atlasName = item.Atlas_Name;
+  const atlas = atlases[atlasName];
+  if (!atlas) return null;
+  const key = item.ID + '.png';
+  const frameData = atlas.frames[key];
+  if (!frameData) return null;
+  const { x, y, w, h } = frameData.frame;
   const s = atlasScale;
   const sw = w * s;
   const sh = h * s;
   const ox = Math.floor((SPRITE_CONTAINER - sw) / 2);
   const oy = Math.floor((SPRITE_CONTAINER - sh) / 2);
-  return { x, y, w, h, sw, sh, ox, oy, s };
+  return { x, y, sw, sh, ox, oy, s, atlasW: atlas.w, atlasH: atlas.h, url: atlas.url };
 }
 
 // ── 스프라이트 DOM 생성 ──
 function makeSpriteDom(sp) {
   const wrap = document.createElement('div');
   wrap.className = 'item-sprite-wrap';
-  // 실제 스프라이트 크기로 내부 div 생성 후 중앙 정렬
   const inner = document.createElement('div');
   inner.style.cssText = `
     position: absolute;
@@ -487,8 +498,8 @@ function makeSpriteDom(sp) {
     top: ${sp.oy}px;
     width: ${sp.sw}px;
     height: ${sp.sh}px;
-    background-image: url('assets/item/weapon/weapons.png');
-    background-size: ${weaponAtlasW * sp.s}px ${weaponAtlasH * sp.s}px;
+    background-image: url('${sp.url}');
+    background-size: ${sp.atlasW * sp.s}px ${sp.atlasH * sp.s}px;
     background-position: -${sp.x * sp.s}px -${sp.y * sp.s}px;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
@@ -524,7 +535,7 @@ function renderSlots() {
       cell.dataset.slot = slotId;
 
       if (item) {
-        const sp = getSpriteCSS(item.ID);
+        const sp = getSpriteCSS(item);
         if (sp) {
           cell.appendChild(makeSpriteDom(sp));
         } else {
@@ -576,7 +587,7 @@ function renderItemList() {
   filtered.forEach(item => {
     const isEquipped = equippedIds.has(item.ID);
     const isTwoHanded = TWO_HANDED.has(item.Sub_Category);
-    const sp = getSpriteCSS(item.ID);
+    const sp = getSpriteCSS(item);
 
     const row = document.createElement('div');
     row.className = 'item-row' + (isEquipped ? ' is-equipped' : '');
@@ -683,22 +694,24 @@ function renderFilterTabs() {
 
 // ── 초기화 ──
 async function init() {
-  // 1. weapons.json 로드
-  const [wjRes, wImg] = await Promise.all([
-    fetch('assets/item/weapon/weapons.json').then(r => { if (!r.ok) throw new Error(`weapons.json ${r.status}`); return r.json(); }),
-    new Promise(resolve => {
-      const img = new Image();
-      img.onload = () => resolve(img);
-      img.onerror = () => resolve(null);
-      img.src = 'assets/item/weapon/weapons.png';
-    }),
-  ]);
-
-  weaponFrames = wjRes.frames || {};
-  if (wImg) {
-    weaponAtlasW = wImg.naturalWidth;
-    weaponAtlasH = wImg.naturalHeight;
-  }
+  // 1. 모든 아틀라스 병렬 로드
+  await Promise.all(Object.entries(ATLAS_DEFS).map(async ([name, def]) => {
+    const [json, img] = await Promise.all([
+      fetch(def.json).then(r => { if (!r.ok) throw new Error(`${def.json} ${r.status}`); return r.json(); }),
+      new Promise(resolve => {
+        const img = new Image();
+        img.onload = () => resolve(img);
+        img.onerror = () => resolve(null);
+        img.src = def.png;
+      }),
+    ]);
+    atlases[name] = {
+      frames: json.frames || {},
+      w: img?.naturalWidth ?? 0,
+      h: img?.naturalHeight ?? 0,
+      url: def.png,
+    };
+  }));
 
   // 2. item_db CSV 로드
   const csvText = await fetch('data/csv/item_db.csv').then(r => { if (!r.ok) throw new Error(`CSV ${r.status}: ${r.url}`); return r.text(); });
