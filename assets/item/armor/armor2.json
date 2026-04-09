@@ -168,10 +168,154 @@
         "y": 0.5
       }
     },
-    "ar_glo_tin_topaz.png": {
+    "ar_glo_willow_topaz.png": {
       "frame": {
         "x": 8,
         "y": 16,
+        "w": 8,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 8,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_willow_ruby.png": {
+      "frame": {
+        "x": 16,
+        "y": 16,
+        "w": 8,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 8,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_willow_emerald.png": {
+      "frame": {
+        "x": 24,
+        "y": 0,
+        "w": 8,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 8,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_willow_diamond.png": {
+      "frame": {
+        "x": 24,
+        "y": 6,
+        "w": 8,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 8,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_willow_amethyst.png": {
+      "frame": {
+        "x": 24,
+        "y": 12,
+        "w": 8,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 8,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_willow.png": {
+      "frame": {
+        "x": 24,
+        "y": 18,
+        "w": 8,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 8,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_tin_topaz.png": {
+      "frame": {
+        "x": 0,
+        "y": 24,
         "w": 8,
         "h": 8
       },
@@ -194,8 +338,8 @@
     },
     "ar_glo_tin_ruby.png": {
       "frame": {
-        "x": 16,
-        "y": 16,
+        "x": 8,
+        "y": 24,
         "w": 8,
         "h": 8
       },
@@ -218,8 +362,8 @@
     },
     "ar_glo_tin_emerald.png": {
       "frame": {
-        "x": 24,
-        "y": 0,
+        "x": 16,
+        "y": 22,
         "w": 8,
         "h": 8
       },
@@ -243,7 +387,7 @@
     "ar_glo_tin_diamond.png": {
       "frame": {
         "x": 24,
-        "y": 8,
+        "y": 24,
         "w": 8,
         "h": 8
       },
@@ -266,8 +410,8 @@
     },
     "ar_glo_tin_amethyst.png": {
       "frame": {
-        "x": 24,
-        "y": 16,
+        "x": 32,
+        "y": 0,
         "w": 8,
         "h": 8
       },
@@ -290,8 +434,8 @@
     },
     "ar_glo_tin.png": {
       "frame": {
-        "x": 0,
-        "y": 24,
+        "x": 32,
+        "y": 8,
         "w": 8,
         "h": 8
       },
@@ -314,18 +458,18 @@
     },
     "ar_glo_silver_topaz.png": {
       "frame": {
-        "x": 8,
-        "y": 24,
+        "x": 32,
+        "y": 16,
         "w": 8,
-        "h": 6
+        "h": 8
       },
       "rotated": false,
-      "trimmed": true,
+      "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
-        "y": 1,
+        "y": 0,
         "w": 8,
-        "h": 6
+        "h": 8
       },
       "sourceSize": {
         "w": 8,
@@ -338,18 +482,18 @@
     },
     "ar_glo_silver_ruby.png": {
       "frame": {
-        "x": 16,
+        "x": 32,
         "y": 24,
         "w": 8,
-        "h": 6
+        "h": 8
       },
       "rotated": false,
-      "trimmed": true,
+      "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
-        "y": 1,
+        "y": 0,
         "w": 8,
-        "h": 6
+        "h": 8
       },
       "sourceSize": {
         "w": 8,
@@ -362,18 +506,18 @@
     },
     "ar_glo_silver_emerald.png": {
       "frame": {
-        "x": 24,
-        "y": 24,
+        "x": 16,
+        "y": 30,
         "w": 8,
-        "h": 6
+        "h": 8
       },
       "rotated": false,
-      "trimmed": true,
+      "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
-        "y": 1,
+        "y": 0,
         "w": 8,
-        "h": 6
+        "h": 8
       },
       "sourceSize": {
         "w": 8,
@@ -385,126 +529,6 @@
       }
     },
     "ar_glo_silver_diamond.png": {
-      "frame": {
-        "x": 32,
-        "y": 0,
-        "w": 8,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 8,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_silver_amethyst.png": {
-      "frame": {
-        "x": 32,
-        "y": 6,
-        "w": 8,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 8,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_silver.png": {
-      "frame": {
-        "x": 32,
-        "y": 12,
-        "w": 8,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 8,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_ramie_topaz.png": {
-      "frame": {
-        "x": 32,
-        "y": 18,
-        "w": 8,
-        "h": 8
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_ramie_ruby.png": {
-      "frame": {
-        "x": 32,
-        "y": 26,
-        "w": 8,
-        "h": 8
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_ramie_emerald.png": {
       "frame": {
         "x": 0,
         "y": 32,
@@ -528,58 +552,34 @@
         "y": 0.5
       }
     },
-    "ar_glo_ramie_diamond.png": {
-      "frame": {
-        "x": 8,
-        "y": 30,
-        "w": 8,
-        "h": 8
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_ramie_amethyst.png": {
-      "frame": {
-        "x": 16,
-        "y": 30,
-        "w": 8,
-        "h": 8
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_ramie.png": {
+    "ar_glo_silver_amethyst.png": {
       "frame": {
         "x": 24,
-        "y": 30,
+        "y": 32,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_silver.png": {
+      "frame": {
+        "x": 8,
+        "y": 32,
         "w": 8,
         "h": 8
       },
@@ -602,8 +602,8 @@
     },
     "ar_glo_rabbit_topaz.png": {
       "frame": {
-        "x": 40,
-        "y": 0,
+        "x": 32,
+        "y": 32,
         "w": 8,
         "h": 8
       },
@@ -627,7 +627,7 @@
     "ar_glo_rabbit_ruby.png": {
       "frame": {
         "x": 40,
-        "y": 8,
+        "y": 0,
         "w": 8,
         "h": 8
       },
@@ -651,7 +651,7 @@
     "ar_glo_rabbit_emerald.png": {
       "frame": {
         "x": 40,
-        "y": 16,
+        "y": 8,
         "w": 8,
         "h": 8
       },
@@ -675,7 +675,7 @@
     "ar_glo_rabbit_diamond.png": {
       "frame": {
         "x": 40,
-        "y": 24,
+        "y": 16,
         "w": 8,
         "h": 8
       },
@@ -699,7 +699,7 @@
     "ar_glo_rabbit_amethyst.png": {
       "frame": {
         "x": 40,
-        "y": 32,
+        "y": 24,
         "w": 8,
         "h": 8
       },
@@ -722,8 +722,8 @@
     },
     "ar_glo_rabbit.png": {
       "frame": {
-        "x": 32,
-        "y": 34,
+        "x": 40,
+        "y": 32,
         "w": 8,
         "h": 8
       },
@@ -746,18 +746,18 @@
     },
     "ar_glo_pine_topaz.png": {
       "frame": {
-        "x": 0,
-        "y": 40,
+        "x": 16,
+        "y": 38,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "rotated": false,
-      "trimmed": false,
+      "trimmed": true,
       "spriteSourceSize": {
         "x": 0,
-        "y": 0,
+        "y": 1,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "sourceSize": {
         "w": 8,
@@ -770,18 +770,18 @@
     },
     "ar_glo_pine_ruby.png": {
       "frame": {
-        "x": 40,
+        "x": 0,
         "y": 40,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "rotated": false,
-      "trimmed": false,
+      "trimmed": true,
       "spriteSourceSize": {
         "x": 0,
-        "y": 0,
+        "y": 1,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "sourceSize": {
         "w": 8,
@@ -794,18 +794,18 @@
     },
     "ar_glo_pine_emerald.png": {
       "frame": {
-        "x": 8,
-        "y": 38,
+        "x": 24,
+        "y": 40,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "rotated": false,
-      "trimmed": false,
+      "trimmed": true,
       "spriteSourceSize": {
         "x": 0,
-        "y": 0,
+        "y": 1,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "sourceSize": {
         "w": 8,
@@ -818,18 +818,18 @@
     },
     "ar_glo_pine_diamond.png": {
       "frame": {
-        "x": 16,
-        "y": 38,
+        "x": 8,
+        "y": 40,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "rotated": false,
-      "trimmed": false,
+      "trimmed": true,
       "spriteSourceSize": {
         "x": 0,
-        "y": 0,
+        "y": 1,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "sourceSize": {
         "w": 8,
@@ -842,18 +842,18 @@
     },
     "ar_glo_pine_amethyst.png": {
       "frame": {
-        "x": 24,
-        "y": 38,
+        "x": 32,
+        "y": 40,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "rotated": false,
-      "trimmed": false,
+      "trimmed": true,
       "spriteSourceSize": {
         "x": 0,
-        "y": 0,
+        "y": 1,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "sourceSize": {
         "w": 8,
@@ -866,18 +866,18 @@
     },
     "ar_glo_pine.png": {
       "frame": {
-        "x": 48,
-        "y": 0,
+        "x": 40,
+        "y": 40,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "rotated": false,
-      "trimmed": false,
+      "trimmed": true,
       "spriteSourceSize": {
         "x": 0,
-        "y": 0,
+        "y": 1,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "sourceSize": {
         "w": 8,
@@ -890,8 +890,8 @@
     },
     "ar_glo_oak_topaz.png": {
       "frame": {
-        "x": 32,
-        "y": 42,
+        "x": 16,
+        "y": 44,
         "w": 8,
         "h": 6
       },
@@ -914,8 +914,8 @@
     },
     "ar_glo_oak_ruby.png": {
       "frame": {
-        "x": 48,
-        "y": 8,
+        "x": 0,
+        "y": 46,
         "w": 8,
         "h": 6
       },
@@ -937,222 +937,6 @@
       }
     },
     "ar_glo_oak_emerald.png": {
-      "frame": {
-        "x": 48,
-        "y": 14,
-        "w": 8,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 8,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_oak_diamond.png": {
-      "frame": {
-        "x": 48,
-        "y": 20,
-        "w": 8,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 8,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_oak_amethyst.png": {
-      "frame": {
-        "x": 48,
-        "y": 26,
-        "w": 8,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 8,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_oak.png": {
-      "frame": {
-        "x": 48,
-        "y": 32,
-        "w": 8,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 8,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_mdeer_topaz.png": {
-      "frame": {
-        "x": 48,
-        "y": 38,
-        "w": 8,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 8,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_mdeer_ruby.png": {
-      "frame": {
-        "x": 48,
-        "y": 44,
-        "w": 8,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 8,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_mdeer_emerald.png": {
-      "frame": {
-        "x": 0,
-        "y": 48,
-        "w": 8,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 8,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_mdeer_diamond.png": {
-      "frame": {
-        "x": 8,
-        "y": 48,
-        "w": 8,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 8,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_mdeer_amethyst.png": {
-      "frame": {
-        "x": 16,
-        "y": 48,
-        "w": 8,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 8,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_mdeer.png": {
       "frame": {
         "x": 24,
         "y": 46,
@@ -1176,10 +960,226 @@
         "y": 0.5
       }
     },
+    "ar_glo_oak_diamond.png": {
+      "frame": {
+        "x": 8,
+        "y": 46,
+        "w": 8,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 8,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_oak_amethyst.png": {
+      "frame": {
+        "x": 32,
+        "y": 46,
+        "w": 8,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 8,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_oak.png": {
+      "frame": {
+        "x": 40,
+        "y": 46,
+        "w": 8,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 8,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_mdeer_topaz.png": {
+      "frame": {
+        "x": 48,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_mdeer_ruby.png": {
+      "frame": {
+        "x": 48,
+        "y": 8,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_mdeer_emerald.png": {
+      "frame": {
+        "x": 48,
+        "y": 16,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_mdeer_diamond.png": {
+      "frame": {
+        "x": 48,
+        "y": 24,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_mdeer_amethyst.png": {
+      "frame": {
+        "x": 48,
+        "y": 32,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_mdeer.png": {
+      "frame": {
+        "x": 48,
+        "y": 40,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
     "ar_glo_iron_topaz.png": {
       "frame": {
-        "x": 0,
-        "y": 54,
+        "x": 16,
+        "y": 50,
         "w": 8,
         "h": 8
       },
@@ -1202,8 +1202,8 @@
     },
     "ar_glo_iron_ruby.png": {
       "frame": {
-        "x": 8,
-        "y": 54,
+        "x": 48,
+        "y": 48,
         "w": 8,
         "h": 8
       },
@@ -1226,8 +1226,8 @@
     },
     "ar_glo_iron_emerald.png": {
       "frame": {
-        "x": 16,
-        "y": 54,
+        "x": 0,
+        "y": 52,
         "w": 8,
         "h": 8
       },
@@ -1274,8 +1274,8 @@
     },
     "ar_glo_iron_amethyst.png": {
       "frame": {
-        "x": 32,
-        "y": 50,
+        "x": 8,
+        "y": 52,
         "w": 8,
         "h": 8
       },
@@ -1298,8 +1298,8 @@
     },
     "ar_glo_iron.png": {
       "frame": {
-        "x": 40,
-        "y": 48,
+        "x": 32,
+        "y": 52,
         "w": 8,
         "h": 8
       },
@@ -1322,18 +1322,18 @@
     },
     "ar_glo_hickory_topaz.png": {
       "frame": {
-        "x": 48,
-        "y": 50,
+        "x": 40,
+        "y": 52,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "rotated": false,
-      "trimmed": false,
+      "trimmed": true,
       "spriteSourceSize": {
         "x": 0,
-        "y": 0,
+        "y": 1,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "sourceSize": {
         "w": 8,
@@ -1349,15 +1349,15 @@
         "x": 56,
         "y": 0,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "rotated": false,
-      "trimmed": false,
+      "trimmed": true,
       "spriteSourceSize": {
         "x": 0,
-        "y": 0,
+        "y": 1,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "sourceSize": {
         "w": 8,
@@ -1371,17 +1371,17 @@
     "ar_glo_hickory_emerald.png": {
       "frame": {
         "x": 56,
-        "y": 8,
+        "y": 6,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "rotated": false,
-      "trimmed": false,
+      "trimmed": true,
       "spriteSourceSize": {
         "x": 0,
-        "y": 0,
+        "y": 1,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "sourceSize": {
         "w": 8,
@@ -1395,17 +1395,17 @@
     "ar_glo_hickory_diamond.png": {
       "frame": {
         "x": 56,
-        "y": 16,
+        "y": 12,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "rotated": false,
-      "trimmed": false,
+      "trimmed": true,
       "spriteSourceSize": {
         "x": 0,
-        "y": 0,
+        "y": 1,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "sourceSize": {
         "w": 8,
@@ -1419,17 +1419,17 @@
     "ar_glo_hickory_amethyst.png": {
       "frame": {
         "x": 56,
-        "y": 24,
+        "y": 18,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "rotated": false,
-      "trimmed": false,
+      "trimmed": true,
       "spriteSourceSize": {
         "x": 0,
-        "y": 0,
+        "y": 1,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "sourceSize": {
         "w": 8,
@@ -1443,161 +1443,17 @@
     "ar_glo_hickory.png": {
       "frame": {
         "x": 56,
-        "y": 32,
+        "y": 24,
         "w": 8,
-        "h": 8
+        "h": 6
       },
       "rotated": false,
-      "trimmed": false,
+      "trimmed": true,
       "spriteSourceSize": {
         "x": 0,
-        "y": 0,
+        "y": 1,
         "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_hemp_topaz.png": {
-      "frame": {
-        "x": 56,
-        "y": 40,
-        "w": 8,
-        "h": 8
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_hemp_ruby.png": {
-      "frame": {
-        "x": 56,
-        "y": 48,
-        "w": 8,
-        "h": 8
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_hemp_emerald.png": {
-      "frame": {
-        "x": 40,
-        "y": 56,
-        "w": 8,
-        "h": 8
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_hemp_diamond.png": {
-      "frame": {
-        "x": 56,
-        "y": 56,
-        "w": 8,
-        "h": 8
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_hemp_amethyst.png": {
-      "frame": {
-        "x": 32,
-        "y": 58,
-        "w": 8,
-        "h": 8
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_hemp.png": {
-      "frame": {
-        "x": 48,
-        "y": 58,
-        "w": 8,
-        "h": 8
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 8,
-        "h": 8
+        "h": 6
       },
       "sourceSize": {
         "w": 8,
@@ -1610,8 +1466,8 @@
     },
     "ar_glo_gold_topaz.png": {
       "frame": {
-        "x": 24,
-        "y": 60,
+        "x": 56,
+        "y": 30,
         "w": 8,
         "h": 8
       },
@@ -1634,8 +1490,8 @@
     },
     "ar_glo_gold_ruby.png": {
       "frame": {
-        "x": 0,
-        "y": 62,
+        "x": 56,
+        "y": 38,
         "w": 8,
         "h": 8
       },
@@ -1658,8 +1514,8 @@
     },
     "ar_glo_gold_emerald.png": {
       "frame": {
-        "x": 8,
-        "y": 62,
+        "x": 56,
+        "y": 46,
         "w": 8,
         "h": 8
       },
@@ -1683,7 +1539,7 @@
     "ar_glo_gold_diamond.png": {
       "frame": {
         "x": 16,
-        "y": 62,
+        "y": 58,
         "w": 8,
         "h": 8
       },
@@ -1705,6 +1561,174 @@
       }
     },
     "ar_glo_gold_amethyst.png": {
+      "frame": {
+        "x": 56,
+        "y": 54,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_gold.png": {
+      "frame": {
+        "x": 0,
+        "y": 60,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_fdeer_topaz.png": {
+      "frame": {
+        "x": 48,
+        "y": 56,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_fdeer_ruby.png": {
+      "frame": {
+        "x": 8,
+        "y": 60,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_fdeer_emerald.png": {
+      "frame": {
+        "x": 40,
+        "y": 58,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_fdeer_diamond.png": {
+      "frame": {
+        "x": 24,
+        "y": 60,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_fdeer_amethyst.png": {
+      "frame": {
+        "x": 32,
+        "y": 60,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_fdeer.png": {
       "frame": {
         "x": 64,
         "y": 0,
@@ -1728,7 +1752,7 @@
         "y": 0.5
       }
     },
-    "ar_glo_gold.png": {
+    "ar_glo_copper_topaz.png": {
       "frame": {
         "x": 64,
         "y": 8,
@@ -1752,68 +1776,20 @@
         "y": 0.5
       }
     },
-    "ar_glo_cotton_topaz.png": {
-      "frame": {
-        "x": 40,
-        "y": 64,
-        "w": 8,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 8,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_cotton_ruby.png": {
-      "frame": {
-        "x": 56,
-        "y": 64,
-        "w": 8,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 8,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_cotton_emerald.png": {
+    "ar_glo_copper_ruby.png": {
       "frame": {
         "x": 64,
         "y": 16,
         "w": 8,
-        "h": 6
+        "h": 8
       },
       "rotated": false,
-      "trimmed": true,
+      "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
-        "y": 1,
+        "y": 0,
         "w": 8,
-        "h": 6
+        "h": 8
       },
       "sourceSize": {
         "w": 8,
@@ -1824,20 +1800,20 @@
         "y": 0.5
       }
     },
-    "ar_glo_cotton_diamond.png": {
+    "ar_glo_copper_emerald.png": {
       "frame": {
         "x": 64,
-        "y": 22,
+        "y": 24,
         "w": 8,
-        "h": 6
+        "h": 8
       },
       "rotated": false,
-      "trimmed": true,
+      "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
-        "y": 1,
+        "y": 0,
         "w": 8,
-        "h": 6
+        "h": 8
       },
       "sourceSize": {
         "w": 8,
@@ -1848,20 +1824,20 @@
         "y": 0.5
       }
     },
-    "ar_glo_cotton_amethyst.png": {
+    "ar_glo_copper_diamond.png": {
       "frame": {
         "x": 64,
-        "y": 28,
+        "y": 32,
         "w": 8,
-        "h": 6
+        "h": 8
       },
       "rotated": false,
-      "trimmed": true,
+      "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
-        "y": 1,
+        "y": 0,
         "w": 8,
-        "h": 6
+        "h": 8
       },
       "sourceSize": {
         "w": 8,
@@ -1872,31 +1848,7 @@
         "y": 0.5
       }
     },
-    "ar_glo_cotton.png": {
-      "frame": {
-        "x": 64,
-        "y": 34,
-        "w": 8,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 8,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_boar_topaz.png": {
+    "ar_glo_copper_amethyst.png": {
       "frame": {
         "x": 64,
         "y": 40,
@@ -1920,7 +1872,7 @@
         "y": 0.5
       }
     },
-    "ar_glo_boar_ruby.png": {
+    "ar_glo_copper.png": {
       "frame": {
         "x": 64,
         "y": 48,
@@ -1944,7 +1896,7 @@
         "y": 0.5
       }
     },
-    "ar_glo_boar_emerald.png": {
+    "ar_glo_boar_topaz.png": {
       "frame": {
         "x": 64,
         "y": 56,
@@ -1968,10 +1920,58 @@
         "y": 0.5
       }
     },
+    "ar_glo_boar_ruby.png": {
+      "frame": {
+        "x": 16,
+        "y": 66,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_boar_emerald.png": {
+      "frame": {
+        "x": 56,
+        "y": 62,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
     "ar_glo_boar_diamond.png": {
       "frame": {
-        "x": 32,
-        "y": 66,
+        "x": 0,
+        "y": 68,
         "w": 8,
         "h": 8
       },
@@ -1995,7 +1995,7 @@
     "ar_glo_boar_amethyst.png": {
       "frame": {
         "x": 48,
-        "y": 66,
+        "y": 64,
         "w": 8,
         "h": 8
       },
@@ -2042,7 +2042,7 @@
     },
     "ar_glo_birch_topaz.png": {
       "frame": {
-        "x": 24,
+        "x": 8,
         "y": 68,
         "w": 8,
         "h": 6
@@ -2067,7 +2067,7 @@
     "ar_glo_birch_ruby.png": {
       "frame": {
         "x": 40,
-        "y": 70,
+        "y": 66,
         "w": 8,
         "h": 6
       },
@@ -2091,7 +2091,7 @@
     "ar_glo_birch_emerald.png": {
       "frame": {
         "x": 56,
-        "y": 72,
+        "y": 70,
         "w": 8,
         "h": 6
       },
@@ -2114,8 +2114,8 @@
     },
     "ar_glo_birch_diamond.png": {
       "frame": {
-        "x": 64,
-        "y": 72,
+        "x": 24,
+        "y": 68,
         "w": 8,
         "h": 6
       },
@@ -2138,8 +2138,8 @@
     },
     "ar_glo_birch_amethyst.png": {
       "frame": {
-        "x": 0,
-        "y": 70,
+        "x": 32,
+        "y": 68,
         "w": 8,
         "h": 6
       },
@@ -2162,8 +2162,8 @@
     },
     "ar_glo_birch.png": {
       "frame": {
-        "x": 8,
-        "y": 70,
+        "x": 72,
+        "y": 0,
         "w": 8,
         "h": 6
       },
@@ -2186,8 +2186,8 @@
     },
     "ar_clo_wolf_topaz.png": {
       "frame": {
-        "x": 16,
-        "y": 70,
+        "x": 72,
+        "y": 6,
         "w": 8,
         "h": 8
       },
@@ -2211,7 +2211,7 @@
     "ar_clo_wolf_ruby.png": {
       "frame": {
         "x": 72,
-        "y": 0,
+        "y": 14,
         "w": 8,
         "h": 8
       },
@@ -2235,7 +2235,7 @@
     "ar_clo_wolf_emerald.png": {
       "frame": {
         "x": 72,
-        "y": 8,
+        "y": 22,
         "w": 8,
         "h": 8
       },
@@ -2259,7 +2259,7 @@
     "ar_clo_wolf_diamond.png": {
       "frame": {
         "x": 72,
-        "y": 16,
+        "y": 30,
         "w": 8,
         "h": 8
       },
@@ -2283,7 +2283,7 @@
     "ar_clo_wolf_amethyst.png": {
       "frame": {
         "x": 72,
-        "y": 24,
+        "y": 38,
         "w": 8,
         "h": 8
       },
@@ -2307,7 +2307,7 @@
     "ar_clo_wolf.png": {
       "frame": {
         "x": 72,
-        "y": 32,
+        "y": 46,
         "w": 8,
         "h": 8
       },
@@ -2331,7 +2331,7 @@
     "ar_clo_willow_topaz.png": {
       "frame": {
         "x": 72,
-        "y": 40,
+        "y": 54,
         "w": 8,
         "h": 8
       },
@@ -2355,7 +2355,7 @@
     "ar_clo_willow_ruby.png": {
       "frame": {
         "x": 72,
-        "y": 48,
+        "y": 62,
         "w": 8,
         "h": 8
       },
@@ -2379,7 +2379,7 @@
     "ar_clo_willow_emerald.png": {
       "frame": {
         "x": 72,
-        "y": 56,
+        "y": 70,
         "w": 8,
         "h": 8
       },
@@ -2402,8 +2402,8 @@
     },
     "ar_clo_willow_diamond.png": {
       "frame": {
-        "x": 72,
-        "y": 64,
+        "x": 64,
+        "y": 72,
         "w": 8,
         "h": 8
       },
@@ -2426,8 +2426,8 @@
     },
     "ar_clo_willow_amethyst.png": {
       "frame": {
-        "x": 48,
-        "y": 74,
+        "x": 0,
+        "y": 76,
         "w": 8,
         "h": 8
       },
@@ -2450,8 +2450,8 @@
     },
     "ar_clo_willow.png": {
       "frame": {
-        "x": 72,
-        "y": 72,
+        "x": 8,
+        "y": 76,
         "w": 8,
         "h": 8
       },
@@ -2474,8 +2474,8 @@
     },
     "ar_clo_tin_topaz.png": {
       "frame": {
-        "x": 0,
-        "y": 78,
+        "x": 16,
+        "y": 76,
         "w": 8,
         "h": 8
       },
@@ -2498,8 +2498,8 @@
     },
     "ar_clo_tin_ruby.png": {
       "frame": {
-        "x": 56,
-        "y": 78,
+        "x": 24,
+        "y": 76,
         "w": 8,
         "h": 8
       },
@@ -2522,7 +2522,7 @@
     },
     "ar_clo_tin_emerald.png": {
       "frame": {
-        "x": 8,
+        "x": 32,
         "y": 76,
         "w": 8,
         "h": 8
@@ -2546,8 +2546,8 @@
     },
     "ar_clo_tin_diamond.png": {
       "frame": {
-        "x": 64,
-        "y": 78,
+        "x": 40,
+        "y": 76,
         "w": 8,
         "h": 8
       },
@@ -2570,8 +2570,8 @@
     },
     "ar_clo_tin_amethyst.png": {
       "frame": {
-        "x": 16,
-        "y": 78,
+        "x": 48,
+        "y": 72,
         "w": 8,
         "h": 8
       },
@@ -2594,7 +2594,7 @@
     },
     "ar_clo_tin.png": {
       "frame": {
-        "x": 24,
+        "x": 56,
         "y": 76,
         "w": 8,
         "h": 8
@@ -2618,8 +2618,8 @@
     },
     "ar_clo_silver_topaz.png": {
       "frame": {
-        "x": 32,
-        "y": 74,
+        "x": 80,
+        "y": 0,
         "w": 8,
         "h": 8
       },
@@ -2642,8 +2642,8 @@
     },
     "ar_clo_silver_ruby.png": {
       "frame": {
-        "x": 40,
-        "y": 76,
+        "x": 80,
+        "y": 8,
         "w": 8,
         "h": 8
       },
@@ -2667,7 +2667,7 @@
     "ar_clo_silver_emerald.png": {
       "frame": {
         "x": 80,
-        "y": 0,
+        "y": 16,
         "w": 8,
         "h": 8
       },
@@ -2691,7 +2691,7 @@
     "ar_clo_silver_diamond.png": {
       "frame": {
         "x": 80,
-        "y": 8,
+        "y": 24,
         "w": 8,
         "h": 8
       },
@@ -2715,7 +2715,7 @@
     "ar_clo_silver_amethyst.png": {
       "frame": {
         "x": 80,
-        "y": 16,
+        "y": 32,
         "w": 8,
         "h": 8
       },
@@ -2739,7 +2739,7 @@
     "ar_clo_silver.png": {
       "frame": {
         "x": 80,
-        "y": 24,
+        "y": 40,
         "w": 8,
         "h": 8
       },
@@ -2763,7 +2763,7 @@
     "ar_clo_ramie_topaz.png": {
       "frame": {
         "x": 80,
-        "y": 32,
+        "y": 48,
         "w": 8,
         "h": 8
       },
@@ -2787,7 +2787,7 @@
     "ar_clo_ramie_ruby.png": {
       "frame": {
         "x": 80,
-        "y": 40,
+        "y": 56,
         "w": 8,
         "h": 8
       },
@@ -2811,7 +2811,7 @@
     "ar_clo_ramie_emerald.png": {
       "frame": {
         "x": 80,
-        "y": 48,
+        "y": 64,
         "w": 8,
         "h": 8
       },
@@ -2835,7 +2835,7 @@
     "ar_clo_ramie_diamond.png": {
       "frame": {
         "x": 80,
-        "y": 56,
+        "y": 72,
         "w": 8,
         "h": 8
       },
@@ -2858,8 +2858,8 @@
     },
     "ar_clo_ramie_amethyst.png": {
       "frame": {
-        "x": 80,
-        "y": 64,
+        "x": 48,
+        "y": 80,
         "w": 8,
         "h": 8
       },
@@ -2882,8 +2882,8 @@
     },
     "ar_clo_agave.png": {
       "frame": {
-        "x": 80,
-        "y": 72,
+        "x": 72,
+        "y": 78,
         "w": 8,
         "h": 8
       },
@@ -2906,7 +2906,7 @@
     },
     "ar_clo_agave_amethyst.png": {
       "frame": {
-        "x": 8,
+        "x": 0,
         "y": 84,
         "w": 8,
         "h": 8
@@ -2930,8 +2930,8 @@
     },
     "ar_clo_agave_diamond.png": {
       "frame": {
-        "x": 32,
-        "y": 82,
+        "x": 64,
+        "y": 80,
         "w": 8,
         "h": 8
       },
@@ -2954,8 +2954,8 @@
     },
     "ar_clo_agave_emerald.png": {
       "frame": {
-        "x": 48,
-        "y": 82,
+        "x": 80,
+        "y": 80,
         "w": 8,
         "h": 8
       },
@@ -2978,8 +2978,8 @@
     },
     "ar_clo_agave_ruby.png": {
       "frame": {
-        "x": 0,
-        "y": 86,
+        "x": 8,
+        "y": 84,
         "w": 8,
         "h": 8
       },
@@ -3002,7 +3002,7 @@
     },
     "ar_clo_agave_topaz.png": {
       "frame": {
-        "x": 24,
+        "x": 56,
         "y": 84,
         "w": 8,
         "h": 8
@@ -3026,7 +3026,7 @@
     },
     "ar_clo_birch.png": {
       "frame": {
-        "x": 40,
+        "x": 16,
         "y": 84,
         "w": 8,
         "h": 8
@@ -3050,8 +3050,8 @@
     },
     "ar_clo_birch_amethyst.png": {
       "frame": {
-        "x": 56,
-        "y": 86,
+        "x": 24,
+        "y": 84,
         "w": 8,
         "h": 8
       },
@@ -3074,8 +3074,8 @@
     },
     "ar_clo_birch_diamond.png": {
       "frame": {
-        "x": 16,
-        "y": 86,
+        "x": 32,
+        "y": 84,
         "w": 8,
         "h": 8
       },
@@ -3098,8 +3098,8 @@
     },
     "ar_clo_birch_emerald.png": {
       "frame": {
-        "x": 64,
-        "y": 86,
+        "x": 40,
+        "y": 84,
         "w": 8,
         "h": 8
       },
@@ -3122,8 +3122,8 @@
     },
     "ar_clo_birch_ruby.png": {
       "frame": {
-        "x": 72,
-        "y": 80,
+        "x": 88,
+        "y": 0,
         "w": 8,
         "h": 8
       },
@@ -3146,8 +3146,8 @@
     },
     "ar_clo_birch_topaz.png": {
       "frame": {
-        "x": 80,
-        "y": 80,
+        "x": 88,
+        "y": 8,
         "w": 8,
         "h": 8
       },
@@ -3171,7 +3171,7 @@
     "ar_clo_boar.png": {
       "frame": {
         "x": 88,
-        "y": 0,
+        "y": 16,
         "w": 8,
         "h": 8
       },
@@ -3195,7 +3195,7 @@
     "ar_clo_boar_amethyst.png": {
       "frame": {
         "x": 88,
-        "y": 8,
+        "y": 24,
         "w": 8,
         "h": 8
       },
@@ -3219,7 +3219,7 @@
     "ar_clo_boar_diamond.png": {
       "frame": {
         "x": 88,
-        "y": 16,
+        "y": 32,
         "w": 8,
         "h": 8
       },
@@ -3243,7 +3243,7 @@
     "ar_clo_boar_emerald.png": {
       "frame": {
         "x": 88,
-        "y": 24,
+        "y": 40,
         "w": 8,
         "h": 8
       },
@@ -3267,7 +3267,7 @@
     "ar_clo_boar_ruby.png": {
       "frame": {
         "x": 88,
-        "y": 32,
+        "y": 48,
         "w": 8,
         "h": 8
       },
@@ -3291,7 +3291,7 @@
     "ar_clo_boar_topaz.png": {
       "frame": {
         "x": 88,
-        "y": 40,
+        "y": 56,
         "w": 8,
         "h": 8
       },
@@ -3315,7 +3315,7 @@
     "ar_clo_copper.png": {
       "frame": {
         "x": 88,
-        "y": 48,
+        "y": 64,
         "w": 8,
         "h": 8
       },
@@ -3339,7 +3339,7 @@
     "ar_clo_copper_amethyst.png": {
       "frame": {
         "x": 88,
-        "y": 56,
+        "y": 72,
         "w": 8,
         "h": 8
       },
@@ -3363,7 +3363,7 @@
     "ar_clo_copper_diamond.png": {
       "frame": {
         "x": 88,
-        "y": 64,
+        "y": 80,
         "w": 8,
         "h": 8
       },
@@ -3386,8 +3386,8 @@
     },
     "ar_clo_copper_emerald.png": {
       "frame": {
-        "x": 88,
-        "y": 72,
+        "x": 72,
+        "y": 86,
         "w": 8,
         "h": 8
       },
@@ -3410,8 +3410,8 @@
     },
     "ar_clo_copper_ruby.png": {
       "frame": {
-        "x": 88,
-        "y": 80,
+        "x": 48,
+        "y": 88,
         "w": 8,
         "h": 8
       },
@@ -3434,8 +3434,8 @@
     },
     "ar_clo_copper_topaz.png": {
       "frame": {
-        "x": 32,
-        "y": 90,
+        "x": 64,
+        "y": 88,
         "w": 8,
         "h": 8
       },
@@ -3458,8 +3458,8 @@
     },
     "ar_clo_cotton.png": {
       "frame": {
-        "x": 48,
-        "y": 90,
+        "x": 0,
+        "y": 92,
         "w": 8,
         "h": 8
       },
@@ -3482,7 +3482,7 @@
     },
     "ar_clo_cotton_amethyst.png": {
       "frame": {
-        "x": 8,
+        "x": 56,
         "y": 92,
         "w": 8,
         "h": 8
@@ -3506,7 +3506,7 @@
     },
     "ar_clo_cotton_diamond.png": {
       "frame": {
-        "x": 24,
+        "x": 8,
         "y": 92,
         "w": 8,
         "h": 8
@@ -3530,7 +3530,7 @@
     },
     "ar_clo_cotton_emerald.png": {
       "frame": {
-        "x": 40,
+        "x": 16,
         "y": 92,
         "w": 8,
         "h": 8
@@ -3554,8 +3554,8 @@
     },
     "ar_clo_cotton_ruby.png": {
       "frame": {
-        "x": 56,
-        "y": 94,
+        "x": 24,
+        "y": 92,
         "w": 8,
         "h": 8
       },
@@ -3578,8 +3578,8 @@
     },
     "ar_clo_cotton_topaz.png": {
       "frame": {
-        "x": 0,
-        "y": 94,
+        "x": 32,
+        "y": 92,
         "w": 8,
         "h": 8
       },
@@ -3602,8 +3602,8 @@
     },
     "ar_clo_fdeer.png": {
       "frame": {
-        "x": 16,
-        "y": 94,
+        "x": 40,
+        "y": 92,
         "w": 8,
         "h": 8
       },
@@ -3625,54 +3625,6 @@
       }
     },
     "ar_clo_fdeer_amethyst.png": {
-      "frame": {
-        "x": 64,
-        "y": 94,
-        "w": 8,
-        "h": 8
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_clo_fdeer_diamond.png": {
-      "frame": {
-        "x": 72,
-        "y": 88,
-        "w": 8,
-        "h": 8
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_clo_fdeer_emerald.png": {
       "frame": {
         "x": 80,
         "y": 88,
@@ -3696,7 +3648,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_fdeer_ruby.png": {
+    "ar_clo_fdeer_diamond.png": {
       "frame": {
         "x": 88,
         "y": 88,
@@ -3720,7 +3672,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_fdeer_topaz.png": {
+    "ar_clo_fdeer_emerald.png": {
       "frame": {
         "x": 96,
         "y": 0,
@@ -3744,7 +3696,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_gold.png": {
+    "ar_clo_fdeer_ruby.png": {
       "frame": {
         "x": 96,
         "y": 8,
@@ -3768,7 +3720,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_gold_amethyst.png": {
+    "ar_clo_fdeer_topaz.png": {
       "frame": {
         "x": 96,
         "y": 16,
@@ -3792,7 +3744,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_gold_diamond.png": {
+    "ar_clo_gold.png": {
       "frame": {
         "x": 96,
         "y": 24,
@@ -3816,7 +3768,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_gold_emerald.png": {
+    "ar_clo_gold_amethyst.png": {
       "frame": {
         "x": 96,
         "y": 32,
@@ -3840,7 +3792,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_gold_ruby.png": {
+    "ar_clo_gold_diamond.png": {
       "frame": {
         "x": 96,
         "y": 40,
@@ -3864,7 +3816,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_gold_topaz.png": {
+    "ar_clo_gold_emerald.png": {
       "frame": {
         "x": 96,
         "y": 48,
@@ -3888,7 +3840,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_hemp.png": {
+    "ar_clo_gold_ruby.png": {
       "frame": {
         "x": 96,
         "y": 56,
@@ -3912,7 +3864,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_hemp_amethyst.png": {
+    "ar_clo_gold_topaz.png": {
       "frame": {
         "x": 96,
         "y": 64,
@@ -3936,7 +3888,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_hemp_diamond.png": {
+    "ar_clo_hemp.png": {
       "frame": {
         "x": 96,
         "y": 72,
@@ -3960,7 +3912,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_hemp_emerald.png": {
+    "ar_clo_hemp_amethyst.png": {
       "frame": {
         "x": 96,
         "y": 80,
@@ -3984,7 +3936,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_hemp_ruby.png": {
+    "ar_clo_hemp_diamond.png": {
       "frame": {
         "x": 96,
         "y": 88,
@@ -4008,10 +3960,58 @@
         "y": 0.5
       }
     },
+    "ar_clo_hemp_emerald.png": {
+      "frame": {
+        "x": 48,
+        "y": 96,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_clo_hemp_ruby.png": {
+      "frame": {
+        "x": 72,
+        "y": 94,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
     "ar_clo_hemp_topaz.png": {
       "frame": {
-        "x": 32,
-        "y": 98,
+        "x": 0,
+        "y": 100,
         "w": 8,
         "h": 8
       },
@@ -4034,8 +4034,8 @@
     },
     "ar_clo_hickory.png": {
       "frame": {
-        "x": 48,
-        "y": 98,
+        "x": 64,
+        "y": 96,
         "w": 8,
         "h": 8
       },
@@ -4082,7 +4082,7 @@
     },
     "ar_clo_hickory_diamond.png": {
       "frame": {
-        "x": 24,
+        "x": 56,
         "y": 100,
         "w": 8,
         "h": 8
@@ -4106,7 +4106,7 @@
     },
     "ar_clo_hickory_emerald.png": {
       "frame": {
-        "x": 40,
+        "x": 16,
         "y": 100,
         "w": 8,
         "h": 8
@@ -4130,8 +4130,8 @@
     },
     "ar_clo_hickory_ruby.png": {
       "frame": {
-        "x": 56,
-        "y": 102,
+        "x": 24,
+        "y": 100,
         "w": 8,
         "h": 8
       },
@@ -4154,8 +4154,8 @@
     },
     "ar_clo_hickory_topaz.png": {
       "frame": {
-        "x": 0,
-        "y": 102,
+        "x": 32,
+        "y": 100,
         "w": 8,
         "h": 8
       },
@@ -4178,8 +4178,8 @@
     },
     "ar_clo_iron.png": {
       "frame": {
-        "x": 16,
-        "y": 102,
+        "x": 40,
+        "y": 100,
         "w": 8,
         "h": 8
       },
@@ -4201,54 +4201,6 @@
       }
     },
     "ar_clo_iron_amethyst.png": {
-      "frame": {
-        "x": 64,
-        "y": 102,
-        "w": 8,
-        "h": 8
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_clo_iron_diamond.png": {
-      "frame": {
-        "x": 72,
-        "y": 96,
-        "w": 8,
-        "h": 8
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_clo_iron_emerald.png": {
       "frame": {
         "x": 80,
         "y": 96,
@@ -4272,7 +4224,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_iron_ruby.png": {
+    "ar_clo_iron_diamond.png": {
       "frame": {
         "x": 88,
         "y": 96,
@@ -4296,7 +4248,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_iron_topaz.png": {
+    "ar_clo_iron_emerald.png": {
       "frame": {
         "x": 96,
         "y": 96,
@@ -4320,7 +4272,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_ramie.png": {
+    "ar_clo_iron_ruby.png": {
       "frame": {
         "x": 104,
         "y": 0,
@@ -4344,7 +4296,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_linen_amethyst.png": {
+    "ar_clo_iron_topaz.png": {
       "frame": {
         "x": 104,
         "y": 8,
@@ -4368,7 +4320,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_linen_diamond.png": {
+    "ar_clo_ramie.png": {
       "frame": {
         "x": 104,
         "y": 16,
@@ -4392,7 +4344,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_linen_emerald.png": {
+    "ar_clo_linen_amethyst.png": {
       "frame": {
         "x": 104,
         "y": 24,
@@ -4416,7 +4368,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_linen_ruby.png": {
+    "ar_clo_linen_diamond.png": {
       "frame": {
         "x": 104,
         "y": 32,
@@ -4440,7 +4392,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_linen_topaz.png": {
+    "ar_clo_linen_emerald.png": {
       "frame": {
         "x": 104,
         "y": 40,
@@ -4464,7 +4416,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_mdeer.png": {
+    "ar_clo_linen_ruby.png": {
       "frame": {
         "x": 104,
         "y": 48,
@@ -4488,7 +4440,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_mdeer_amethyst.png": {
+    "ar_clo_linen_topaz.png": {
       "frame": {
         "x": 104,
         "y": 56,
@@ -4512,7 +4464,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_mdeer_diamond.png": {
+    "ar_clo_mdeer.png": {
       "frame": {
         "x": 104,
         "y": 64,
@@ -4536,7 +4488,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_mdeer_emerald.png": {
+    "ar_clo_mdeer_amethyst.png": {
       "frame": {
         "x": 104,
         "y": 72,
@@ -4560,7 +4512,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_mdeer_ruby.png": {
+    "ar_clo_mdeer_diamond.png": {
       "frame": {
         "x": 104,
         "y": 80,
@@ -4584,7 +4536,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_mdeer_topaz.png": {
+    "ar_clo_mdeer_emerald.png": {
       "frame": {
         "x": 104,
         "y": 88,
@@ -4608,7 +4560,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_oak.png": {
+    "ar_clo_mdeer_ruby.png": {
       "frame": {
         "x": 104,
         "y": 96,
@@ -4632,10 +4584,58 @@
         "y": 0.5
       }
     },
+    "ar_clo_mdeer_topaz.png": {
+      "frame": {
+        "x": 48,
+        "y": 104,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_clo_oak.png": {
+      "frame": {
+        "x": 72,
+        "y": 102,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
     "ar_clo_oak_amethyst.png": {
       "frame": {
-        "x": 32,
-        "y": 106,
+        "x": 0,
+        "y": 108,
         "w": 8,
         "h": 8
       },
@@ -4658,8 +4658,8 @@
     },
     "ar_clo_oak_diamond.png": {
       "frame": {
-        "x": 48,
-        "y": 106,
+        "x": 64,
+        "y": 104,
         "w": 8,
         "h": 8
       },
@@ -4706,7 +4706,7 @@
     },
     "ar_clo_oak_ruby.png": {
       "frame": {
-        "x": 24,
+        "x": 56,
         "y": 108,
         "w": 8,
         "h": 8
@@ -4730,7 +4730,7 @@
     },
     "ar_clo_oak_topaz.png": {
       "frame": {
-        "x": 40,
+        "x": 16,
         "y": 108,
         "w": 8,
         "h": 8
@@ -4754,8 +4754,8 @@
     },
     "ar_clo_pine.png": {
       "frame": {
-        "x": 56,
-        "y": 110,
+        "x": 24,
+        "y": 108,
         "w": 8,
         "h": 8
       },
@@ -4778,8 +4778,8 @@
     },
     "ar_clo_pine_amethyst.png": {
       "frame": {
-        "x": 0,
-        "y": 110,
+        "x": 32,
+        "y": 108,
         "w": 8,
         "h": 8
       },
@@ -4802,8 +4802,8 @@
     },
     "ar_clo_pine_diamond.png": {
       "frame": {
-        "x": 16,
-        "y": 110,
+        "x": 40,
+        "y": 108,
         "w": 8,
         "h": 8
       },
@@ -4825,54 +4825,6 @@
       }
     },
     "ar_clo_pine_emerald.png": {
-      "frame": {
-        "x": 64,
-        "y": 110,
-        "w": 8,
-        "h": 8
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_clo_pine_ruby.png": {
-      "frame": {
-        "x": 72,
-        "y": 104,
-        "w": 8,
-        "h": 8
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 8,
-        "h": 8
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_clo_pine_topaz.png": {
       "frame": {
         "x": 80,
         "y": 104,
@@ -4896,7 +4848,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_rabbit.png": {
+    "ar_clo_pine_ruby.png": {
       "frame": {
         "x": 88,
         "y": 104,
@@ -4920,7 +4872,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_rabbit_amethyst.png": {
+    "ar_clo_pine_topaz.png": {
       "frame": {
         "x": 96,
         "y": 104,
@@ -4944,7 +4896,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_rabbit_diamond.png": {
+    "ar_clo_rabbit.png": {
       "frame": {
         "x": 104,
         "y": 104,
@@ -4968,7 +4920,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_rabbit_emerald.png": {
+    "ar_clo_rabbit_amethyst.png": {
       "frame": {
         "x": 112,
         "y": 0,
@@ -4992,7 +4944,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_rabbit_ruby.png": {
+    "ar_clo_rabbit_diamond.png": {
       "frame": {
         "x": 112,
         "y": 8,
@@ -5016,7 +4968,7 @@
         "y": 0.5
       }
     },
-    "ar_clo_rabbit_topaz.png": {
+    "ar_clo_rabbit_emerald.png": {
       "frame": {
         "x": 112,
         "y": 16,
@@ -5040,10 +4992,58 @@
         "y": 0.5
       }
     },
-    "ar_bot_mdeer_diamond.png": {
+    "ar_clo_rabbit_ruby.png": {
       "frame": {
         "x": 112,
         "y": 24,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_clo_rabbit_topaz.png": {
+      "frame": {
+        "x": 112,
+        "y": 32,
+        "w": 8,
+        "h": 8
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_mdeer_diamond.png": {
+      "frame": {
+        "x": 112,
+        "y": 40,
         "w": 7,
         "h": 7
       },
@@ -5067,7 +5067,7 @@
     "ar_bot_birch.png": {
       "frame": {
         "x": 112,
-        "y": 31,
+        "y": 47,
         "w": 7,
         "h": 7
       },
@@ -5091,7 +5091,7 @@
     "ar_bot_wolf_emerald.png": {
       "frame": {
         "x": 112,
-        "y": 38,
+        "y": 54,
         "w": 7,
         "h": 7
       },
@@ -5115,7 +5115,7 @@
     "ar_bot_wolf_diamond.png": {
       "frame": {
         "x": 112,
-        "y": 45,
+        "y": 61,
         "w": 7,
         "h": 7
       },
@@ -5139,7 +5139,7 @@
     "ar_bot_wolf_amethyst.png": {
       "frame": {
         "x": 112,
-        "y": 52,
+        "y": 68,
         "w": 7,
         "h": 7
       },
@@ -5163,7 +5163,151 @@
     "ar_bot_wolf.png": {
       "frame": {
         "x": 112,
-        "y": 59,
+        "y": 75,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_willow_topaz.png": {
+      "frame": {
+        "x": 112,
+        "y": 82,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_willow_ruby.png": {
+      "frame": {
+        "x": 112,
+        "y": 89,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_willow_emerald.png": {
+      "frame": {
+        "x": 112,
+        "y": 96,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_willow_diamond.png": {
+      "frame": {
+        "x": 112,
+        "y": 103,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_willow_amethyst.png": {
+      "frame": {
+        "x": 0,
+        "y": 116,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_willow.png": {
+      "frame": {
+        "x": 7,
+        "y": 116,
         "w": 7,
         "h": 7
       },
@@ -5186,8 +5330,8 @@
     },
     "ar_bot_tin_topaz.png": {
       "frame": {
-        "x": 112,
-        "y": 66,
+        "x": 14,
+        "y": 116,
         "w": 7,
         "h": 7
       },
@@ -5210,8 +5354,8 @@
     },
     "ar_bot_tin_ruby.png": {
       "frame": {
-        "x": 112,
-        "y": 73,
+        "x": 21,
+        "y": 116,
         "w": 7,
         "h": 7
       },
@@ -5234,8 +5378,8 @@
     },
     "ar_bot_tin_emerald.png": {
       "frame": {
-        "x": 112,
-        "y": 80,
+        "x": 28,
+        "y": 116,
         "w": 7,
         "h": 7
       },
@@ -5258,8 +5402,8 @@
     },
     "ar_bot_tin_diamond.png": {
       "frame": {
-        "x": 112,
-        "y": 87,
+        "x": 35,
+        "y": 116,
         "w": 7,
         "h": 7
       },
@@ -5282,8 +5426,8 @@
     },
     "ar_bot_tin_amethyst.png": {
       "frame": {
-        "x": 112,
-        "y": 94,
+        "x": 42,
+        "y": 116,
         "w": 7,
         "h": 7
       },
@@ -5306,8 +5450,8 @@
     },
     "ar_bot_tin.png": {
       "frame": {
-        "x": 112,
-        "y": 101,
+        "x": 49,
+        "y": 112,
         "w": 7,
         "h": 7
       },
@@ -5330,8 +5474,8 @@
     },
     "ar_bot_silver_topaz.png": {
       "frame": {
-        "x": 112,
-        "y": 108,
+        "x": 56,
+        "y": 116,
         "w": 7,
         "h": 7
       },
@@ -5354,8 +5498,8 @@
     },
     "ar_bot_silver_ruby.png": {
       "frame": {
-        "x": 0,
-        "y": 118,
+        "x": 63,
+        "y": 116,
         "w": 7,
         "h": 7
       },
@@ -5378,8 +5522,8 @@
     },
     "ar_bot_silver_emerald.png": {
       "frame": {
-        "x": 7,
-        "y": 118,
+        "x": 72,
+        "y": 110,
         "w": 7,
         "h": 7
       },
@@ -5402,8 +5546,8 @@
     },
     "ar_bot_silver_diamond.png": {
       "frame": {
-        "x": 14,
-        "y": 118,
+        "x": 112,
+        "y": 110,
         "w": 7,
         "h": 7
       },
@@ -5426,8 +5570,8 @@
     },
     "ar_bot_silver_amethyst.png": {
       "frame": {
-        "x": 21,
-        "y": 118,
+        "x": 79,
+        "y": 112,
         "w": 7,
         "h": 7
       },
@@ -5450,152 +5594,8 @@
     },
     "ar_bot_silver.png": {
       "frame": {
-        "x": 28,
-        "y": 118,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_ramie_topaz.png": {
-      "frame": {
-        "x": 35,
-        "y": 118,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_ramie_ruby.png": {
-      "frame": {
-        "x": 42,
-        "y": 118,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_ramie_emerald.png": {
-      "frame": {
-        "x": 49,
-        "y": 114,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_ramie_diamond.png": {
-      "frame": {
-        "x": 56,
-        "y": 118,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_ramie_amethyst.png": {
-      "frame": {
-        "x": 63,
-        "y": 118,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_ramie.png": {
-      "frame": {
-        "x": 70,
-        "y": 118,
+        "x": 86,
+        "y": 112,
         "w": 7,
         "h": 7
       },
@@ -5618,8 +5618,8 @@
     },
     "ar_bot_rabbit_topaz.png": {
       "frame": {
-        "x": 77,
-        "y": 115,
+        "x": 93,
+        "y": 112,
         "w": 7,
         "h": 7
       },
@@ -5642,8 +5642,8 @@
     },
     "ar_bot_rabbit_ruby.png": {
       "frame": {
-        "x": 84,
-        "y": 115,
+        "x": 100,
+        "y": 112,
         "w": 7,
         "h": 7
       },
@@ -5666,8 +5666,8 @@
     },
     "ar_bot_rabbit_emerald.png": {
       "frame": {
-        "x": 91,
-        "y": 115,
+        "x": 120,
+        "y": 0,
         "w": 7,
         "h": 7
       },
@@ -5690,8 +5690,8 @@
     },
     "ar_bot_rabbit_diamond.png": {
       "frame": {
-        "x": 98,
-        "y": 115,
+        "x": 120,
+        "y": 7,
         "w": 7,
         "h": 7
       },
@@ -5714,8 +5714,8 @@
     },
     "ar_bot_rabbit_amethyst.png": {
       "frame": {
-        "x": 105,
-        "y": 112,
+        "x": 120,
+        "y": 14,
         "w": 7,
         "h": 7
       },
@@ -5738,8 +5738,8 @@
     },
     "ar_bot_rabbit.png": {
       "frame": {
-        "x": 112,
-        "y": 115,
+        "x": 120,
+        "y": 21,
         "w": 7,
         "h": 7
       },
@@ -5763,7 +5763,7 @@
     "ar_bot_pine_topaz.png": {
       "frame": {
         "x": 120,
-        "y": 0,
+        "y": 28,
         "w": 7,
         "h": 7
       },
@@ -5787,7 +5787,7 @@
     "ar_bot_pine_ruby.png": {
       "frame": {
         "x": 120,
-        "y": 7,
+        "y": 35,
         "w": 7,
         "h": 7
       },
@@ -5810,8 +5810,8 @@
     },
     "ar_bot_pine_emerald.png": {
       "frame": {
-        "x": 120,
-        "y": 14,
+        "x": 119,
+        "y": 42,
         "w": 7,
         "h": 7
       },
@@ -5834,8 +5834,8 @@
     },
     "ar_bot_pine_diamond.png": {
       "frame": {
-        "x": 120,
-        "y": 21,
+        "x": 119,
+        "y": 49,
         "w": 7,
         "h": 7
       },
@@ -5859,7 +5859,7 @@
     "ar_bot_pine_amethyst.png": {
       "frame": {
         "x": 119,
-        "y": 28,
+        "y": 56,
         "w": 7,
         "h": 7
       },
@@ -5883,7 +5883,7 @@
     "ar_bot_pine.png": {
       "frame": {
         "x": 119,
-        "y": 35,
+        "y": 63,
         "w": 7,
         "h": 7
       },
@@ -5907,7 +5907,7 @@
     "ar_bot_oak_topaz.png": {
       "frame": {
         "x": 119,
-        "y": 42,
+        "y": 70,
         "w": 7,
         "h": 7
       },
@@ -5931,7 +5931,7 @@
     "ar_bot_oak_ruby.png": {
       "frame": {
         "x": 119,
-        "y": 49,
+        "y": 77,
         "w": 7,
         "h": 7
       },
@@ -5955,7 +5955,7 @@
     "ar_bot_oak_emerald.png": {
       "frame": {
         "x": 119,
-        "y": 56,
+        "y": 84,
         "w": 7,
         "h": 7
       },
@@ -5979,7 +5979,7 @@
     "ar_bot_oak_diamond.png": {
       "frame": {
         "x": 119,
-        "y": 63,
+        "y": 91,
         "w": 7,
         "h": 7
       },
@@ -6003,7 +6003,7 @@
     "ar_bot_oak_amethyst.png": {
       "frame": {
         "x": 119,
-        "y": 70,
+        "y": 98,
         "w": 7,
         "h": 7
       },
@@ -6027,7 +6027,7 @@
     "ar_bot_oak.png": {
       "frame": {
         "x": 119,
-        "y": 77,
+        "y": 105,
         "w": 7,
         "h": 7
       },
@@ -6051,7 +6051,7 @@
     "ar_bot_mdeer_topaz.png": {
       "frame": {
         "x": 119,
-        "y": 84,
+        "y": 112,
         "w": 7,
         "h": 7
       },
@@ -6074,8 +6074,8 @@
     },
     "ar_bot_mdeer_ruby.png": {
       "frame": {
-        "x": 119,
-        "y": 91,
+        "x": 49,
+        "y": 119,
         "w": 7,
         "h": 7
       },
@@ -6098,8 +6098,8 @@
     },
     "ar_bot_mdeer_emerald.png": {
       "frame": {
-        "x": 119,
-        "y": 98,
+        "x": 0,
+        "y": 123,
         "w": 7,
         "h": 7
       },
@@ -6122,8 +6122,8 @@
     },
     "ar_bot_wolf_ruby.png": {
       "frame": {
-        "x": 119,
-        "y": 105,
+        "x": 56,
+        "y": 123,
         "w": 7,
         "h": 7
       },
@@ -6146,8 +6146,8 @@
     },
     "ar_bot_mdeer_amethyst.png": {
       "frame": {
-        "x": 119,
-        "y": 112,
+        "x": 7,
+        "y": 123,
         "w": 7,
         "h": 7
       },
@@ -6170,8 +6170,8 @@
     },
     "ar_bot_mdeer.png": {
       "frame": {
-        "x": 49,
-        "y": 121,
+        "x": 63,
+        "y": 123,
         "w": 7,
         "h": 7
       },
@@ -6193,6 +6193,246 @@
       }
     },
     "ar_bot_wolf_topaz.png": {
+      "frame": {
+        "x": 14,
+        "y": 123,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_iron_topaz.png": {
+      "frame": {
+        "x": 21,
+        "y": 123,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_iron_ruby.png": {
+      "frame": {
+        "x": 28,
+        "y": 123,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_iron_emerald.png": {
+      "frame": {
+        "x": 35,
+        "y": 123,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_iron_diamond.png": {
+      "frame": {
+        "x": 42,
+        "y": 123,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_iron_amethyst.png": {
+      "frame": {
+        "x": 70,
+        "y": 117,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_iron.png": {
+      "frame": {
+        "x": 77,
+        "y": 119,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_hickory_topaz.png": {
+      "frame": {
+        "x": 84,
+        "y": 119,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_hickory_ruby.png": {
+      "frame": {
+        "x": 91,
+        "y": 119,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_hickory_emerald.png": {
+      "frame": {
+        "x": 98,
+        "y": 119,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_hickory_diamond.png": {
       "frame": {
         "x": 105,
         "y": 119,
@@ -6216,250 +6456,10 @@
         "y": 0.5
       }
     },
-    "ar_bot_iron_topaz.png": {
-      "frame": {
-        "x": 0,
-        "y": 125,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_iron_ruby.png": {
-      "frame": {
-        "x": 56,
-        "y": 125,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_iron_emerald.png": {
-      "frame": {
-        "x": 7,
-        "y": 125,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_iron_diamond.png": {
-      "frame": {
-        "x": 63,
-        "y": 125,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_iron_amethyst.png": {
-      "frame": {
-        "x": 14,
-        "y": 125,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_iron.png": {
-      "frame": {
-        "x": 70,
-        "y": 125,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_hickory_topaz.png": {
-      "frame": {
-        "x": 21,
-        "y": 125,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_hickory_ruby.png": {
-      "frame": {
-        "x": 28,
-        "y": 125,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_hickory_emerald.png": {
-      "frame": {
-        "x": 35,
-        "y": 125,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_hickory_diamond.png": {
-      "frame": {
-        "x": 42,
-        "y": 125,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
     "ar_bot_hickory_amethyst.png": {
       "frame": {
-        "x": 119,
-        "y": 119,
+        "x": 112,
+        "y": 117,
         "w": 7,
         "h": 7
       },
@@ -6482,152 +6482,8 @@
     },
     "ar_bot_hickory.png": {
       "frame": {
-        "x": 112,
-        "y": 122,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_hemp_topaz.png": {
-      "frame": {
-        "x": 77,
-        "y": 122,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_hemp_ruby.png": {
-      "frame": {
-        "x": 84,
-        "y": 122,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_hemp_emerald.png": {
-      "frame": {
-        "x": 91,
-        "y": 122,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_hemp_diamond.png": {
-      "frame": {
-        "x": 98,
-        "y": 122,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_hemp_amethyst.png": {
-      "frame": {
-        "x": 127,
-        "y": 0,
-        "w": 7,
-        "h": 7
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 1,
-        "w": 7,
-        "h": 7
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_hemp.png": {
-      "frame": {
-        "x": 127,
-        "y": 7,
+        "x": 119,
+        "y": 119,
         "w": 7,
         "h": 7
       },
@@ -6651,7 +6507,7 @@
     "ar_bot_gold_topaz.png": {
       "frame": {
         "x": 127,
-        "y": 14,
+        "y": 0,
         "w": 7,
         "h": 7
       },
@@ -6675,7 +6531,7 @@
     "ar_bot_gold_ruby.png": {
       "frame": {
         "x": 127,
-        "y": 21,
+        "y": 7,
         "w": 7,
         "h": 7
       },
@@ -6698,8 +6554,8 @@
     },
     "ar_bot_gold_emerald.png": {
       "frame": {
-        "x": 126,
-        "y": 28,
+        "x": 127,
+        "y": 14,
         "w": 7,
         "h": 7
       },
@@ -6722,8 +6578,8 @@
     },
     "ar_bot_gold_diamond.png": {
       "frame": {
-        "x": 126,
-        "y": 35,
+        "x": 127,
+        "y": 21,
         "w": 7,
         "h": 7
       },
@@ -6745,6 +6601,54 @@
       }
     },
     "ar_bot_gold_amethyst.png": {
+      "frame": {
+        "x": 127,
+        "y": 28,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_gold.png": {
+      "frame": {
+        "x": 127,
+        "y": 35,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_fdeer_topaz.png": {
       "frame": {
         "x": 126,
         "y": 42,
@@ -6768,7 +6672,7 @@
         "y": 0.5
       }
     },
-    "ar_bot_gold.png": {
+    "ar_bot_fdeer_ruby.png": {
       "frame": {
         "x": 126,
         "y": 49,
@@ -6792,7 +6696,7 @@
         "y": 0.5
       }
     },
-    "ar_bot_cotton_topaz.png": {
+    "ar_bot_fdeer_emerald.png": {
       "frame": {
         "x": 126,
         "y": 56,
@@ -6816,7 +6720,7 @@
         "y": 0.5
       }
     },
-    "ar_bot_cotton_ruby.png": {
+    "ar_bot_fdeer_diamond.png": {
       "frame": {
         "x": 126,
         "y": 63,
@@ -6840,7 +6744,7 @@
         "y": 0.5
       }
     },
-    "ar_bot_cotton_emerald.png": {
+    "ar_bot_fdeer_amethyst.png": {
       "frame": {
         "x": 126,
         "y": 70,
@@ -6864,7 +6768,7 @@
         "y": 0.5
       }
     },
-    "ar_bot_cotton_diamond.png": {
+    "ar_bot_fdeer.png": {
       "frame": {
         "x": 126,
         "y": 77,
@@ -6888,7 +6792,7 @@
         "y": 0.5
       }
     },
-    "ar_bot_cotton_amethyst.png": {
+    "ar_bot_copper_topaz.png": {
       "frame": {
         "x": 126,
         "y": 84,
@@ -6912,7 +6816,7 @@
         "y": 0.5
       }
     },
-    "ar_bot_cotton.png": {
+    "ar_bot_copper_ruby.png": {
       "frame": {
         "x": 126,
         "y": 91,
@@ -6936,7 +6840,7 @@
         "y": 0.5
       }
     },
-    "ar_bot_boar_topaz.png": {
+    "ar_bot_copper_emerald.png": {
       "frame": {
         "x": 126,
         "y": 98,
@@ -6960,7 +6864,7 @@
         "y": 0.5
       }
     },
-    "ar_bot_boar_ruby.png": {
+    "ar_bot_copper_diamond.png": {
       "frame": {
         "x": 126,
         "y": 105,
@@ -6984,7 +6888,7 @@
         "y": 0.5
       }
     },
-    "ar_bot_boar_emerald.png": {
+    "ar_bot_copper_amethyst.png": {
       "frame": {
         "x": 126,
         "y": 112,
@@ -7008,7 +6912,7 @@
         "y": 0.5
       }
     },
-    "ar_bot_boar_diamond.png": {
+    "ar_bot_copper.png": {
       "frame": {
         "x": 126,
         "y": 119,
@@ -7032,10 +6936,106 @@
         "y": 0.5
       }
     },
-    "ar_bot_boar_amethyst.png": {
+    "ar_bot_boar_topaz.png": {
       "frame": {
         "x": 49,
-        "y": 128,
+        "y": 126,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_boar_ruby.png": {
+      "frame": {
+        "x": 70,
+        "y": 124,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_boar_emerald.png": {
+      "frame": {
+        "x": 112,
+        "y": 124,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_boar_diamond.png": {
+      "frame": {
+        "x": 0,
+        "y": 130,
+        "w": 7,
+        "h": 7
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 7,
+        "h": 7
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_boar_amethyst.png": {
+      "frame": {
+        "x": 56,
+        "y": 130,
         "w": 7,
         "h": 7
       },
@@ -7058,8 +7058,8 @@
     },
     "ar_bot_boar.png": {
       "frame": {
-        "x": 105,
-        "y": 126,
+        "x": 7,
+        "y": 130,
         "w": 7,
         "h": 7
       },
@@ -7082,8 +7082,8 @@
     },
     "ar_bot_birch_topaz.png": {
       "frame": {
-        "x": 0,
-        "y": 132,
+        "x": 63,
+        "y": 130,
         "w": 7,
         "h": 7
       },
@@ -7106,8 +7106,8 @@
     },
     "ar_bot_birch_ruby.png": {
       "frame": {
-        "x": 56,
-        "y": 132,
+        "x": 14,
+        "y": 130,
         "w": 7,
         "h": 7
       },
@@ -7130,8 +7130,8 @@
     },
     "ar_bot_birch_emerald.png": {
       "frame": {
-        "x": 7,
-        "y": 132,
+        "x": 21,
+        "y": 130,
         "w": 7,
         "h": 7
       },
@@ -7154,8 +7154,8 @@
     },
     "ar_bot_birch_diamond.png": {
       "frame": {
-        "x": 63,
-        "y": 132,
+        "x": 28,
+        "y": 130,
         "w": 7,
         "h": 7
       },
@@ -7178,8 +7178,8 @@
     },
     "ar_bot_birch_amethyst.png": {
       "frame": {
-        "x": 14,
-        "y": 132,
+        "x": 35,
+        "y": 130,
         "w": 7,
         "h": 7
       },
@@ -7200,19 +7200,19 @@
         "y": 0.5
       }
     },
-    "ar_bot_linen_emerald.png": {
+    "ar_glo_hemp_emerald.png": {
       "frame": {
-        "x": 72,
-        "y": 112,
-        "w": 5,
+        "x": 70,
+        "y": 131,
+        "w": 6,
         "h": 6
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 2,
+        "x": 1,
         "y": 1,
-        "w": 5,
+        "w": 6,
         "h": 6
       },
       "sourceSize": {
@@ -7226,8 +7226,8 @@
     },
     "ar_glo_linen_amethyst.png": {
       "frame": {
-        "x": 70,
-        "y": 133,
+        "x": 76,
+        "y": 131,
         "w": 6,
         "h": 6
       },
@@ -7250,8 +7250,8 @@
     },
     "ar_glo_linen_diamond.png": {
       "frame": {
-        "x": 76,
-        "y": 133,
+        "x": 82,
+        "y": 131,
         "w": 6,
         "h": 6
       },
@@ -7274,8 +7274,8 @@
     },
     "ar_glo_linen_emerald.png": {
       "frame": {
-        "x": 82,
-        "y": 133,
+        "x": 88,
+        "y": 131,
         "w": 6,
         "h": 6
       },
@@ -7298,8 +7298,8 @@
     },
     "ar_glo_linen_ruby.png": {
       "frame": {
-        "x": 88,
-        "y": 133,
+        "x": 94,
+        "y": 131,
         "w": 6,
         "h": 6
       },
@@ -7322,32 +7322,8 @@
     },
     "ar_glo_linen_topaz.png": {
       "frame": {
-        "x": 94,
-        "y": 133,
-        "w": 6,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 1,
-        "y": 1,
-        "w": 6,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_fdeer.png": {
-      "frame": {
         "x": 100,
-        "y": 133,
+        "y": 131,
         "w": 6,
         "h": 6
       },
@@ -7368,130 +7344,10 @@
         "y": 0.5
       }
     },
-    "ar_glo_fdeer_amethyst.png": {
+    "ar_bot_ramie_diamond.png": {
       "frame": {
-        "x": 106,
-        "y": 133,
-        "w": 6,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 1,
-        "y": 1,
-        "w": 6,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_fdeer_diamond.png": {
-      "frame": {
-        "x": 21,
-        "y": 132,
-        "w": 6,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 1,
-        "y": 1,
-        "w": 6,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_fdeer_emerald.png": {
-      "frame": {
-        "x": 27,
-        "y": 132,
-        "w": 6,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 1,
-        "y": 1,
-        "w": 6,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_fdeer_ruby.png": {
-      "frame": {
-        "x": 33,
-        "y": 132,
-        "w": 6,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 1,
-        "y": 1,
-        "w": 6,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_fdeer_topaz.png": {
-      "frame": {
-        "x": 39,
-        "y": 132,
-        "w": 6,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 1,
-        "y": 1,
-        "w": 6,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_willow_topaz.png": {
-      "frame": {
-        "x": 112,
-        "y": 129,
+        "x": 107,
+        "y": 112,
         "w": 5,
         "h": 6
       },
@@ -7512,10 +7368,154 @@
         "y": 0.5
       }
     },
-    "ar_bot_willow_ruby.png": {
+    "ar_bot_hemp_topaz.png": {
       "frame": {
-        "x": 117,
-        "y": 129,
+        "x": 106,
+        "y": 131,
+        "w": 5,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 1,
+        "w": 5,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_hemp_ruby.png": {
+      "frame": {
+        "x": 111,
+        "y": 131,
+        "w": 5,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 1,
+        "w": 5,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_hemp_emerald.png": {
+      "frame": {
+        "x": 116,
+        "y": 131,
+        "w": 5,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 1,
+        "w": 5,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_hemp_diamond.png": {
+      "frame": {
+        "x": 42,
+        "y": 130,
+        "w": 5,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 1,
+        "w": 5,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_hemp_amethyst.png": {
+      "frame": {
+        "x": 121,
+        "y": 126,
+        "w": 5,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 1,
+        "w": 5,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_hemp.png": {
+      "frame": {
+        "x": 126,
+        "y": 126,
+        "w": 5,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 1,
+        "w": 5,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_ramie_amethyst.png": {
+      "frame": {
+        "x": 134,
+        "y": 0,
         "w": 5,
         "h": 6
       },
@@ -7538,8 +7538,8 @@
     },
     "ar_glo_agave.png": {
       "frame": {
-        "x": 122,
-        "y": 126,
+        "x": 133,
+        "y": 42,
         "w": 6,
         "h": 6
       },
@@ -7562,8 +7562,8 @@
     },
     "ar_glo_agave_amethyst.png": {
       "frame": {
-        "x": 128,
-        "y": 126,
+        "x": 133,
+        "y": 48,
         "w": 6,
         "h": 6
       },
@@ -7586,8 +7586,8 @@
     },
     "ar_glo_agave_diamond.png": {
       "frame": {
-        "x": 122,
-        "y": 132,
+        "x": 133,
+        "y": 54,
         "w": 6,
         "h": 6
       },
@@ -7610,8 +7610,8 @@
     },
     "ar_glo_agave_emerald.png": {
       "frame": {
-        "x": 128,
-        "y": 132,
+        "x": 133,
+        "y": 60,
         "w": 6,
         "h": 6
       },
@@ -7634,8 +7634,8 @@
     },
     "ar_glo_agave_ruby.png": {
       "frame": {
-        "x": 134,
-        "y": 0,
+        "x": 133,
+        "y": 66,
         "w": 6,
         "h": 6
       },
@@ -7656,7 +7656,7 @@
         "y": 0.5
       }
     },
-    "ar_bot_fdeer_topaz.png": {
+    "ar_bot_linen_topaz.png": {
       "frame": {
         "x": 134,
         "y": 6,
@@ -7680,7 +7680,7 @@
         "y": 0.5
       }
     },
-    "ar_bot_fdeer_ruby.png": {
+    "ar_bot_linen_ruby.png": {
       "frame": {
         "x": 134,
         "y": 12,
@@ -7704,7 +7704,7 @@
         "y": 0.5
       }
     },
-    "ar_bot_fdeer_emerald.png": {
+    "ar_bot_linen_emerald.png": {
       "frame": {
         "x": 134,
         "y": 18,
@@ -7728,7 +7728,7 @@
         "y": 0.5
       }
     },
-    "ar_bot_fdeer_diamond.png": {
+    "ar_bot_linen_diamond.png": {
       "frame": {
         "x": 134,
         "y": 24,
@@ -7752,7 +7752,7 @@
         "y": 0.5
       }
     },
-    "ar_bot_fdeer_amethyst.png": {
+    "ar_bot_linen_amethyst.png": {
       "frame": {
         "x": 134,
         "y": 30,
@@ -7776,7 +7776,31 @@
         "y": 0.5
       }
     },
-    "ar_bot_fdeer.png": {
+    "ar_glo_hemp.png": {
+      "frame": {
+        "x": 133,
+        "y": 72,
+        "w": 6,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 6,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_cotton_topaz.png": {
       "frame": {
         "x": 134,
         "y": 36,
@@ -7800,153 +7824,9 @@
         "y": 0.5
       }
     },
-    "ar_bot_linen_topaz.png": {
+    "ar_bot_cotton_ruby.png": {
       "frame": {
-        "x": 134,
-        "y": 42,
-        "w": 5,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 2,
-        "y": 1,
-        "w": 5,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_linen_ruby.png": {
-      "frame": {
-        "x": 134,
-        "y": 48,
-        "w": 5,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 2,
-        "y": 1,
-        "w": 5,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_copper.png": {
-      "frame": {
-        "x": 134,
-        "y": 54,
-        "w": 6,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 1,
-        "y": 1,
-        "w": 6,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_linen_diamond.png": {
-      "frame": {
-        "x": 134,
-        "y": 60,
-        "w": 5,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 2,
-        "y": 1,
-        "w": 5,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_linen_amethyst.png": {
-      "frame": {
-        "x": 134,
-        "y": 66,
-        "w": 5,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 2,
-        "y": 1,
-        "w": 5,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_linen.png": {
-      "frame": {
-        "x": 134,
-        "y": 72,
-        "w": 5,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 2,
-        "y": 1,
-        "w": 5,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_copper_topaz.png": {
-      "frame": {
-        "x": 134,
+        "x": 133,
         "y": 78,
         "w": 5,
         "h": 6
@@ -7968,9 +7848,9 @@
         "y": 0.5
       }
     },
-    "ar_bot_copper_ruby.png": {
+    "ar_bot_cotton_emerald.png": {
       "frame": {
-        "x": 134,
+        "x": 133,
         "y": 84,
         "w": 5,
         "h": 6
@@ -7992,9 +7872,9 @@
         "y": 0.5
       }
     },
-    "ar_bot_copper_emerald.png": {
+    "ar_bot_cotton_diamond.png": {
       "frame": {
-        "x": 134,
+        "x": 133,
         "y": 90,
         "w": 5,
         "h": 6
@@ -8016,9 +7896,9 @@
         "y": 0.5
       }
     },
-    "ar_bot_copper_diamond.png": {
+    "ar_bot_cotton_amethyst.png": {
       "frame": {
-        "x": 134,
+        "x": 133,
         "y": 96,
         "w": 5,
         "h": 6
@@ -8040,19 +7920,19 @@
         "y": 0.5
       }
     },
-    "ar_bot_copper_amethyst.png": {
+    "ar_glo_ramie.png": {
       "frame": {
-        "x": 134,
+        "x": 133,
         "y": 102,
-        "w": 5,
+        "w": 6,
         "h": 6
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 2,
+        "x": 1,
         "y": 1,
-        "w": 5,
+        "w": 6,
         "h": 6
       },
       "sourceSize": {
@@ -8064,19 +7944,19 @@
         "y": 0.5
       }
     },
-    "ar_bot_copper.png": {
+    "ar_glo_ramie_amethyst.png": {
       "frame": {
-        "x": 134,
+        "x": 133,
         "y": 108,
-        "w": 5,
+        "w": 6,
         "h": 6
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 2,
+        "x": 1,
         "y": 1,
-        "w": 5,
+        "w": 6,
         "h": 6
       },
       "sourceSize": {
@@ -8088,9 +7968,9 @@
         "y": 0.5
       }
     },
-    "ar_glo_copper_amethyst.png": {
+    "ar_glo_ramie_diamond.png": {
       "frame": {
-        "x": 134,
+        "x": 133,
         "y": 114,
         "w": 6,
         "h": 6
@@ -8112,7 +7992,7 @@
         "y": 0.5
       }
     },
-    "ar_glo_copper_diamond.png": {
+    "ar_glo_ramie_emerald.png": {
       "frame": {
         "x": 133,
         "y": 120,
@@ -8136,9 +8016,9 @@
         "y": 0.5
       }
     },
-    "ar_glo_copper_emerald.png": {
+    "ar_glo_ramie_ruby.png": {
       "frame": {
-        "x": 134,
+        "x": 131,
         "y": 126,
         "w": 6,
         "h": 6
@@ -8160,10 +8040,10 @@
         "y": 0.5
       }
     },
-    "ar_glo_copper_ruby.png": {
+    "ar_glo_ramie_topaz.png": {
       "frame": {
-        "x": 134,
-        "y": 132,
+        "x": 0,
+        "y": 137,
         "w": 6,
         "h": 6
       },
@@ -8184,10 +8064,58 @@
         "y": 0.5
       }
     },
-    "ar_glo_copper_topaz.png": {
+    "ar_bot_cotton.png": {
       "frame": {
-        "x": 0,
-        "y": 139,
+        "x": 6,
+        "y": 137,
+        "w": 5,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 1,
+        "w": 5,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_hemp_amethyst.png": {
+      "frame": {
+        "x": 11,
+        "y": 137,
+        "w": 6,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 6,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_hemp_diamond.png": {
+      "frame": {
+        "x": 17,
+        "y": 137,
         "w": 6,
         "h": 6
       },
@@ -8210,8 +8138,8 @@
     },
     "ar_glo_agave_topaz.png": {
       "frame": {
-        "x": 6,
-        "y": 139,
+        "x": 23,
+        "y": 137,
         "w": 6,
         "h": 6
       },
@@ -8232,10 +8160,58 @@
         "y": 0.5
       }
     },
-    "ar_bot_willow_emerald.png": {
+    "ar_glo_hemp_ruby.png": {
       "frame": {
-        "x": 12,
-        "y": 139,
+        "x": 29,
+        "y": 137,
+        "w": 6,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 6,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_hemp_topaz.png": {
+      "frame": {
+        "x": 35,
+        "y": 137,
+        "w": 6,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 6,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_linen.png": {
+      "frame": {
+        "x": 41,
+        "y": 137,
         "w": 5,
         "h": 6
       },
@@ -8256,58 +8232,10 @@
         "y": 0.5
       }
     },
-    "ar_bot_willow_diamond.png": {
+    "ar_bot_ramie.png": {
       "frame": {
-        "x": 17,
-        "y": 139,
-        "w": 5,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 2,
-        "y": 1,
-        "w": 5,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_willow_amethyst.png": {
-      "frame": {
-        "x": 22,
-        "y": 139,
-        "w": 5,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 2,
-        "y": 1,
-        "w": 5,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_bot_willow.png": {
-      "frame": {
-        "x": 27,
-        "y": 139,
+        "x": 46,
+        "y": 137,
         "w": 5,
         "h": 6
       },
@@ -8330,8 +8258,8 @@
     },
     "ar_bot_agave_amethyst.png": {
       "frame": {
-        "x": 32,
-        "y": 139,
+        "x": 51,
+        "y": 133,
         "w": 5,
         "h": 6
       },
@@ -8352,19 +8280,19 @@
         "y": 0.5
       }
     },
-    "ar_glo_willow.png": {
+    "ar_bot_ramie_topaz.png": {
       "frame": {
-        "x": 37,
-        "y": 139,
-        "w": 6,
+        "x": 56,
+        "y": 137,
+        "w": 5,
         "h": 6
       },
       "rotated": false,
       "trimmed": true,
       "spriteSourceSize": {
-        "x": 1,
+        "x": 2,
         "y": 1,
-        "w": 6,
+        "w": 5,
         "h": 6
       },
       "sourceSize": {
@@ -8376,82 +8304,58 @@
         "y": 0.5
       }
     },
-    "ar_glo_willow_amethyst.png": {
-      "frame": {
-        "x": 43,
-        "y": 139,
-        "w": 6,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 1,
-        "y": 1,
-        "w": 6,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_willow_diamond.png": {
-      "frame": {
-        "x": 49,
-        "y": 139,
-        "w": 6,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 1,
-        "y": 1,
-        "w": 6,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_willow_emerald.png": {
-      "frame": {
-        "x": 55,
-        "y": 139,
-        "w": 6,
-        "h": 6
-      },
-      "rotated": false,
-      "trimmed": true,
-      "spriteSourceSize": {
-        "x": 1,
-        "y": 1,
-        "w": 6,
-        "h": 6
-      },
-      "sourceSize": {
-        "w": 8,
-        "h": 8
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "ar_glo_willow_ruby.png": {
+    "ar_bot_ramie_ruby.png": {
       "frame": {
         "x": 61,
-        "y": 139,
+        "y": 137,
+        "w": 5,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 1,
+        "w": 5,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_bot_ramie_emerald.png": {
+      "frame": {
+        "x": 66,
+        "y": 137,
+        "w": 5,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 1,
+        "w": 5,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_cotton.png": {
+      "frame": {
+        "x": 71,
+        "y": 137,
         "w": 6,
         "h": 6
       },
@@ -8472,10 +8376,106 @@
         "y": 0.5
       }
     },
-    "ar_glo_willow_topaz.png": {
+    "ar_glo_cotton_amethyst.png": {
       "frame": {
-        "x": 67,
-        "y": 139,
+        "x": 77,
+        "y": 137,
+        "w": 6,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 6,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_cotton_diamond.png": {
+      "frame": {
+        "x": 83,
+        "y": 137,
+        "w": 6,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 6,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_cotton_emerald.png": {
+      "frame": {
+        "x": 89,
+        "y": 137,
+        "w": 6,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 6,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_cotton_ruby.png": {
+      "frame": {
+        "x": 95,
+        "y": 137,
+        "w": 6,
+        "h": 6
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 1,
+        "w": 6,
+        "h": 6
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "ar_glo_cotton_topaz.png": {
+      "frame": {
+        "x": 101,
+        "y": 137,
         "w": 6,
         "h": 6
       },
@@ -8498,8 +8498,8 @@
     },
     "ar_glo_linen.png": {
       "frame": {
-        "x": 73,
-        "y": 139,
+        "x": 107,
+        "y": 137,
         "w": 6,
         "h": 6
       },
@@ -8522,8 +8522,8 @@
     },
     "ar_bot_agave_topaz.png": {
       "frame": {
-        "x": 79,
-        "y": 139,
+        "x": 113,
+        "y": 137,
         "w": 5,
         "h": 6
       },
@@ -8546,8 +8546,8 @@
     },
     "ar_bot_agave_ruby.png": {
       "frame": {
-        "x": 84,
-        "y": 139,
+        "x": 118,
+        "y": 137,
         "w": 5,
         "h": 6
       },
@@ -8570,8 +8570,8 @@
     },
     "ar_bot_agave_emerald.png": {
       "frame": {
-        "x": 89,
-        "y": 139,
+        "x": 123,
+        "y": 132,
         "w": 5,
         "h": 6
       },
@@ -8594,8 +8594,8 @@
     },
     "ar_bot_agave_diamond.png": {
       "frame": {
-        "x": 94,
-        "y": 139,
+        "x": 128,
+        "y": 132,
         "w": 5,
         "h": 6
       },
@@ -8618,8 +8618,8 @@
     },
     "ar_bot_agave.png": {
       "frame": {
-        "x": 99,
-        "y": 139,
+        "x": 133,
+        "y": 132,
         "w": 5,
         "h": 6
       },
@@ -8647,8 +8647,8 @@
     "image": "armor2.png",
     "format": "RGBA8888",
     "size": {
-      "w": 140,
-      "h": 145
+      "w": 139,
+      "h": 143
     },
     "scale": 1
   }
