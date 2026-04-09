@@ -472,48 +472,40 @@ function parseCSV(text) {
 const SPRITE_CONTAINER = 40;
 
 function getSpriteCSS(item) {
-  const atlasName = item.Atlas_Name;
-  const atlas = atlases[atlasName];
+  const atlas = atlases[item.Atlas_Name];
   if (!atlas) return null;
-  const key = item.ID + '.png';
-  const frameData = atlas.frames[key];
+  const frameData = atlas.frames[item.ID + '.png'];
   if (!frameData) return null;
   const { x, y, w, h } = frameData.frame;
   const s = atlasScale;
-  const sw = w * s;
-  const sh = h * s;
-  // trimmed 스프라이트는 spriteSourceSize 오프셋으로 원본 위치 복원
-  // trim 없으면 sourceSize == frame size이므로 sss = {x:0, y:0}
+  // trim된 경우 spriteSourceSize로 원본 프레임 내 오프셋 복원
   const sss = frameData.spriteSourceSize || { x: 0, y: 0 };
-  const src = frameData.sourceSize || { w, h };
-  const containerW = src.w * s;
-  const containerH = src.h * s;
-  const ox = sss.x * s;
-  const oy = sss.y * s;
-  return { x, y, sw, sh, ox, oy, containerW, containerH, s, atlasW: atlas.w, atlasH: atlas.h, url: atlas.url };
+  const src = frameData.sourceSize     || { w, h };
+  return {
+    x, y,
+    sw: w * s, sh: h * s,
+    ox: sss.x * s, oy: sss.y * s,
+    cw: src.w * s, ch: src.h * s,
+    atlasW: atlas.w * s, atlasH: atlas.h * s,
+    url: atlas.url,
+  };
 }
 
 // ── 스프라이트 DOM 생성 ──
 function makeSpriteDom(sp) {
   const wrap = document.createElement('div');
   wrap.className = 'item-sprite-wrap';
-  // 컨테이너를 sourceSize 기반으로, 40px보다 크면 40px로 clamp
-  const cw = Math.min(sp.containerW, SPRITE_CONTAINER);
-  const ch = Math.min(sp.containerH, SPRITE_CONTAINER);
-  wrap.style.width  = cw + 'px';
-  wrap.style.height = ch + 'px';
+  wrap.style.width  = sp.cw + 'px';
+  wrap.style.height = sp.ch + 'px';
   const inner = document.createElement('div');
   inner.style.cssText = `
-    position: absolute;
-    left: ${sp.ox}px;
-    top: ${sp.oy}px;
-    width: ${sp.sw}px;
-    height: ${sp.sh}px;
-    background-image: url('${sp.url}');
-    background-size: ${sp.atlasW * sp.s}px ${sp.atlasH * sp.s}px;
-    background-position: -${sp.x * sp.s}px -${sp.y * sp.s}px;
-    image-rendering: pixelated;
-    image-rendering: crisp-edges;
+    position:absolute;
+    left:${sp.ox}px; top:${sp.oy}px;
+    width:${sp.sw}px; height:${sp.sh}px;
+    background-image:url('${sp.url}');
+    background-size:${sp.atlasW}px ${sp.atlasH}px;
+    background-position:-${sp.x * atlasScale}px -${sp.y * atlasScale}px;
+    image-rendering:pixelated; image-rendering:crisp-edges;
   `;
   wrap.appendChild(inner);
   return wrap;
